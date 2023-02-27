@@ -35,35 +35,43 @@ Finally, as a longer term business goal, Kerry Surf School has begun researching
 ## 3. Features
 ## 4. future features
 ## 5. Typography and color scheme
-## 6. wireframes
+## 6. Wireframes
 
-### 6.1 Home Page
+### 6.1 Home Page on Desktop
 
-![Wireframe of the website home page](documents/home-page.png "Home Page")
+![Wireframe of the website home page on a desktop view](documents/desktop-home-page.png "Home Page on Desktop")
 
-### 6.2 Sign Up/ Log In
+### 6.2 Home Page on Mobile
 
-![Wireframe of the sign up or login page](documents/signup-login.png "Sign Up or Log In")
+![Wireframe of the website home page on a mobile view](documents/mobile-home-page.png "Home Page on Mobile")
 
-### 6.3 Sign Up
+### 6.3 Sign Up/ Log In on Desktop
 
-![Wireframe of the sign up page](documents/signup.png "Sign Up")
+![Wireframe of the sign up or login options page on a desktop view](documents/desktop-sign-up-sign-in.png "Sign Up or Log In on Desktop")
 
-### 6.4 Log In
+### 6.4 Sign Up/ Log In on Mobile
 
-![Wireframe of the log in page](documents/login.png "Log In")
+![Wireframe of the sign up or login options page on a mobile view](documents/mobile-sign-up-sign-in.png "Sign Up or Log In on Mobile")
 
-### 6.5 User Account after first Log In
+### 6.5 Sign Up
+
+![Wireframe of the sign up page](documents/tablet-sign-up.png "Sign Up")
+
+### 6.6 Log In
+
+![Wireframe of the log in page](documents/tablet-log-in.png "Log In")
+
+### 6.7 User Account after first Log In
 
 ![Wireframe of the user account page after the first log in](documents/user-account-first-login.png "User Account after first Log In")
 
-### 6.6 User Account
+### 6.8 User Account
 
 ![Wireframe of the user account page](documents/user-account.png "User Account")
 
-### 6.7 Create Profile
+### 6.9 Create Booking
 
-![Wireframe of the create profile page](documents/create-profile.png "Create Profile")
+![Wireframe of the create booking page](documents/create-booking.png "Create Booking")
 
 ## 7. Database Entity Relationship Diagram
 
