@@ -33,6 +33,131 @@ Finally, as a longer term business goal, Kerry Surf School has begun researching
 10. As a **Site Admin User** I can **close a specific lesson time and type to further bookings** so that **I can avoid inconvenience to the business and its customers by automated acceptance of bookings to lessons already determined to be full.**
 
 ## 3. Features
+
+Please note that the features section contains relevant extracts from the project wireframes. The complete wireframes are included in section 6 of this document.
+
+### 3.1 Navigation Bar
+
+* The navigation bar provides a link to return to the home page from any other page. This link will be highlighted to indicate when a user is on the homepage.
+
+* When no user is logged in the navigation bar provides links to sign-up or log-in.
+
+* When a user is logged in the link to log-out replaces the log-in or sign-up options.
+
+<details><summary>Fig. 3.1.1 Navigation Bar with no user logged in.</summary>
+<img src="documents/navbar-logged-out.png"
+alt="wireframe of the navigation bar when there is no user logged in"></details>
+
+<details><summary>Fig. 3.1.2 Navigation Bar with a user logged in.</summary>
+<img src="documents/navbar-logged-in.png"
+alt="wireframe of the navigation bar when there is a user logged in"></details>
+
+### 3.2 Header
+
+* The header contains the business name "Kerry Surf School" as an h1 heading in a prominent location on the page.
+
+* The header contains a hero image with a theme related to the purpose of the website.
+
+<details><summary>Fig. 3.2.1 Header</summary>
+<img src="documents/header.png"
+alt="wireframe of the page header"></details>
+
+### 3.3 Home Page Main Section
+
+* The main section contains a link, in the form of a card, to commence the booking process. This is the key call to action on the home page. This link will bring the user to the page with options to log in or sign up.
+
+* The main section contains a link, in the form of a card, to information regarding surfing lessons. This information is located further down on the home page. This link is therefore a section link within the page.
+
+* The main section contains a link, in the form of a card, to information regarding equipment hire. This information is located further down on the home page. This link is therefore a section link within the page.
+
+* On mobile devices the three items will be displayed beneath each other in an accordion format.
+
+<details><summary>Fig. 3.3.1 Home Page Main Section on Desktop</summary>
+<img src="documents/home-main-desktop.png"
+alt="wireframe of the home page main section on desktop"></details>
+
+<details><summary>Fig. 3.3.2 Home Page Main Section on Mobile</summary>
+<img src="documents/home-main-mobile.png"
+alt="wireframe of the home page main section on a mobile device"></details>
+
+### 3.4 Footer
+
+* The footer contains links to social media.
+
+* The footer is sticky, always appearing at the bottom of the view.
+
+### 3.5 Sign Up/ Log In Page
+
+* This page is reached by clicking on the booking option on the home page.
+
+* The main section on this page contains links to the sign up or sign in options.
+
+* There is also a brief explainer regarding the need to create an account. This is in the form of a dropdown box on the mobile version.
+
+<details><summary>Fig. 3.5.1 Sign Up/ Log In</summary>
+<img src="documents/desktop-sign-up-sign-in-main.png"
+alt="wireframe of the main section of the sign up or log in page"></details>
+
+### 3.6 Sign Up Form
+
+* The page containing this form is reached either by clicking on sign up on the navigation bar or by clicking on the appropriate link on the sign up or log in options page.
+
+* The form contains a field to enter a unique username and fields to enter and confirm a user password.
+
+* The form has a submit button to process the entered information.
+
+<details><summary>Fig. 3.6.1 Sign Up Form</summary>
+<img src="documents/sign-up-form.png"
+alt="wireframe of the sign up form"></details>
+
+### 3.7 User Account First Log In
+
+* This page will appear after a user creates an account.
+
+* This page will contain a form for the provision of an email address and telephone number for the management of bookings.
+
+* A short explainer is provided regarding the data collected.
+
+<details><summary>Fig. 3.7.1 Email and Phone Number Form</summary>
+<img src="documents/email-phone-form.png"
+alt="wireframe of the email and telephone number form"></details>
+
+### 3.8 Log In Form
+
+* The page containing this form is reached either by clicking on log in on the navigation bar or by clicking on the appropriate link on the sign up or log in options page.
+
+* The form contains a field to enter a username and user password.
+
+* The form has a submit button to process the entered information.
+
+<details><summary>Fig. 3.8.1 Log In Form</summary>
+<img src="documents/log-in-form.png"
+alt="wireframe of the log in form"></details>
+
+### 3.9 Customer Account Page Main Section
+
+* The main section of this page contains a customer greeting.
+
+* The main section of this page contains a summary of customer information.
+
+* The main section of this page contains links to create, view, edit and cancel bookings.
+
+<details><summary>Fig. 3.9.1 Customer Account Page Main Section</summary>
+<img src="documents/user-account-main.png"
+alt="wireframe of the main section of the customer account page"></details>
+
+### 3.10 Create Booking Form
+
+* This form is reached by clicking the appropriate link on the customer account page.
+
+* This form gathers the necessary data for each individual's booking including first name, last name, date of birth, height, weight, ability level, booking date and booking time.
+
+* A submit button allows creation of the booking and its storage onto the database.
+
+<details><summary>Fig. 3.10.1 Create Booking Form</summary>
+<img src="documents/create-booking-form.png"
+alt="wireframe of the create booking form"></details>
+
 ## 4. future features
 ## 5. Typography and color scheme
 ## 6. Wireframes
