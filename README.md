@@ -158,7 +158,20 @@ alt="wireframe of the main section of the customer account page"></details>
 <img src="documents/create-booking-form.png"
 alt="wireframe of the create booking form"></details>
 
-## 4. future features
+## 4. Future Features
+
+The following future features could be added in time:
+
+1. The ability to create and save numerous individual profiles within a user account to allow for quicker completion of future bookings. Allowing several profiles under one customer account, would for example allow a parent to create one account but then create individual profiles for each family member.
+
+2. The ability to book equipment hire online.
+
+3. The ability to book a broader range of lessons including private lessons with or without equipment hire included.
+
+4. The ability to make payments online.
+
+5. The creation of an online shop for surfing equipment sales.
+
 ## 5. Typography and color scheme
 ## 6. Wireframes
 
