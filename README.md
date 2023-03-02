@@ -224,4 +224,27 @@ The following future features could be added in time:
 ## 10. Deployment
 ### 10.1 via gitpod
 ### 10.2 via github pages
-## 11. credits
+
+## 11. References and Credits
+
+### 11.1 References
+
+* The Code Institute student Template for Gitpod provided by Code Institute at https://github.com/Code-Institute-Org/gitpod-full-template. This template allows easy set up of a repository and workspace.
+
+* The Code Institute Hello Django and I Think therefore I Blog example projects provided within the online learning system (LMS). These provide general guidance as to minimun project requirements. They also provide an overview of best practice and industry conventions. Furthermore they outline the key aspects of the Django framework, the process to import Django into the IDE and the process to deploy a production version to Heroku.
+
+* The Code Institute Principles of Agile Development module provided by Code Institute within its online learning system (LMS). This module provides information on Agile theory as well as systems for its practical implementation that have been applied to this project.
+
+* Django version 3.2 documentation available at https://docs.djangoproject.com/en/3.2/. Django is the full-stack framework technology used to develop this project.
+
+* Cloudinary Documentation available at https://cloudinary.com/documentation. Cloudinary has been used as the remote persistent storage for media and static files on this project.
+
+* Bootstrap version 5.3 documentation available at https://getbootstrap.com/docs/5.3/getting-started/introduction/. Bootstrap has been used throughout this project to create page styles and components.
+
+### 11.2 Credits
+
+* Fellow students in the KCETB-Code Institute cohort for the feedback, advice, and, constant discussion of all things code.
+
+* Ms. Irene Neville, Code Institute cohort facilitator, for the provision of or signposting towards all key pieces of information needed to ensure the successful completion of the project to the required standards.
+
+* Mr. Rohit Sharma (Mentor) for guidance on overall project approach, industry standards and, README requirements.
