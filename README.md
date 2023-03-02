@@ -278,6 +278,10 @@ The following technologies were used in developing and deploying the website:
 
 ### 11.2 Credits
 
+* Hero Image by Pixabay and taken from pixels.com: https://www.pexels.com/photo/man-surfing-on-waves-390051/.
+
+* Image size and format adjusting by Reduce Images: https://www.reduceimages.com/
+
 * Fellow students in the KCETB-Code Institute cohort for the feedback, advice, and, constant discussion of all things code.
 
 * Ms. Irene Neville, Code Institute cohort facilitator, for the provision of or signposting towards all key pieces of information needed to ensure the successful completion of the project to the required standards.

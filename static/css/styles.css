@@ -1,3 +1,53 @@
-.nav-bg-color {
+.nav-footer-bg-color {
     background-color: #7acdf3;
+}
+
+.title-styles {
+    height: 450px;
+    background: url('../images/pexels-pixabay-390051-sm.png') no-repeat center center;
+    background-size: cover;
+}
+
+h1 {
+    color: #620da7;
+    font-size: 10vw;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer li {
+    display: inline-block;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+footer li a {
+    color: inherit;
+    font-size: 25px;
+}
+
+/* For Screens 750px wide and up */
+@media screen and (min-width: 750px) {
+    h1 {
+        font-size: 70px;
+    }
+}
+
+/* For Screens 992px wide and up */
+@media screen and (min-width: 992px) {
+    h1 {
+        max-width: 400px;
+        font-size: 90px;
+    }
 }
