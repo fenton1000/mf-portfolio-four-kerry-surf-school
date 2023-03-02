@@ -215,7 +215,42 @@ The following future features could be added in time:
 
 ![Database ERD showing the 4 data models and their relationships](documents/database-erd.png "Database Entity Relationship Diagram")
 
-## 8. technology
+## 8. Technology
+
+The following technologies were used in developing and deploying the website:
+
+* Python
+
+* HTML
+
+* CSS
+
+* Javascript
+
+* Django
+
+* Cloudinary
+
+* Bootstrap
+
+* The IDE used was GITPOD
+
+* The repository used is GITHUB
+
+* GITHUB issues, projects and boards are used to implement Agile practices.
+
+* The website is deployed on Heroku.
+
+* Balsamiq was used to prepare wireframes.
+
+* Lucidchart was used to prepare the Database Entity Relationship Diagram.
+
+* Google Chrome was used as the main web browser both for accessing the IDE and the repository as well as to view the application locally and on Heroku during development.
+
+* Developer Tools in Google Chrome were used to test the application during development and following completion.
+
+* Microsoft Edge and Mozilla Firefox were used to test cross browser compatibility.
+
 ## 9. testing
 ### 9.1 code validation
 ### 9.2 test cases (user story based with screenshots)
