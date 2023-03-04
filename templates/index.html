@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+{% load static %}
 <main>
     <div id="accordion">
         <div class="d-grid gap-2">
@@ -115,7 +117,7 @@
             <div class="row">
                 <div class="col">
                     <div class="card min-max-card-width m-auto">
-                        <img src="../static/images/pexels-elle-hughes-1549196-sm.png" class="card-img-top"
+                        <img src="{% static 'images/pexels-elle-hughes-1549196-sm.png' %}" class="card-img-top"
                             alt="Surfers with surfboards walking on a beach">
                         <div class="card-body">
                             <h2 class="card-title text-styling">Info on Surf Lessons</h2>
@@ -133,7 +135,7 @@
                 </div>
                 <div class="col">
                     <div class="card min-max-card-width m-auto">
-                        <img src="../static/images/pexels-monica-silvestre-699955-sm.png" class="card-img-top"
+                        <img src="{% static 'images/pexels-monica-silvestre-699955-sm.png' %}" class="card-img-top"
                             alt="Two surfboards lying on a sandy beach">
                         <div class="card-body">
                             <h2 class="card-title text-styling">Info on Hiring Gear</h2>
