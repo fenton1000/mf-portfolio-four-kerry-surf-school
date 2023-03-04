@@ -172,7 +172,34 @@ The following future features could be added in time:
 
 5. The creation of an online shop for surfing equipment sales.
 
-## 5. Typography and color scheme
+## 5. Typography and Color Scheme
+
+### 5.1 Typography
+
+The main page heading is also the business name "Kerry Surf School". It has the main surfer hero image as a background and has the font style Bubblegum Sans. This was chosen for its fun, informal relaxed style and was considered to be very much in keeping with the surfing theme.
+
+All other text uses the Quicksand font-style. This style is clear and easy to read while maintaining a somewhat informal look and works well with the Bubblegum Sans heading text.
+
+### 5.2 Color Scheme
+
+As the site is for a surf school it was decided that the appearance of the website should be inspired by sea, surf, sand, and sunshine.
+
+Therefore a color palette consisting of blues, browns, oranges, reds, and purples was considered appropriate.
+
+#7acdf3 is a light blue color and it has been used throughout the website including as the background color for the navigation bar, the footer and a nuber of link buttons. The color fits within the color scheme theme as outlined above and provides a good contrast when reading text.
+
+#3dbcf7 is a slightly darker blue and has been used as the hover color for link buttons. It provides sufficient contrast to the lighter blue above so as to fulfill its function in providing feedback to the user when they hover over a clickable link.
+
+#f1e2d3 is a light brown color and is used as the main background color for the site. It fits within the theme above and contrasts nicely with all other elements on the page.
+
+#620da7 is a rich, deep purple color and has been used for the main page title, the business name, "Kerry Surf School" on larger screens when the title is located to the left of or at the top of the image. The colour is in keeping with the overall theme and provides the required contrast with the background image.
+
+#e9d1d1 is a light orange-pink color and has been used for the main title when it is located towards the bottom of the background image on smaller screens. The location of the surfer within the image on smaller screens requires the title to be displayed toward the bottom of the image. However the purple color #620da7 does not provide sufficient contrast with the color within the background image at this location and so this lighter color is used. Likewise, this lighter color would not provide the required contrast at other locations within the image and therefore the purple color is used as described above.
+
+#d3ccc5 is a brown that provides a small degree of contrast with the main background color and has been used to provide a subtle outline to the booking card on larger screens.
+
+#246bad is a darker blue and has been used to provide a top border to the footer so as to ensure it is always distinguishable even when clickable links and accordion elements with the same background color overlap it.
+
 ## 6. Wireframes
 
 ### 6.1 Home Page on Desktop
