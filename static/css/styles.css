@@ -34,7 +34,7 @@ body {
 
 .title-styles {
     height: 400px;
-    background: url('/static/images/pexels-pixabay-390051-sm.png') no-repeat center center;
+    background: url('../images/pexels-pixabay-390051-sm.png');
     background-size: cover;
 }
 
