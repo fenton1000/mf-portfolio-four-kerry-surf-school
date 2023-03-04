@@ -233,6 +233,10 @@ The following technologies were used in developing and deploying the website:
 
 * Bootstrap
 
+* jQuery
+
+* Google Fonts
+
 * The IDE used was GITPOD
 
 * The repository used is GITHUB
@@ -272,13 +276,27 @@ The following technologies were used in developing and deploying the website:
 
 * Django version 3.2 documentation available at https://docs.djangoproject.com/en/3.2/. Django is the full-stack framework technology used to develop this project.
 
-* Cloudinary Documentation available at https://cloudinary.com/documentation. Cloudinary has been used as the remote persistent storage for media and static files on this project.
+* Cloudinary documentation available at https://cloudinary.com/documentation. Cloudinary has been used as the remote persistent storage for media and static files on this project.
 
 * Bootstrap version 5.3 documentation available at https://getbootstrap.com/docs/5.3/getting-started/introduction/. Bootstrap has been used throughout this project to create page styles and components.
+
+* jQuery documentation available at https://jquery.com/. jQuery has been used for event handling and DOM manipulation including to aid responsivness.
+
+* fontpair information on font styles and pairings at https://www.fontpair.co/.
+
+* Google Fonts documentation available at https://fonts.google.com/. Google Fonts has been used to import The Bubblegum Sans and the Quicksand font styles.
+
+* w3schools information on the matchMedia() js method at https://www.w3schools.com/jsref/met_win_matchmedia.asp.
+
+* w3schools information on using the addEventListener() js method to attach the "resize" event on the window object at https://www.w3schools.com/jsref/event_onresize.asp.
 
 ### 11.2 Credits
 
 * Hero Image by Pixabay and taken from pixels.com: https://www.pexels.com/photo/man-surfing-on-waves-390051/.
+
+* Surf Lessons photo by Elle Hughes and taken from pixels.com: https://www.pexels.com/photo/group-of-people-carrying-surfboards-1549196/
+
+* Gear Hire photo by Monica Silvestre and taken from pixels.com: https://www.pexels.com/photo/yellow-and-red-surfboards-near-blue-calm-body-of-water-699955/
 
 * Image size and format adjusting by Reduce Images: https://www.reduceimages.com/
 

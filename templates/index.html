@@ -1,7 +1,75 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<p>This is from the index for home!!!</p>
-
+<main>
+    <div id="accordion">
+        <div class="d-grid gap-2">
+            <a class="btn text-styling light-blue-btn-bg-color m-0" href="#" role="button">Book Now!!</a>
+            <div class="accordion">
+                <div class="accordion-item light-brown-bg-color">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed text-styling light-blue-btn-bg-color mb-2" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Info on Surfing Lessons!!
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            This is the info!!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item light-brown-bg-color">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed text-styling light-blue-btn-bg-color" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Info on Hiring Gear!!
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            This is the gear info!!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cards">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <div class="card min-max-card-width m-auto">
+                        <img src="../static/images/pexels-elle-hughes-1549196-sm.png" class="card-img-top"
+                            alt="Surfers with surfboards walking on a beach">
+                        <div class="card-body">
+                            <h2 class="card-title text-styling">Info on Surf Lessons</h2>
+                            <a href="#" class="btn light-blue-btn-bg-color text-styling">Click Here!!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="book-card m-auto d-flex flex-column justify-content-around">
+                        <h2 class="text-height-action text-styling">Book Today!!</h2>
+                        <a id="book-now" href="#"
+                            class="btn light-blue-btn-bg-color text-height-action m-auto text-styling">Book Now!</a>
+                        <p class="text-height-action text-styling">Pay on Arrival!!</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card min-max-card-width m-auto">
+                        <img src="../static/images/pexels-monica-silvestre-699955-sm.png" class="card-img-top"
+                            alt="Two surfboards lying on a sandy beach">
+                        <div class="card-body">
+                            <h2 class="card-title text-styling">Info on Hiring Gear</h2>
+                            <a href="#" class="btn light-blue-btn-bg-color text-styling">Click Here!!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 {% endblock %}
