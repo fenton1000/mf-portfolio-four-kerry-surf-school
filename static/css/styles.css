@@ -31,6 +31,9 @@
     height: 400px;
     background: url('../images/pexels-pixabay-390051-sm.png') no-repeat center center;
     background-size: cover;
+}
+
+.bottom-margin-10 {
     margin-bottom: 10px;
 }
 
