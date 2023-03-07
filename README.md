@@ -262,6 +262,8 @@ The following technologies were used in developing and deploying the website:
 
 * jQuery
 
+* django-allauth
+
 * Google Fonts
 
 * The IDE used was GITPOD
@@ -309,6 +311,8 @@ The following technologies were used in developing and deploying the website:
 
 * jQuery documentation available at https://jquery.com/. jQuery has been used for event handling and DOM manipulation including to aid responsivness.
 
+* django-allauth documentation available at https://django-allauth.readthedocs.io/en/latest/index.html. django-allauth has been used for user sign up/ log in/ authentication.
+
 * fontpair information on font styles and pairings at https://www.fontpair.co/.
 
 * Google Fonts documentation available at https://fonts.google.com/. Google Fonts has been used to import The Bubblegum Sans and the Quicksand font styles.
@@ -316,6 +320,10 @@ The following technologies were used in developing and deploying the website:
 * w3schools information on the matchMedia() js method at https://www.w3schools.com/jsref/met_win_matchmedia.asp.
 
 * w3schools information on using the addEventListener() js method to attach the "resize" event on the window object at https://www.w3schools.com/jsref/event_onresize.asp.
+
+* Answer by username ladhari to a question on Stack Overflow at https://stackoverflow.com/questions/20138049/redirect-user-to-another-url-with-django-allauth-log-in-signal for information on having seperate django redirects for sign up and log in.
+
+* Real Python information on using current user instance in the backend via request.user at https://realpython.com/django-view-authorization/.
 
 ### 11.2 Credits
 

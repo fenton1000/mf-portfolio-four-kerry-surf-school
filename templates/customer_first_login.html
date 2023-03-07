@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load static %}
+<main>
+    <h2>Add Details</h2>
+    <form method="POST" action="/customer/firstlogin/">
+        {% csrf_token %}
+        {{ form }}
+
+        <button type="submit">Submit Details</button>
+
+    </form>
+</main>
+{% endblock content %}
