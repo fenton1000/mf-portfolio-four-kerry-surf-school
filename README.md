@@ -196,7 +196,7 @@ Therefore a color palette consisting of blues, browns, oranges, reds, and purple
 
 #e9d1d1 is a light orange-pink color and has been used for the main title when it is located towards the bottom of the background image on smaller screens. The location of the surfer within the image on smaller screens requires the title to be displayed toward the bottom of the image. However the purple color #620da7 does not provide sufficient contrast with the color within the background image at this location and so this lighter color is used. Likewise, this lighter color would not provide the required contrast at other locations within the image and therefore the purple color is used as described above.
 
-#d3ccc5 is a brown that provides a small degree of contrast with the main background color and has been used to provide a subtle outline to the booking card on larger screens.
+#d3ccc5 is a brown that provides a small degree of contrast with the main background color and has been used to provide a subtle outline to the booking card on larger screens and to form input fields.
 
 #246bad is a darker blue and has been used to provide a top border to the footer so as to ensure it is always distinguishable even when clickable links and accordion elements with the same background color overlap it.
 

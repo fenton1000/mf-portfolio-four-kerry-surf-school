@@ -79,6 +79,16 @@ main {
     max-height: 200px;
 }
 
+form input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #d3ccc5;
+}
+
+form input:hover {
+    border: 1px solid black;
+}
+
 footer {
     position: fixed;
     bottom: 0;
