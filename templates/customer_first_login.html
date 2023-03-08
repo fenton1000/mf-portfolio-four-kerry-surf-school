@@ -4,13 +4,37 @@
 
 {% load static %}
 <main>
-    <h2>Add Details</h2>
-    <form method="POST" action="/customer/firstlogin/">
-        {% csrf_token %}
-        {{ form }}
+    <h2 class="ps-3">Welcome, {{ user.username }}!</h2>
+    <p class="ps-3">Please enter an email address and telephone number:</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mt-3 offset-md-2">
+                <form method="POST" action="/customer/firstlogin/">
+                    {% csrf_token %}
+                    <p>
+                        {{ form.email.label_tag }}
+                    </p>
+                    <p>
+                        {{ form.email }}
+                    </p>
+                    <p>
+                        <label for="id_phone_num">Telephone Number:</label>
+                    </p>
+                    <p>
+                        {{ form.phone_num }}
+                    </p>
+                    <button class="btn light-blue-btn-bg-color" type="submit">Submit Details</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
-        <button type="submit">Submit Details</button>
-
-    </form>
+    <p class="ps-3">We will use your email to send confirmation of any bookings
+        and to communicate with you regarding your booking.
+        We will only use your telephone number to contact you if needed at
+        short notice regarding your booking.
+        The details you provide will only be used for purposes
+        directly related to your booking. Thank you!
+    </p>
 </main>
 {% endblock content %}
