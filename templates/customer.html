@@ -4,6 +4,17 @@
 
 {% load static %}
 <main>
-    <h2>Hello {{ user.username }}!</h2>
+    <h2 class="ps-3">Welcome {{ user.username }}!</h2>
+    <div class="container top-margin-30">
+        <div class="row">
+            <div class="col-12 col-sm">
+                <h3>Your Details:</h3>
+            </div>
+            <div class="col">
+                <p>Email: {{ user.customer.email}}</p>
+                <p>Telephone Number: {{ user.customer.phone_num}}</p>
+            </div>
+        </div>
+    </div>
 </main>
 {% endblock %}
