@@ -40,6 +40,10 @@ body {
     margin-bottom: 10px;
 }
 
+.bottom-margin-50 {
+    margin-bottom: 50px;
+}
+
 h1 {
     font-family: Bubblegum Sans, sans-serif;
     color: #620da7;
