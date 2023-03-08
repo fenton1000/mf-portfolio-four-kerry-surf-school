@@ -68,6 +68,7 @@ main {
     width: 100%;
     border-radius: 5px;
     max-width: 290px;
+    min-height: 225px;
 }
 
 #book-now {
@@ -124,6 +125,17 @@ footer li a {
     h1 {
         font-size: 45px;
         color: #e9d1d1;
+    }
+
+    .text-height-action {
+        font-size: 24px;
+    }
+}
+
+/* For Screens 825px wide and down */
+@media screen and (max-width: 825px) {
+    .text-height-action {
+        font-size: 25px;
     }
 }
 

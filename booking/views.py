@@ -11,6 +11,10 @@ def customer(request):
     return render(request, 'customer.html')
 
 
+def signup_login_links(request):
+    return render(request, 'signup_login_links.html')
+
+
 def customer_first_login(request):
     if request.method == 'POST':
         form = CustomerForm(request.POST)

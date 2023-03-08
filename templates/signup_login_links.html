@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<main>
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-12 col-lg-6 top-margin-30">
+                <div class="book-card m-auto d-flex flex-column justify-content-around">
+                    <h2 class="text-height-action text-styling">New to Kerry Surf School?</h2>
+                    <a href="{% url 'account_signup' %}"
+                        class="btn light-blue-btn-bg-color text-height-action m-auto text-styling">Sign Up!</a>
+                    <p class="text-height-action text-styling">Please create an Account!</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 top-margin-30">
+                <div class="book-card m-auto d-flex flex-column justify-content-around">
+                    <h2 class="text-height-action text-styling">Already have an Account?</h2>
+                    <a href="{% url 'account_login' %}"
+                        class="btn light-blue-btn-bg-color text-height-action m-auto text-styling">Log In!</a>
+                    <p class="text-height-action text-styling">Please log in to continue!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ps-3">
+        <h3 class="top-margin-30">Why Do I Need an Account?</h3>
+        <p>Please note that no payment details are required to create this account.
+            All payments are made on the day prior to the lesson.
+            We do need to record some basic information to save your booking including contact details.
+            We will only contact you regarding your booking if it becomes necessary and your
+            information will not be used for any other other purpose.
+            An account allows you to review the information you provided to us at any time at your convenience.
+        </p>
+    </div>
+</main>
+{% endblock %}
