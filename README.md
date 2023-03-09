@@ -305,6 +305,8 @@ The following technologies were used in developing and deploying the website:
 
 * Django version 3.2 documentation available at https://docs.djangoproject.com/en/3.2/. Django is the full-stack framework technology used to develop this project.
 
+* Python version 3.8 documentation available at https://docs.python.org/3.8/. Python is the backend programming language used in the Django full-stack framework technology used to develop this project.
+
 * Cloudinary documentation available at https://cloudinary.com/documentation. Cloudinary has been used as the remote persistent storage for media and static files on this project.
 
 * Bootstrap version 5.3 documentation available at https://getbootstrap.com/docs/5.3/getting-started/introduction/. Bootstrap has been used throughout this project to create page styles and components.
