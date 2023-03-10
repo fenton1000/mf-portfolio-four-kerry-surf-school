@@ -50,6 +50,12 @@ h1 {
     font-size: 10vw;
 }
 
+.title-styles {
+    height: 400px;
+    background: url('https://res.cloudinary.com/dwaoancv8/image/upload/v1677964760/static/images/pexels-pixabay-390051-sm.b0370c7d3533.png') no-repeat center center;
+    background-size: cover;
+}
+
 main {
     margin-bottom: 50px;
 }
