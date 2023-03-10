@@ -323,6 +323,10 @@ The following technologies were used in developing and deploying the website:
 
 * w3schools information on using the addEventListener() js method to attach the "resize" event on the window object at https://www.w3schools.com/jsref/event_onresize.asp.
 
+* w3schools information on input type date at https://www.w3schools.com/tags/att_input_type_date.asp.
+
+* w3schools information on the HTML select tag at https://www.w3schools.com/tags/tag_select.asp.
+
 * Answer by username ladhari to a question on Stack Overflow at https://stackoverflow.com/questions/20138049/redirect-user-to-another-url-with-django-allauth-log-in-signal for information on having seperate django redirects for sign up and log in.
 
 * Real Python information on using current user instance in the backend via request.user at https://realpython.com/django-view-authorization/.

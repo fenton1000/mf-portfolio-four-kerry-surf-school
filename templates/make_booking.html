@@ -3,14 +3,53 @@
 {% block content %}
 
 <main>
-    <h2 class="ps-3">You can make a booking here{{ user.username }}!</h2>
+    <h2 class="ps-3">You can make a booking here {{ user.username }}!</h2>
     <p class="ps-3">Please complete the form in full:</p>
     <div class="container">
         <div class="row">
             <div class="col-md-8 mt-3 offset-md-2">
                 <form method="POST" action="/book/">
                     {% csrf_token %}
-                    {{ form.as_p }}
+                    <p>
+                        {{ form.first_name.label_tag }}
+                        {{ form.first_name }}
+                    </p>
+                    <p>
+                        {{ form.last_name.label_tag }}
+                        {{ form.last_name }}
+                    </p>
+                    <p>
+                        <label for="id_date_of_birth">Date of birth:</label>
+                        <input type="date" name="date_of_birth" required id="id_date_of_birth">
+                    </p>
+                    <p>
+                        {{ form.height.label_tag }}
+                        {{ form.height }}
+                    </p>
+                    <p>
+                        {{ form.weight.label_tag }}
+                        {{ form.weight }}
+                    </p>
+                    <p>
+                        <label for="id_ability_level">Ability level:</label>
+                        <select name="ability_level" id="id_ability_level" required>
+                            <option value="Beginner">Beginner</option>
+                            <option value="Intermediate">Intermediate</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="id_lesson_date">Lesson date:</label>
+                        <input type="date" name="lesson_date" required id="id_lesson_date">
+                    </p>
+                    <p>
+                        <label for="id_lesson_time">Lesson Time:</label>
+                        <select name="lesson_time" id="id_lesson_time" required>
+                            <option value="09:00:00">9.00am</option>
+                            <option value="11:00:00">11.00am</option>
+                            <option value="13:30:00">1.30pm</option>
+                            <option value="15:30:00">3.30pm</option>
+                        </select>
+                    </p>
                     <button class="btn light-blue-btn-bg-color" type="submit">Make Booking!</button>
                 </form>
             </div>
@@ -20,7 +59,7 @@
         The information provided will be used for no other purpose other than
         to adminsiter your booking and provide an appropriate lesson.
         Weight, height, ability level and date of birth are used to ensure
-        students are placed in the appropriate class with the appropriate surfing equipment. 
+        students are placed in the appropriate class with the appropriate surfing equipment.
     </p>
 </main>
 {% endblock content %}
