@@ -36,12 +36,20 @@ body {
     margin-top: 30px;
 }
 
+.bottom-margin-2 {
+    margin-bottom: 2px;
+}
+
 .bottom-margin-10 {
     margin-bottom: 10px;
 }
 
 .bottom-margin-50 {
     margin-bottom: 50px;
+}
+
+.min-width-220 {
+    min-width: 220px;
 }
 
 h1 {

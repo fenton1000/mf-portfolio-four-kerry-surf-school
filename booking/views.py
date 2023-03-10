@@ -62,3 +62,22 @@ def make_booking(request):
         'form': form
     }
     return render(request, 'make_booking.html', context)
+
+
+def view_bookings(request):
+    # if request.method == 'POST':
+    #     form = CustomerForm(request.POST)
+    #     if form.is_valid():
+    #         user = request.user
+    #         email = form.cleaned_data['email']
+    #         phone_num = form.cleaned_data['phone_num']
+    #         Customer.objects.create(
+    #             user=user, email=email, phone_num=phone_num)
+    #         return redirect('customer')
+    # form = CustomerForm()
+    bookings = Booking.objects.filter(customer=request.user)
+    
+    context = {
+        'bookings': bookings
+    }
+    return render(request, 'view_bookings.html', context)

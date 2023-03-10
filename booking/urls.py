@@ -10,6 +10,8 @@ urlpatterns = [
         views.customer_first_login,
         name='customer_first_login'
         ),
-    path('signuporlogin/', views.signup_login_links, name='signup_login_links'),
+    path(
+        'signuporlogin/', views.signup_login_links, name='signup_login_links'),
     path('book/', views.make_booking, name='make_booking'),
+    path('mybookings/', views.view_bookings, name='view_bookings'),
 ]

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main>
+    <h2 class="ps-3">All bookings made by {{ user.username }}!</h2>
+    <div class="d-flex justify-content-around flex-wrap">
+        {% for booking in bookings %}
+        <div class='d-inline-block border border-info p-2 m-2 min-width-220'>
+            <p class="bottom-margin-2"><strong>Student:</strong></p>
+            <p>{{ booking.first_name }} {{ booking.last_name}}</p>
+            <p class="bottom-margin-2"><strong>Date of Birth:</strong></p>
+            <p>{{ booking.date_of_birth }}</p>
+            <p class="bottom-margin-2"><strong>Ability Level:</strong></p>
+            <p>{{ booking.ability_level }}</p>
+            <p class="bottom-margin-2"><strong>Lesson Booked for:</strong></p>
+            <p>{{ booking.lesson_date }} at {{ booking.lesson_time}}</p>
+        </div>
+        {% endfor %}
+    </div>
+</main>
+{% endblock %}
