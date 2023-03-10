@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<main>
+    <h2 class="ps-3">You can make a booking here{{ user.username }}!</h2>
+    <p class="ps-3">Please complete the form in full:</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mt-3 offset-md-2">
+                <form method="POST" action="/book/">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button class="btn light-blue-btn-bg-color" type="submit">Make Booking!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <p class="ps-3">All of the above details are required to make your booking.
+        The information provided will be used for no other purpose other than
+        to adminsiter your booking and provide an appropriate lesson.
+        Weight, height, ability level and date of birth are used to ensure
+        students are placed in the appropriate class with the appropriate surfing equipment. 
+    </p>
+</main>
+{% endblock content %}

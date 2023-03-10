@@ -24,7 +24,7 @@ class Booking(models.Model):
         max_digits=3, decimal_places=1, null=False, blank=False)
     ability_level = models.CharField(max_length=50, null=False, blank=False)
     lesson_date = models.DateField(null=False, blank=False)
-    lesson_time = models.DateTimeField(null=False, blank=False)
+    lesson_time = models.TimeField(null=False, blank=False)
 
     def __str__(self):
-        return self.lesson_date
+        return str(self.lesson_date)
