@@ -343,6 +343,10 @@ The following technologies were used in developing and deploying the website:
 
 * "Converting 12 hour format time to 24 hour format in JavaScript" by tutorials point. This article is available at https://www.tutorialspoint.com/converting-12-hour-format-time-to-24-hour-format-in-javascript. It was used to source information and a code snippet for converting time to 24 hour format that was then adapted for the purposes of this project in the edits.js file. This conversion is used in the process required to fill the current booking data for lesson time into the edit booking form as the simple prepopulated Django form would not provide the dropdown select time options.
 
+* w3schools information on the HTML data-* attribute available at https://www.w3schools.com/tags/att_data-.asp.
+
+* "How to Get the data-id Attribute of an Element Using jQuery" by TutorialRepublic, available at https://www.tutorialrepublic.com/faq/how-to-get-the-data-id-attribute-of-an-element-using-jquery.php#:~:text=Alternatively%2C%20you%20can%20also%20use,the%20statement%20like%20%24(this). This was a source for guidance on combined use of a data attribute with the jQuery attr() method.
+
 ### 11.2 Credits
 
 * Hero Image by Pixabay and taken from pixels.com: https://www.pexels.com/photo/man-surfing-on-waves-390051/.
