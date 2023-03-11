@@ -65,18 +65,7 @@ def make_booking(request):
 
 
 def view_bookings(request):
-    # if request.method == 'POST':
-    #     form = CustomerForm(request.POST)
-    #     if form.is_valid():
-    #         user = request.user
-    #         email = form.cleaned_data['email']
-    #         phone_num = form.cleaned_data['phone_num']
-    #         Customer.objects.create(
-    #             user=user, email=email, phone_num=phone_num)
-    #         return redirect('customer')
-    # form = CustomerForm()
     bookings = Booking.objects.filter(customer=request.user)
-    
     context = {
         'bookings': bookings
     }
@@ -89,10 +78,16 @@ def edit_booking(request, booking_id):
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
             form.save()
-            return redirect('customer')
+            return redirect('view_bookings')
     form = BookingForm(instance=booking)
     context = {
         'booking': booking,
         'form': form
     }
     return render(request, 'edit_booking.html', context)
+
+
+def delete_booking(request, booking_id):
+    booking = get_object_or_404(Booking, id=booking_id, customer=request.user)
+    booking.delete()
+    return redirect('view_bookings')
