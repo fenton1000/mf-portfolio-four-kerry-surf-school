@@ -14,6 +14,7 @@
             <p>{{ booking.ability_level }}</p>
             <p class="bottom-margin-2"><strong>Lesson Booked for:</strong></p>
             <p>{{ booking.lesson_date }} at {{ booking.lesson_time}}</p>
+            <a href="/edit/{{ booking.id }}" class="btn light-blue-btn-bg-color text-styling">Edit Booking</a>
         </div>
         {% endfor %}
     </div>

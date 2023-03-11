@@ -14,4 +14,5 @@ urlpatterns = [
         'signuporlogin/', views.signup_login_links, name='signup_login_links'),
     path('book/', views.make_booking, name='make_booking'),
     path('mybookings/', views.view_bookings, name='view_bookings'),
+    path('edit/<booking_id>', views.edit_booking, name='edit_booking'),
 ]

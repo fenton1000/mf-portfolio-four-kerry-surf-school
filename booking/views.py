@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Customer, Booking
 from .forms import CustomerForm, BookingForm
 
@@ -81,3 +81,18 @@ def view_bookings(request):
         'bookings': bookings
     }
     return render(request, 'view_bookings.html', context)
+
+
+def edit_booking(request, booking_id):
+    booking = get_object_or_404(Booking, id=booking_id, customer=request.user)
+    if request.method == 'POST':
+        form = BookingForm(request.POST, instance=booking)
+        if form.is_valid():
+            form.save()
+            return redirect('customer')
+    form = BookingForm(instance=booking)
+    context = {
+        'booking': booking,
+        'form': form
+    }
+    return render(request, 'edit_booking.html', context)

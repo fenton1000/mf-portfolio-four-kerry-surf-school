@@ -331,6 +331,18 @@ The following technologies were used in developing and deploying the website:
 
 * Real Python information on using current user instance in the backend via request.user at https://realpython.com/django-view-authorization/.
 
+* "How to Safely Pass Data to JavaScript in a Django Template" by Adam Johnson. This article is available on his website at https://adamj.eu/tech/2022/10/06/how-to-safely-pass-data-to-javascript-in-a-django-template/. It was used to source information and code snippets for the use of data attributes to transfer data from the edit_booking template to the edits.js file. This was used to fill the current booking data into the edit booking form for date inputs when a simple prepopulated Django form would not provide the date picker functionality.
+
+* Answer by John Slegers to a question on Stack Overflow available at https://stackoverflow.com/questions/23593052/format-javascript-date-as-yyyy-mm-dd#:~:text=The%20simplest%20way%20to%20convert,(%22T%22)%5B0%5D%3B for information on, and a code snippet to, convert a date to an ISO string date, including allowing for timezones. This is required in edits.js as part of the process of supplying existing booking date data to the edit form.
+
+* w3schools information on the jQuery val() Method at https://www.w3schools.com/jquery/html_val.asp.
+
+* w3schools information on the jQuery attr() Method at https://www.w3schools.com/jquery/html_attr.asp
+
+* Answers by both username "c-smile" and username "Pointy" to a question on Stack Overflow available at https://stackoverflow.com/questions/6131119/jquery-attribute-selector-variable for information on the correct syntax when using the jQuery attribute selector with a variable as the value.
+
+* "Converting 12 hour format time to 24 hour format in JavaScript" by tutorials point. This article is available at https://www.tutorialspoint.com/converting-12-hour-format-time-to-24-hour-format-in-javascript. It was used to source information and a code snippet for converting time to 24 hour format that was then adapted for the purposes of this project in the edits.js file. This conversion is used in the process required to fill the current booking data for lesson time into the edit booking form as the simple prepopulated Django form would not provide the dropdown select time options.
+
 ### 11.2 Credits
 
 * Hero Image by Pixabay and taken from pixels.com: https://www.pexels.com/photo/man-surfing-on-waves-390051/.
