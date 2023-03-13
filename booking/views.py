@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib import messages
 from .models import Customer, Booking
 from .forms import CustomerForm, BookingForm
 
@@ -24,6 +25,8 @@ def customer_first_login(request):
             phone_num = form.cleaned_data['phone_num']
             Customer.objects.create(
                 user=user, email=email, phone_num=phone_num)
+            messages.success(
+                request, 'Email address and telephone number saved!')
             return redirect('customer')
     form = CustomerForm()
     context = {
@@ -56,6 +59,8 @@ def make_booking(request):
                 lesson_date=lesson_date,
                 lesson_time=lesson_time,
                 )
+            messages.success(
+                request, 'Booking Complete! See View Your Bookings')
             return redirect('customer')
     form = BookingForm()
     context = {
@@ -78,6 +83,7 @@ def edit_booking(request, booking_id):
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Your booking has been updated!')
             return redirect('view_bookings')
     form = BookingForm(instance=booking)
     context = {
@@ -90,4 +96,5 @@ def edit_booking(request, booking_id):
 def delete_booking(request, booking_id):
     booking = get_object_or_404(Booking, id=booking_id, customer=request.user)
     booking.delete()
+    messages.success(request, 'Your booking has been cancelled!')
     return redirect('view_bookings')
