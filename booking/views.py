@@ -48,6 +48,15 @@ def make_booking(request):
             ability_level = form.cleaned_data['ability_level']
             lesson_date = form.cleaned_data['lesson_date']
             lesson_time = form.cleaned_data['lesson_time']
+            if Booking.objects.filter(
+                customer=customer,
+                first_name=first_name,
+                last_name=last_name,
+                lesson_date=lesson_date,
+                lesson_time=lesson_time,
+                ).exists():
+                messages.warning(request, 'This booking already exists!')
+                return redirect('customer')
             Booking.objects.create(
                 customer=customer,
                 first_name=first_name,
@@ -82,6 +91,29 @@ def edit_booking(request, booking_id):
     if request.method == 'POST':
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
+            pk = booking.id
+            customer = request.user
+            first_name = form.cleaned_data['first_name']
+            last_name = form.cleaned_data['last_name']
+            lesson_date = form.cleaned_data['lesson_date']
+            lesson_time = form.cleaned_data['lesson_time']
+            if Booking.objects.filter(
+                customer=customer,
+                first_name=first_name,
+                last_name=last_name,
+                lesson_date=lesson_date,
+                lesson_time=lesson_time,
+                ).exists():
+                check_booking = Booking.objects.get(
+                    customer=customer,
+                    first_name=first_name,
+                    last_name=last_name,
+                    lesson_date=lesson_date,
+                    lesson_time=lesson_time,
+                )
+                if pk != check_booking.id:
+                    messages.warning(request, 'This booking already exists!')
+                    return redirect('customer')
             form.save()
             messages.success(request, 'Your booking has been updated!')
             return redirect('view_bookings')
