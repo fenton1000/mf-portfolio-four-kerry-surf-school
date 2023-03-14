@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% load static %}
+
 {% block content %}
 
 <main>
@@ -62,4 +64,5 @@
         students are placed in the appropriate class with the appropriate surfing equipment.
     </p>
 </main>
+<script src="{% static 'js/date.js' %}" defer></script>
 {% endblock content %}
