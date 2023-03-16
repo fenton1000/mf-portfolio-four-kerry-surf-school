@@ -262,6 +262,8 @@ The following technologies were used in developing and deploying the website:
 
 * jQuery
 
+* Jest
+
 * django-allauth
 
 * Google Fonts
@@ -312,6 +314,8 @@ The following technologies were used in developing and deploying the website:
 * Bootstrap version 5.3 documentation available at https://getbootstrap.com/docs/5.3/getting-started/introduction/. Bootstrap has been used throughout this project to create page styles and components.
 
 * jQuery documentation available at https://jquery.com/. jQuery has been used for event handling and DOM manipulation including to aid responsivness.
+
+* Jest documentation available at https://jestjs.io/docs/getting-started. Jest has been used as the Javascript testing framework for this project.
 
 * django-allauth documentation available at https://django-allauth.readthedocs.io/en/latest/index.html. django-allauth has been used for user sign up/ log in/ authentication.
 

@@ -1,0 +1,22 @@
+{
+  "name": "mf-portfolio-four-kerry-surf-school",
+  "version": "1.0.0",
+  "description": "## 1. Purpose of the Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fenton1000/mf-portfolio-four-kerry-surf-school.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fenton1000/mf-portfolio-four-kerry-surf-school/issues"
+  },
+  "homepage": "https://github.com/fenton1000/mf-portfolio-four-kerry-surf-school#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
