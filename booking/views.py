@@ -54,7 +54,7 @@ def make_booking(request):
                 last_name=last_name,
                 lesson_date=lesson_date,
                 lesson_time=lesson_time,
-                ).exists():
+            ).exists():
                 messages.warning(request, 'This booking already exists!')
                 return redirect('customer')
             Booking.objects.create(
@@ -67,7 +67,7 @@ def make_booking(request):
                 ability_level=ability_level,
                 lesson_date=lesson_date,
                 lesson_time=lesson_time,
-                )
+            )
             messages.success(
                 request, 'Booking Complete! See View Your Bookings')
             return redirect('customer')
@@ -103,7 +103,7 @@ def edit_booking(request, booking_id):
                 last_name=last_name,
                 lesson_date=lesson_date,
                 lesson_time=lesson_time,
-                ).exists():
+            ).exists():
                 check_booking = Booking.objects.get(
                     customer=customer,
                     first_name=first_name,

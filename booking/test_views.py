@@ -1,7 +1,11 @@
 from django.test import TestCase
 from django.contrib.auth.models import User
+from django.contrib.messages import get_messages
 from django.shortcuts import get_object_or_404
 from .models import Booking, Customer
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 class TestViews(TestCase):
@@ -86,6 +90,29 @@ class TestViews(TestCase):
         new_booking = Booking.objects.filter(customer=user, first_name='Jane')
         self.assertEqual(len(new_booking), 1)
 
+    def test_complete_make_booking_form_prevents_double_bookings(self):
+        user = self.user
+        self.client.force_login(user)
+        response = self.client.post(
+            '/book/',
+            {
+                'first_name': 'John',
+                'last_name': 'Smith',
+                'date_of_birth': '1980-04-11',
+                'height': '1.6',
+                'weight': '75',
+                'ability_level': 'Intermediate',
+                'lesson_date': '2023-10-10',
+                'lesson_time': '09:00',
+            },
+            user=user,
+        )
+        self.assertEqual(response.status_code, 302)
+        self.assertRedirects(response, '/customer/')
+        johns_bookings = Booking.objects.filter(
+            customer=user, first_name='John')
+        self.assertEqual(len(johns_bookings), 1)
+
     def test_view_bookings_page(self):
         user = self.user
         self.client.force_login(user)
@@ -124,6 +151,40 @@ class TestViews(TestCase):
         edited_booking = get_object_or_404(Booking, id=booking.id)
         self.assertEqual(edited_booking.weight, 75.0)
         self.assertEqual(edited_booking.ability_level, 'Intermediate')
+
+    def test_complete_edit_booking_form_does_not_allow_double_bookings(self):
+        user = self.user
+        booking = self.booking
+        other_existing_booking = Booking.objects.create(
+            customer=user,
+            first_name='Jane',
+            last_name='Smith',
+            date_of_birth='1977-05-11',
+            height='1.7',
+            weight='65',
+            ability_level='Beginner',
+            lesson_date='2023-10-10',
+            lesson_time='09:00',
+        )
+        self.client.force_login(user)
+        response = self.client.post(
+            f'/edit/{booking.id}',
+            {
+                'first_name': 'Jane',
+                'last_name': 'Smith',
+                'date_of_birth': '1980-04-10',
+                'height': '1.8',
+                'weight': '65',
+                'ability_level': 'Beginner',
+                'lesson_date': '2023-10-10',
+                'lesson_time': '09:00',
+            },
+            user=user,
+        )
+        self.assertEqual(response.status_code, 302)
+        self.assertRedirects(response, '/customer/')
+        attempted_edited_booking = get_object_or_404(Booking, id=booking.id)
+        self.assertEqual(attempted_edited_booking.first_name, 'John')
 
     def test_delete_booking(self):
         user = self.user
