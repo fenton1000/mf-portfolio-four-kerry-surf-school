@@ -280,6 +280,8 @@ The following technologies were used in developing and deploying the website:
 
 * Lucidchart was used to prepare the Database Entity Relationship Diagram.
 
+* favicon.io was used to generate the website favicon.
+
 * Google Chrome was used as the main web browser both for accessing the IDE and the repository as well as to view the application locally and on Heroku during development.
 
 * Developer Tools in Google Chrome were used to test the application during development and following completion.
@@ -355,6 +357,8 @@ The following technologies were used in developing and deploying the website:
 
 * Answer by Mahdi Zare to a question on Stack Overflow at https://stackoverflow.com/questions/27064206/django-check-if-a-related-object-exists-error-relatedobjectdoesnotexist for information on using ObjectDoesNotExist from django.core.exceptions.
 
+* "Dynamic classes in navbar" from Django World by Yash Patel available at https://www.youtube.com/watch?v=qLG6B6yWH58 for code and information regarding the addition of the active class to the correct link in the navbar of a base template.
+
 ### 11.2 Credits
 
 * Hero Image by Pixabay and taken from pixels.com: https://www.pexels.com/photo/man-surfing-on-waves-390051/.
@@ -364,6 +368,8 @@ The following technologies were used in developing and deploying the website:
 * Gear Hire photo by Monica Silvestre and taken from pixels.com: https://www.pexels.com/photo/yellow-and-red-surfboards-near-blue-calm-body-of-water-699955/
 
 * Image size and format adjusting by Reduce Images: https://www.reduceimages.com/
+
+* Favicon generation by favicon.io: https://favicon.io/
 
 * Fellow students in the KCETB-Code Institute cohort for the feedback, advice, and, constant discussion of all things code.
 
