@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from django.core.exceptions import ObjectDoesNotExist
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import Customer, Booking
@@ -11,7 +12,11 @@ def index(request):
 
 @login_required
 def customer(request):
-    return render(request, 'customer.html')
+    try:
+        request.user.customer
+        return render(request, 'customer.html')
+    except ObjectDoesNotExist:
+        return redirect('customer_first_login')
 
 
 def signup_login_links(request):
@@ -40,46 +45,51 @@ def customer_first_login(request):
 
 @login_required
 def make_booking(request):
-    if request.method == 'POST':
-        form = BookingForm(request.POST)
-        if form.is_valid():
-            customer = request.user
-            first_name = form.cleaned_data['first_name']
-            last_name = form.cleaned_data['last_name']
-            date_of_birth = form.cleaned_data['date_of_birth']
-            height = form.cleaned_data['height']
-            weight = form.cleaned_data['weight']
-            ability_level = form.cleaned_data['ability_level']
-            lesson_date = form.cleaned_data['lesson_date']
-            lesson_time = form.cleaned_data['lesson_time']
-            if Booking.objects.filter(
-                customer=customer,
-                first_name=first_name,
-                last_name=last_name,
-                lesson_date=lesson_date,
-                lesson_time=lesson_time,
-            ).exists():
-                messages.warning(request, 'This booking already exists!')
+    try:
+        request.user.customer
+    except ObjectDoesNotExist:
+        return redirect('customer_first_login')
+    else:
+        if request.method == 'POST':
+            form = BookingForm(request.POST)
+            if form.is_valid():
+                customer = request.user
+                first_name = form.cleaned_data['first_name']
+                last_name = form.cleaned_data['last_name']
+                date_of_birth = form.cleaned_data['date_of_birth']
+                height = form.cleaned_data['height']
+                weight = form.cleaned_data['weight']
+                ability_level = form.cleaned_data['ability_level']
+                lesson_date = form.cleaned_data['lesson_date']
+                lesson_time = form.cleaned_data['lesson_time']
+                if Booking.objects.filter(
+                    customer=customer,
+                    first_name=first_name,
+                    last_name=last_name,
+                    lesson_date=lesson_date,
+                    lesson_time=lesson_time,
+                ).exists():
+                    messages.warning(request, 'This booking already exists!')
+                    return redirect('customer')
+                Booking.objects.create(
+                    customer=customer,
+                    first_name=first_name,
+                    last_name=last_name,
+                    date_of_birth=date_of_birth,
+                    height=height,
+                    weight=weight,
+                    ability_level=ability_level,
+                    lesson_date=lesson_date,
+                    lesson_time=lesson_time,
+                )
+                messages.success(
+                    request, 'Booking Complete! See View Your Bookings')
                 return redirect('customer')
-            Booking.objects.create(
-                customer=customer,
-                first_name=first_name,
-                last_name=last_name,
-                date_of_birth=date_of_birth,
-                height=height,
-                weight=weight,
-                ability_level=ability_level,
-                lesson_date=lesson_date,
-                lesson_time=lesson_time,
-            )
-            messages.success(
-                request, 'Booking Complete! See View Your Bookings')
-            return redirect('customer')
-    form = BookingForm()
-    context = {
-        'form': form
-    }
-    return render(request, 'make_booking.html', context)
+        form = BookingForm()
+        context = {
+            'form': form
+        }
+        return render(request, 'make_booking.html', context)
 
 
 @login_required

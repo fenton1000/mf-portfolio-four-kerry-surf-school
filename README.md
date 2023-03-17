@@ -353,6 +353,8 @@ The following technologies were used in developing and deploying the website:
 
 * "How to use Django Messages Framework" by JAYSHA on ORDINARY CODERS available at https://ordinarycoders.com/blog/article/django-messages-framework for information on creating custom alerts using Django messages.
 
+* Answer by Mahdi Zare to a question on Stack Overflow at https://stackoverflow.com/questions/27064206/django-check-if-a-related-object-exists-error-relatedobjectdoesnotexist for information on using ObjectDoesNotExist from django.core.exceptions.
+
 ### 11.2 Credits
 
 * Hero Image by Pixabay and taken from pixels.com: https://www.pexels.com/photo/man-surfing-on-waves-390051/.
