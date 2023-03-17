@@ -16,7 +16,26 @@
             </div>
         </div>
     </div>
-    <a href="{% url 'make_booking' %}" class="btn light-blue-btn-bg-color text-styling">Make a booking!</a>
-    <a href="{% url 'view_bookings' %}" class="btn light-blue-btn-bg-color text-styling">View your bookings!</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-10 offset-1 my-3">
+                <p>From here you can make multiple bookings for as many members of your family or group as you need!</p>
+                <p>The booking form will ask you for the name and required details for each person.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm d-flex justify-content-center top-margin-30">
+                <a href="{% url 'make_booking' %}" class="btn light-blue-btn-bg-color text-styling">Make a
+                    booking!</a>
+            </div>
+            <div class="col d-flex justify-content-center top-margin-30">
+                <a href="{% url 'view_bookings' %}" class="btn light-blue-btn-bg-color text-styling">View your
+                    bookings!</a>
+            </div>
+        </div>
+    </div>
+
 </main>
 {% endblock %}

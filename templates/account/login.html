@@ -5,27 +5,27 @@
 
 {% block content %}
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
-      <h2>{% trans "Log In" %}</h2>
-      {% get_providers as socialaccount_providers %}
-      <p>{% blocktrans %}If you have not created an account yet, then please
-        <a class="link" href="{{ signup_url }}">Sign Up</a> first!{% endblocktrans %}</p>
+  <div class="container bottom-margin-50">
+    <div class="row">
+      <div class="col-md-8 mt-3 offset-md-2">
+        <h2>{% trans "Log In" %}</h2>
+        {% get_providers as socialaccount_providers %}
+        <p>{% blocktrans %}If you have not created an account yet, then please
+          <a class="link" href="{{ signup_url }}">Sign Up</a> first!{% endblocktrans %}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 mt-3 offset-md-2">
+        <form class="login" method="POST" action="{% url 'account_login' %}">
+          {% csrf_token %}
+          {{ form.as_p }}
+          {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+          {% endif %}
+          <button class="btn light-blue-btn-bg-color" type="submit">{% trans "Log In" %} &raquo;</button>
+        </form>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
-      <form class="login" method="POST" action="{% url 'account_login' %}">
-        {% csrf_token %}
-        {{ form.as_p }}
-        {% if redirect_field_value %}
-        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-        {% endif %}
-        <button class="btn light-blue-btn-bg-color" type="submit">{% trans "Log In" %} &raquo;</button>
-      </form>
-    </div>
-  </div>
-</div>
 
 {% endblock %}

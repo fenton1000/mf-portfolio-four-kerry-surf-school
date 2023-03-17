@@ -5,6 +5,7 @@
 {% block content %}
 <main>
     <h2 class="ps-3">All bookings made by {{ user.username }}!</h2>
+    <a href="{% url 'customer' %}" class="btn light-blue-btn-bg-color text-styling m-3">Back to Account Summary!</a>
     <div id="all-bookings" class="d-flex justify-content-around flex-wrap">
         {% for booking in bookings %}
         <div class='d-inline-block border border-info p-2 m-2 min-width-220'>
@@ -16,8 +17,8 @@
             <p>{{ booking.ability_level }}</p>
             <p class="bottom-margin-2"><strong>Lesson Booked for:</strong></p>
             <p>{{ booking.lesson_date }} at {{ booking.lesson_time}}</p>
-            <a href="/edit/{{ booking.id }}" class="btn light-blue-btn-bg-color text-styling">Edit Booking</a>
-            <button type="button" class="btn btn-danger text-styling" data-bs-toggle="modal"
+            <a href="/edit/{{ booking.id }}" class="btn light-blue-btn-bg-color text-styling mt-2">Edit Booking</a>
+            <button type="button" class="btn btn-danger text-styling mt-2" data-bs-toggle="modal"
                 data-bs-target="#confirmDeleteModal" data-delete-href="/delete/{{ booking.id }}">
                 Cancel Booking
             </button>
