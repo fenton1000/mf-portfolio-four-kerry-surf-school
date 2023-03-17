@@ -28,22 +28,30 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item mx-md-3 mx-lg-5">
-                            <a class="nav-link active text-styling" aria-current="page"
+                            <a {% if request.path == '/' %} class="nav-link active text-styling" {% else %}
+                                class="nav-link text-styling" {% endif %} aria-current="page"
                                 href="{% url 'index' %}">Home</a>
                         </li>
                         {% if user.is_authenticated %}
                         <li class="nav-item mx-md-3 mx-lg-5">
-                            <a class="nav-link text-styling" href="{% url 'customer' %}">My Account</a>
+                            <a {% if request.path == '/customer/' %} class="nav-link active text-styling" {% else %}
+                                class="nav-link text-styling" {% endif %} href="{% url 'customer' %}">My Account</a>
                         </li>
                         <li class="nav-item mx-md-3 mx-lg-5">
-                            <a class="nav-link text-styling" href="{% url 'account_logout' %}">Log Out</a>
+                            <a {% if request.path == '/accounts/logout/' %} class="nav-link active text-styling"
+                                {% else %} class="nav-link text-styling" {% endif %}
+                                href="{% url 'account_logout' %}">Log Out</a>
                         </li>
                         {% else %}
                         <li class="nav-item mx-md-3 mx-lg-5">
-                            <a class="nav-link text-styling" href="{% url 'account_signup' %}">Sign Up</a>
+                            <a {% if request.path == '/accounts/signup/' %} class="nav-link active text-styling"
+                                {% else %} class="nav-link text-styling" {% endif %}
+                                href="{% url 'account_signup' %}">Sign Up</a>
                         </li>
                         <li class="nav-item mx-md-3 mx-lg-5">
-                            <a class="nav-link text-styling" href="{% url 'account_login' %}">Log In</a>
+                            <a {% if request.path == '/accounts/login/' %} class="nav-link active text-styling"
+                                {% else %} class="nav-link text-styling" {% endif %}
+                                href="{% url 'account_login' %}">Log In</a>
                         </li>
                         {% endif %}
                     </ul>

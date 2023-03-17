@@ -52,6 +52,10 @@ body {
     min-width: 220px;
 }
 
+.active {
+    text-decoration: underline;
+}
+
 h1 {
     font-family: Bubblegum Sans, sans-serif;
     color: #620da7;
