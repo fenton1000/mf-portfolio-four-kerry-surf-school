@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from .models import Customer, Booking
 from .forms import CustomerForm, BookingForm
 
@@ -8,6 +9,7 @@ def index(request):
     return render(request, 'index.html')
 
 
+@login_required
 def customer(request):
     return render(request, 'customer.html')
 
@@ -16,6 +18,7 @@ def signup_login_links(request):
     return render(request, 'signup_login_links.html')
 
 
+@login_required
 def customer_first_login(request):
     if request.method == 'POST':
         form = CustomerForm(request.POST)
@@ -35,6 +38,7 @@ def customer_first_login(request):
     return render(request, 'customer_first_login.html', context)
 
 
+@login_required
 def make_booking(request):
     if request.method == 'POST':
         form = BookingForm(request.POST)
@@ -78,6 +82,7 @@ def make_booking(request):
     return render(request, 'make_booking.html', context)
 
 
+@login_required
 def view_bookings(request):
     bookings = Booking.objects.filter(customer=request.user)
     context = {
@@ -86,6 +91,7 @@ def view_bookings(request):
     return render(request, 'view_bookings.html', context)
 
 
+@login_required
 def edit_booking(request, booking_id):
     booking = get_object_or_404(Booking, id=booking_id, customer=request.user)
     if request.method == 'POST':
@@ -125,6 +131,7 @@ def edit_booking(request, booking_id):
     return render(request, 'edit_booking.html', context)
 
 
+@login_required
 def delete_booking(request, booking_id):
     booking = get_object_or_404(Booking, id=booking_id, customer=request.user)
     booking.delete()
