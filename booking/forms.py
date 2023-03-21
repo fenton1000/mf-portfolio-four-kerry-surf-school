@@ -5,19 +5,23 @@ from .models import Customer, Booking
 class CustomerForm(forms.ModelForm):
     class Meta:
         model = Customer
-        fields = ['email', 'phone_num']
+        fields = [
+            'first_name',
+            'last_name',
+            'email',
+            'phone_num',
+            'date_of_birth',
+            'height',
+            'weight'
+        ]
 
 
 class BookingForm(forms.ModelForm):
     class Meta:
         model = Booking
         fields = [
-            'first_name',
-            'last_name',
-            'date_of_birth',
-            'height',
-            'weight',
             'ability_level',
             'lesson_date',
-            'lesson_time'
+            'lesson_time',
+            'customer_requests'
             ]
