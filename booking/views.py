@@ -29,12 +29,25 @@ def customer_first_login(request):
         form = CustomerForm(request.POST)
         if form.is_valid():
             user = request.user
+            first_name = form.cleaned_data['first_name']
+            last_name = form.cleaned_data['last_name']
             email = form.cleaned_data['email']
             phone_num = form.cleaned_data['phone_num']
+            date_of_birth = form.cleaned_data['date_of_birth']
+            height = form.cleaned_data['height']
+            weight = form.cleaned_data['weight']
             Customer.objects.create(
-                user=user, email=email, phone_num=phone_num)
+                user=user,
+                first_name=first_name,
+                last_name=last_name,
+                email=email,
+                phone_num=phone_num,
+                date_of_birth=date_of_birth,
+                height=height,
+                weight=weight,
+            )
             messages.success(
-                request, 'Email address and telephone number saved!')
+                request, 'Your profile has been saved!')
             return redirect('customer')
     form = CustomerForm()
     context = {
@@ -54,18 +67,12 @@ def make_booking(request):
             form = BookingForm(request.POST)
             if form.is_valid():
                 customer = request.user
-                first_name = form.cleaned_data['first_name']
-                last_name = form.cleaned_data['last_name']
-                date_of_birth = form.cleaned_data['date_of_birth']
-                height = form.cleaned_data['height']
-                weight = form.cleaned_data['weight']
                 ability_level = form.cleaned_data['ability_level']
                 lesson_date = form.cleaned_data['lesson_date']
                 lesson_time = form.cleaned_data['lesson_time']
+                customer_requests = form.cleaned_data['customer_requests']
                 if Booking.objects.filter(
                     customer=customer,
-                    first_name=first_name,
-                    last_name=last_name,
                     lesson_date=lesson_date,
                     lesson_time=lesson_time,
                 ).exists():
@@ -73,14 +80,10 @@ def make_booking(request):
                     return redirect('customer')
                 Booking.objects.create(
                     customer=customer,
-                    first_name=first_name,
-                    last_name=last_name,
-                    date_of_birth=date_of_birth,
-                    height=height,
-                    weight=weight,
                     ability_level=ability_level,
                     lesson_date=lesson_date,
                     lesson_time=lesson_time,
+                    customer_requests=customer_requests
                 )
                 messages.success(
                     request, 'Booking Complete! See View Your Bookings')
@@ -109,21 +112,15 @@ def edit_booking(request, booking_id):
         if form.is_valid():
             pk = booking.id
             customer = request.user
-            first_name = form.cleaned_data['first_name']
-            last_name = form.cleaned_data['last_name']
             lesson_date = form.cleaned_data['lesson_date']
             lesson_time = form.cleaned_data['lesson_time']
             if Booking.objects.filter(
                 customer=customer,
-                first_name=first_name,
-                last_name=last_name,
                 lesson_date=lesson_date,
                 lesson_time=lesson_time,
             ).exists():
                 check_booking = Booking.objects.get(
                     customer=customer,
-                    first_name=first_name,
-                    last_name=last_name,
                     lesson_date=lesson_date,
                     lesson_time=lesson_time,
                 )

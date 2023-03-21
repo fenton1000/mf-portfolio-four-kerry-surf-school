@@ -13,26 +13,6 @@
                 <form method="POST" action="/book/">
                     {% csrf_token %}
                     <p>
-                        {{ form.first_name.label_tag }}
-                        {{ form.first_name }}
-                    </p>
-                    <p>
-                        {{ form.last_name.label_tag }}
-                        {{ form.last_name }}
-                    </p>
-                    <p>
-                        <label for="id_date_of_birth">Date of birth:</label>
-                        <input type="date" name="date_of_birth" required id="id_date_of_birth">
-                    </p>
-                    <p>
-                        {{ form.height.label_tag }}
-                        {{ form.height }}
-                    </p>
-                    <p>
-                        {{ form.weight.label_tag }}
-                        {{ form.weight }}
-                    </p>
-                    <p>
                         <label for="id_ability_level">Ability level:</label>
                         <select name="ability_level" id="id_ability_level" required>
                             <option value="Beginner">Beginner</option>
@@ -51,6 +31,12 @@
                             <option value="13:30:00">1.30pm</option>
                             <option value="15:30:00">3.30pm</option>
                         </select>
+                    </p>
+                    <p>
+                        {{ form.customer_requests.label_tag }}
+                    </p>
+                    <p>
+                        {{ form.customer_requests }}
                     </p>
                     <button class="btn light-blue-btn-bg-color" type="submit">Make Booking!</button>
                 </form>

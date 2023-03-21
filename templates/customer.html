@@ -11,16 +11,22 @@
                 <h3>Your Details:</h3>
             </div>
             <div class="col">
+                <p>Name: {{ user.customer.first_name }} {{ user.customer.last_name}}</p>
                 <p>Email: {{ user.customer.email}}</p>
                 <p>Telephone Number: {{ user.customer.phone_num}}</p>
+                <p>Date of Birth: {{ user.customer.date_of_birth }}</p>
+                <p>Height: {{user.customer.height }}m</p>
+                <p>Weight: {{ user.customer.weight }}kg</p>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-10 offset-1 my-3">
-                <p>From here you can make multiple bookings for as many members of your family or group as you need!</p>
-                <p>The booking form will ask you for the name and required details for each person.</p>
+                <p>From here you can make as many bookings for yourself as needed!</p>
+                <p>To edit or cancel bookings select the option to View you Bookings! and
+                    then follow the steps from there.
+                </p>
             </div>
         </div>
     </div>

@@ -5,12 +5,24 @@
 {% load static %}
 <main>
     <h2 class="ps-3">Welcome, {{ user.username }}!</h2>
-    <p class="ps-3">Please enter an email address and telephone number:</p>
+    <p class="ps-3">Please complete the customer profile below:</p>
     <div class="container">
         <div class="row">
             <div class="col-md-8 mt-3 offset-md-2">
                 <form method="POST" action="/customer/firstlogin/">
                     {% csrf_token %}
+                    <p>
+                        {{ form.first_name.label_tag }}
+                    </p>
+                    <p>
+                        {{ form.first_name }}
+                    </p>
+                    <p>
+                        {{ form.last_name.label_tag }}
+                    </p>
+                    <p>
+                        {{ form.last_name }}
+                    </p>
                     <p>
                         {{ form.email.label_tag }}
                     </p>
@@ -23,18 +35,36 @@
                     <p>
                         {{ form.phone_num }}
                     </p>
+                    <p>
+                        <label for="id_date_of_birth">Date of birth:</label>
+                        <input type="date" name="date_of_birth" required id="id_date_of_birth">
+                    </p>
+                    <p>
+                        {{ form.height.label_tag }}
+                    </p>
+                    <p>
+                        {{ form.height }}
+                    </p>
+                    <p>
+                        {{ form.weight.label_tag }}
+                    </p>
+                    <p>
+                        {{ form.weight }}
+                    </p>
                     <button class="btn light-blue-btn-bg-color" type="submit">Submit Details</button>
                 </form>
             </div>
         </div>
     </div>
 
-    <p class="ps-3">We will use your email to send confirmation of any bookings
-        and to communicate with you regarding your booking.
+    <p class="ps-3">The details you provide are necessary to process your booking
+        and will not be used for any other purpose. Weight, height, and date of birth
+        are used to ensure students are placed in the appropriate class with the
+        appropriate surfing equipment. We will use your email to send confirmation
+        of any bookings and to communicate with you regarding your booking.
         We will only use your telephone number to contact you if needed at
-        short notice regarding your booking.
-        The details you provide will only be used for purposes
-        directly related to your booking. Thank you!
+        short notice regarding your booking. The details you provide will only be
+        used for purposes directly related to your booking. Thank you!
     </p>
 </main>
 {% endblock content %}
