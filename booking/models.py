@@ -25,7 +25,7 @@ class Booking(models.Model):
     ability_level = models.CharField(max_length=50, null=False, blank=False)
     lesson_date = models.DateField(null=False, blank=False)
     lesson_time = models.TimeField(null=False, blank=False)
-    customer_requests = models.TextField()
+    customer_requests = models.TextField(null=True)
     approved = models.BooleanField(default=False)
 
     def __str__(self):
