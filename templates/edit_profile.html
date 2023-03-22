@@ -32,31 +32,33 @@
                     </p>
                     <p>
                         <label for="id_phone_num">Telephone Number:</label>
-                    </p>
-                    <p>
-                        {{ form.phone_num }}
+                        <input type="tel" pattern="[0-9, '', +]+" name="phone_num" value="{{ customer.phone_num }}"
+                            maxlength="20" required id="id_phone_num">
                     </p>
                     <p>
                         <label for="id_date_of_birth">Date of birth:</label>
                         <input type="date" name="date_of_birth" required id="id_date_of_birth">
                     </p>
                     <p>
-                        {{ form.height.label_tag }}
+                        {{ form.height.label_tag }} (In metres. Max 2 decimal places)
                     </p>
                     <p>
                         {{ form.height.errors }}
-                        {{ form.height }}
+                        <input type="number" name="height" value="{{ customer.height }}" step="0.01" required
+                            id="id_height" min="0" max="3" placeholder="0.00"> m
                     </p>
                     <p>
-                        {{ form.weight.label_tag }}
+                        {{ form.weight.label_tag }} (In kg. Max 1 decimal place)
                     </p>
                     <p>
                         {{ form.weight.errors }}
-                        {{ form.weight }}
+                        <input type="number" name="weight" value="{{ customer.weight }}" step="0.1" required
+                            id="id_weight" min="0" max="999" placeholder="000.0"> kg
                     </p>
                     <button class="btn light-blue-btn-bg-color" type="submit">Update Profile!</button>
                 </form>
-                <a href="{% url 'customer' %}" class="btn light-blue-btn-bg-color text-styling top-margin-30">Go Back!</a>
+                <a href="{% url 'customer' %}" class="btn light-blue-btn-bg-color text-styling top-margin-30">Go
+                    Back!</a>
             </div>
         </div>
     </div>
@@ -66,7 +68,7 @@
     </p>
 </main>
 
-<script src="{% static 'js/editProfile.js' %}" defer
-    data-dob="{{ customer.date_of_birth }}"></script>
+<script src="{% static 'js/editProfile.js' %}" defer data-dob="{{ customer.date_of_birth }}"></script>
+<script src="{% static 'js/dateOfBirth.js' %}" defer></script>
 
 {% endblock content %}
