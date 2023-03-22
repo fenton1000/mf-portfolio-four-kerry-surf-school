@@ -26,6 +26,7 @@ def signup_login_links(request):
 
 @login_required
 def customer_first_login(request):
+    form = CustomerForm()
     if request.method == 'POST':
         form = CustomerForm(request.POST)
         if form.is_valid():
@@ -50,7 +51,6 @@ def customer_first_login(request):
             messages.success(
                 request, 'Your profile has been saved!')
             return redirect('customer')
-    form = CustomerForm()
     context = {
         'form': form
     }
@@ -60,13 +60,13 @@ def customer_first_login(request):
 @login_required
 def edit_customer(request):
     customer = get_object_or_404(Customer, user=request.user)
+    form = CustomerForm(instance=customer)
     if request.method == 'POST':
         form = CustomerForm(request.POST, instance=customer)
         if form.is_valid():
             form.save()
             messages.success(request, 'Your profile has been updated!')
             return redirect('customer')
-    form = CustomerForm(instance=customer)
     context = {
         'customer': customer,
         'form': form
@@ -89,6 +89,7 @@ def make_booking(request):
     except ObjectDoesNotExist:
         return redirect('customer_first_login')
     else:
+        form = BookingForm()
         if request.method == 'POST':
             form = BookingForm(request.POST)
             if form.is_valid():
@@ -114,7 +115,6 @@ def make_booking(request):
                 messages.success(
                     request, 'Booking Complete! See View Your Bookings')
                 return redirect('customer')
-        form = BookingForm()
         context = {
             'form': form
         }
@@ -133,6 +133,7 @@ def view_bookings(request):
 @login_required
 def edit_booking(request, booking_id):
     booking = get_object_or_404(Booking, id=booking_id, customer=request.user)
+    form = BookingForm(instance=booking)
     if request.method == 'POST':
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
@@ -156,7 +157,6 @@ def edit_booking(request, booking_id):
             form.save()
             messages.success(request, 'Your booking has been updated!')
             return redirect('view_bookings')
-    form = BookingForm(instance=booking)
     context = {
         'booking': booking,
         'form': form

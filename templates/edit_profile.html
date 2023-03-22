@@ -44,12 +44,14 @@
                         {{ form.height.label_tag }}
                     </p>
                     <p>
+                        {{ form.height.errors }}
                         {{ form.height }}
                     </p>
                     <p>
                         {{ form.weight.label_tag }}
                     </p>
                     <p>
+                        {{ form.weight.errors }}
                         {{ form.weight }}
                     </p>
                     <button class="btn light-blue-btn-bg-color" type="submit">Update Profile!</button>
