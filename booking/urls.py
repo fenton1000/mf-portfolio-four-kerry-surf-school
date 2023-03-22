@@ -21,4 +21,9 @@ urlpatterns = [
         views.edit_customer,
         name='edit_customer'
     ),
+    path(
+        'deleteprofile/',
+        views.delete_user,
+        name='delete_user'
+    ),
 ]

@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.core.exceptions import ObjectDoesNotExist
 from django.contrib import messages
+from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from .models import Customer, Booking
 from .forms import CustomerForm, BookingForm
@@ -71,6 +72,14 @@ def edit_customer(request):
         'form': form
     }
     return render(request, 'edit_profile.html', context)
+
+
+@login_required
+def delete_user(request):
+    user = get_object_or_404(User, id=request.user.id)
+    user.delete()
+    messages.success(request, 'Your Customer Account has been deleted!')
+    return redirect('index')
 
 
 @login_required
