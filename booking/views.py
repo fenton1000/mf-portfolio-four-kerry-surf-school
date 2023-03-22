@@ -57,6 +57,23 @@ def customer_first_login(request):
 
 
 @login_required
+def edit_customer(request):
+    customer = get_object_or_404(Customer, user=request.user)
+    if request.method == 'POST':
+        form = CustomerForm(request.POST, instance=customer)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your profile has been updated!')
+            return redirect('customer')
+    form = CustomerForm(instance=customer)
+    context = {
+        'customer': customer,
+        'form': form
+    }
+    return render(request, 'edit_profile.html', context)
+
+
+@login_required
 def make_booking(request):
     try:
         request.user.customer

@@ -5,7 +5,7 @@
 {% load static %}
 
 <main>
-    <h2 class="ps-3">You can edit the selected booking here {{ user.username }}!</h2>
+    <h2 class="ps-3">You can edit your customer profile here {{ user.username }}!</h2>
     <p class="ps-3">Please edit the appropriate fields and submit changes once you are ready to do so:</p>
     <div class="container">
         <div class="row">
@@ -13,34 +13,48 @@
                 <form method="POST">
                     {% csrf_token %}
                     <p>
-                        <label for="id_ability_level">Ability level:</label>
-                        <select name="ability_level" id="id_ability_level" required>
-                            <option value="Beginner">Beginner</option>
-                            <option value="Intermediate">Intermediate</option>
-                        </select>
+                        {{ form.first_name.label_tag }}
                     </p>
                     <p>
-                        <label for="id_lesson_date">Lesson date:</label>
-                        <input type="date" name="lesson_date" required id="id_lesson_date">
+                        {{ form.first_name }}
                     </p>
                     <p>
-                        <label for="id_lesson_time">Lesson Time:</label>
-                        <select name="lesson_time" id="id_lesson_time" required>
-                            <option value="09:00">9:00am</option>
-                            <option value="11:00">11:00am</option>
-                            <option value="13:30">1:30pm</option>
-                            <option value="15:30">3:30pm</option>
-                        </select>
+                        {{ form.last_name.label_tag }}
                     </p>
                     <p>
-                        {{ form.customer_requests.label_tag }}
+                        {{ form.last_name }}
                     </p>
                     <p>
-                        {{ form.customer_requests }}
+                        {{ form.email.label_tag }}
                     </p>
-                    <button class="btn light-blue-btn-bg-color" type="submit">Update Booking!</button>
+                    <p>
+                        {{ form.email }}
+                    </p>
+                    <p>
+                        <label for="id_phone_num">Telephone Number:</label>
+                    </p>
+                    <p>
+                        {{ form.phone_num }}
+                    </p>
+                    <p>
+                        <label for="id_date_of_birth">Date of birth:</label>
+                        <input type="date" name="date_of_birth" required id="id_date_of_birth">
+                    </p>
+                    <p>
+                        {{ form.height.label_tag }}
+                    </p>
+                    <p>
+                        {{ form.height }}
+                    </p>
+                    <p>
+                        {{ form.weight.label_tag }}
+                    </p>
+                    <p>
+                        {{ form.weight }}
+                    </p>
+                    <button class="btn light-blue-btn-bg-color" type="submit">Update Profile!</button>
                 </form>
-                <a href="{% url 'view_bookings' %}" class="btn light-blue-btn-bg-color text-styling top-margin-30">Go Back!</a>
+                <a href="{% url 'customer' %}" class="btn light-blue-btn-bg-color text-styling top-margin-30">Go Back!</a>
             </div>
         </div>
     </div>
@@ -50,11 +64,7 @@
     </p>
 </main>
 
-<script src="{% static 'js/edits.js' %}" defer
-    data-dob="{{ booking.date_of_birth }}"
-    data-lesson-date="{{ booking.lesson_date }}"
-    data-ability-level="{{ booking.ability_level }}"
-    data-lesson-time="{{ booking.lesson_time }}"></script>
+<script src="{% static 'js/editProfile.js' %}" defer
+    data-dob="{{ customer.date_of_birth }}"></script>
 
-<script src="{% static 'js/date.js' %}" defer></script>
 {% endblock content %}
