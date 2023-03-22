@@ -50,7 +50,8 @@
     </p>
 </main>
 
-<script src="{% static 'js/editBooking.js' %}" defer
+<script src="{% static 'js/edits.js' %}" defer
+    data-dob="{{ booking.date_of_birth }}"
     data-lesson-date="{{ booking.lesson_date }}"
     data-ability-level="{{ booking.ability_level }}"
     data-lesson-time="{{ booking.lesson_time }}"></script>
