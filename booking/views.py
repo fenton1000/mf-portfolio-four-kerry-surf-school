@@ -7,17 +7,24 @@ from .models import Customer, Booking
 from .forms import CustomerForm, BookingForm
 
 
+def customer_account_required(func):
+    def wrapper(request):
+        try:
+            request.user.customer
+        except ObjectDoesNotExist:
+            return redirect('customer_first_login')
+        return func(request)
+    return wrapper
+
+
 def index(request):
     return render(request, 'index.html')
 
 
 @login_required
+@customer_account_required
 def customer(request):
-    try:
-        request.user.customer
-        return render(request, 'customer.html')
-    except ObjectDoesNotExist:
-        return redirect('customer_first_login')
+    return render(request, 'customer.html')
 
 
 def signup_login_links(request):
@@ -83,45 +90,42 @@ def delete_user(request):
 
 
 @login_required
+@customer_account_required
 def make_booking(request):
-    try:
-        request.user.customer
-    except ObjectDoesNotExist:
-        return redirect('customer_first_login')
-    else:
-        form = BookingForm()
-        if request.method == 'POST':
-            form = BookingForm(request.POST)
-            if form.is_valid():
-                customer = request.user
-                ability_level = form.cleaned_data['ability_level']
-                lesson_date = form.cleaned_data['lesson_date']
-                lesson_time = form.cleaned_data['lesson_time']
-                customer_requests = form.cleaned_data['customer_requests']
-                if Booking.objects.filter(
-                    customer=customer,
-                    lesson_date=lesson_date,
-                    lesson_time=lesson_time,
-                ).exists():
-                    messages.warning(request, 'This booking already exists!')
-                    return redirect('customer')
-                Booking.objects.create(
-                    customer=customer,
-                    ability_level=ability_level,
-                    lesson_date=lesson_date,
-                    lesson_time=lesson_time,
-                    customer_requests=customer_requests
-                )
-                messages.success(
-                    request, 'Booking Complete! See View Your Bookings')
+    form = BookingForm()
+    if request.method == 'POST':
+        form = BookingForm(request.POST)
+        if form.is_valid():
+            customer = request.user
+            ability_level = form.cleaned_data['ability_level']
+            lesson_date = form.cleaned_data['lesson_date']
+            lesson_time = form.cleaned_data['lesson_time']
+            customer_requests = form.cleaned_data['customer_requests']
+            if Booking.objects.filter(
+                customer=customer,
+                lesson_date=lesson_date,
+                lesson_time=lesson_time,
+            ).exists():
+                messages.warning(request, 'This booking already exists!')
                 return redirect('customer')
-        context = {
-            'form': form
-        }
-        return render(request, 'make_booking.html', context)
+            Booking.objects.create(
+                customer=customer,
+                ability_level=ability_level,
+                lesson_date=lesson_date,
+                lesson_time=lesson_time,
+                customer_requests=customer_requests
+            )
+            messages.success(
+                request, 'Booking Complete! See View Your Bookings')
+            return redirect('customer')
+    context = {
+        'form': form
+    }
+    return render(request, 'make_booking.html', context)
 
 
 @login_required
+@customer_account_required
 def view_bookings(request):
     bookings = Booking.objects.filter(customer=request.user)
     context = {
