@@ -9,7 +9,7 @@
     <p class="ps-3">Please edit the appropriate fields and submit changes once you are ready to do so:</p>
     <div class="container">
         <div class="row">
-            <div class="col-md-8 mt-3 offset-md-2">
+            <div class="col-md-8 mt-3 offset-md-2 d-flex justify-content-center">
                 <form method="POST">
                     {% csrf_token %}
                     <p>
@@ -32,11 +32,15 @@
                     </p>
                     <p>
                         <label for="id_phone_num">Telephone Number:</label>
+                    </p>
+                    <p>
                         <input type="tel" pattern="[0-9, '', +]+" name="phone_num" value="{{ customer.phone_num }}"
                             maxlength="20" required id="id_phone_num">
                     </p>
                     <p>
                         <label for="id_date_of_birth">Date of birth:</label>
+                    </p>
+                    <p>
                         <input type="date" name="date_of_birth" required id="id_date_of_birth">
                     </p>
                     <p>
@@ -55,10 +59,10 @@
                         <input type="number" name="weight" value="{{ customer.weight }}" step="0.1" required
                             id="id_weight" min="0" max="999" placeholder="000.0"> kg
                     </p>
-                    <button class="btn light-blue-btn-bg-color" type="submit">Update Profile!</button>
+                    <button class="btn light-blue-btn-bg-color my-2" type="submit">Update Profile!</button>
+                    <a href="{% url 'customer' %}" class="btn light-blue-btn-bg-color text-styling my-2 ms-3">Go
+                        Back!</a>
                 </form>
-                <a href="{% url 'customer' %}" class="btn light-blue-btn-bg-color text-styling top-margin-30">Go
-                    Back!</a>
             </div>
         </div>
     </div>

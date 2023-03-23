@@ -15,14 +15,31 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-8 mt-3 offset-md-2">
+      <div class="col-md-8 mt-3 offset-md-2 d-flex justify-content-center">
         <form class="login" method="POST" action="{% url 'account_login' %}">
           {% csrf_token %}
-          {{ form.as_p }}
+          <p>
+            {{ form.login.label_tag }}
+          </p>
+          <p>
+            {{ form.login }}
+          </p>
+          <p>
+            {{ form.password.label_tag }}
+          </p>
+          <p>
+            {{ form.password }}
+          </p>
+          <p>
+            {{ form.remember.label_tag }}
+          </p>
+          <p>
+            {{ form.remember }}
+          </p>
           {% if redirect_field_value %}
           <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
           {% endif %}
-          <button class="btn light-blue-btn-bg-color" type="submit">{% trans "Log In" %} &raquo;</button>
+          <button class="btn light-blue-btn-bg-color my-2" type="submit">{% trans "Log In" %} &raquo;</button>
         </form>
       </div>
     </div>

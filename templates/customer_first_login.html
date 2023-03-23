@@ -8,7 +8,7 @@
     <p class="ps-3">Please complete the customer profile below:</p>
     <div class="container">
         <div class="row">
-            <div class="col-md-8 mt-3 offset-md-2">
+            <div class="col-md-8 mt-3 offset-md-2 d-flex justify-content-center">
                 <form method="POST" action="/customer/firstlogin/">
                     {% csrf_token %}
                     <p>
@@ -31,11 +31,15 @@
                     </p>
                     <p>
                         <label for="id_phone_num">Telephone Number:</label>
+                    </p>
+                    <p>
                         <input type="tel" pattern="[0-9, '', +]+" name="phone_num" maxlength="20" required
                             id="id_phone_num">
                     </p>
                     <p>
                         <label for="id_date_of_birth">Date of birth:</label>
+                    </p>
+                    <p>
                         <input type="date" name="date_of_birth" required id="id_date_of_birth">
                     </p>
                     <p>
@@ -54,13 +58,13 @@
                         <input type="number" name="weight" step="0.1" required id="id_weight" min="0" max="999"
                             placeholder="000.0"> kg
                     </p>
-                    <button class="btn light-blue-btn-bg-color" type="submit">Submit Details</button>
+                    <button class="btn light-blue-btn-bg-color my-2" type="submit">Submit Details</button>
                 </form>
             </div>
         </div>
     </div>
 
-    <p class="ps-3">The details you provide are necessary to process your booking
+    <p class="ps-3 m-3">The details you provide are necessary to process your booking
         and will not be used for any other purpose. Weight, height, and date of birth
         are used to ensure students are placed in the appropriate class with the
         appropriate surfing equipment. We will use your email to send confirmation

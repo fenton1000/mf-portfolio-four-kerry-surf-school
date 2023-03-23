@@ -9,11 +9,13 @@
     <p class="ps-3">Please complete the form in full:</p>
     <div class="container">
         <div class="row">
-            <div class="col-md-8 mt-3 offset-md-2">
+            <div class="col-md-8 mt-3 offset-md-2 d-flex justify-content-center">
                 <form method="POST" action="/book/">
                     {% csrf_token %}
                     <p>
                         <label for="id_ability_level">Ability level:</label>
+                    </p>
+                    <p>
                         <select name="ability_level" id="id_ability_level" required>
                             <option value="Beginner">Beginner</option>
                             <option value="Intermediate">Intermediate</option>
@@ -21,10 +23,14 @@
                     </p>
                     <p>
                         <label for="id_lesson_date">Lesson date:</label>
+                    </p>
+                    <p>
                         <input type="date" name="lesson_date" required id="id_lesson_date">
                     </p>
                     <p>
                         <label for="id_lesson_time">Lesson Time:</label>
+                    </p>
+                    <p>
                         <select name="lesson_time" id="id_lesson_time" required>
                             <option value="09:00:00">9.00am</option>
                             <option value="11:00:00">11.00am</option>
@@ -38,17 +44,16 @@
                     <p>
                         {{ form.customer_requests }}
                     </p>
-                    <button class="btn light-blue-btn-bg-color" type="submit">Make Booking!</button>
+                    <button class="btn light-blue-btn-bg-color my-2" type="submit">Make Booking!</button>
+                    <a href="{% url 'customer' %}" class="btn light-blue-btn-bg-color text-styling my-2 ms-3">Go
+                        Back!</a>
                 </form>
-                <a href="{% url 'customer' %}" class="btn light-blue-btn-bg-color text-styling top-margin-30">Go Back!</a>
             </div>
         </div>
     </div>
-    <p class="ps-3">All of the above details are required to make your booking.
+    <p class="ps-3 m-3">All of the above details are required to make your booking.
         The information provided will be used for no other purpose other than
         to adminsiter your booking and provide an appropriate lesson.
-        Weight, height, ability level and date of birth are used to ensure
-        students are placed in the appropriate class with the appropriate surfing equipment.
     </p>
 </main>
 <script src="{% static 'js/date.js' %}" defer></script>
