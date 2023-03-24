@@ -26,6 +26,10 @@ body {
     background-color: #f1e2d3;
 }
 
+.admin-link-col {
+    color: rgb(245, 241, 241);
+}
+
 .text-height-action {
     font-size: 3vw;
     margin: 8px 0;
