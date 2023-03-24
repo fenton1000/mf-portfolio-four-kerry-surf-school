@@ -17,6 +17,11 @@ class BookingAdmin(admin.ModelAdmin):
         'ability_level',
         'approved'
     )
+    ordering = [
+        'lesson_date',
+        'lesson_time',
+        '-customer__customer__date_of_birth'
+    ]
     list_filter = (('lesson_date', CustomDateFieldListFilter), 'approved',)
     actions = ['approve_selected_bookings', 'disapprove_selected_bookings']
 
