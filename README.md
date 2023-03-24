@@ -365,6 +365,10 @@ The following technologies were used in developing and deploying the website:
 
 * Contributions by Alain Boyer and user10261970 on Stack Overflow available at https://stackoverflow.com/questions/51975488/extending-django-admins-datefieldlistfilter-for-custom-upcoming-filter for guidance on customising the DateFieldListFilter class.
 
+* Contribution by indianwebdevil on Stack Overflow available at https://stackoverflow.com/questions/61604603/display-data-from-related-model-in-django-admin-interface-for-a-model-object for code snippet to display data from a related model in the django admin list display of the current chosen model.
+
+* Contribution by Danny W Adair on Stack Overflow available at https://stackoverflow.com/questions/2217488/age-from-birthdate-in-python for python code snippet to calculate an age from a date of birth.
+
 ### 11.2 Credits
 
 * Hero Image by Pixabay and taken from pixels.com: https://www.pexels.com/photo/man-surfing-on-waves-390051/.
