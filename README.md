@@ -369,6 +369,8 @@ The following technologies were used in developing and deploying the website:
 
 * Contribution by Danny W Adair on Stack Overflow available at https://stackoverflow.com/questions/2217488/age-from-birthdate-in-python for python code snippet to calculate an age from a date of birth.
 
+* Contributions by sherpya, gtalarico and Jieter on Stack Overflow available at https://stackoverflow.com/questions/37539132/display-foreign-key-columns-as-link-to-detail-object-in-django-admin for code snippets and guidance on creating a link to an object in a related database in the display list for the current database.
+
 ### 11.2 Credits
 
 * Hero Image by Pixabay and taken from pixels.com: https://www.pexels.com/photo/man-surfing-on-waves-390051/.

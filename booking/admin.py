@@ -1,5 +1,7 @@
 from datetime import date
 from django.contrib import admin
+from django.utils.html import format_html
+from django.urls import reverse
 from .models import Customer, Booking
 from .admin_filters import CustomDateFieldListFilter
 
@@ -13,6 +15,7 @@ class BookingAdmin(admin.ModelAdmin):
     list_display = (
         'lesson_date',
         'lesson_time',
+        'customer_name_link',
         'customer__age',
         'ability_level',
         'approved'
@@ -38,3 +41,9 @@ class BookingAdmin(admin.ModelAdmin):
             (today.month, today.day) < (born.month, born.day)
         )
 
+    def customer_name_link(self, obj):
+        link = reverse('admin:booking_customer_change', args=[obj.customer.id])
+        return format_html(
+            '<a href="{}">{}</a>',
+            link, obj.customer.customer.first_name
+        ) if obj.customer.customer else None
