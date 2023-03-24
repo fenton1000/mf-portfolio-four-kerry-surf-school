@@ -361,6 +361,10 @@ The following technologies were used in developing and deploying the website:
 
 * mdn web docs information on the HTML input type "tel" and the pattern attribute available at https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel.
 
+* Django admin DateFieldListFilter class source code available at https://github.com/django/django/blob/main/django/contrib/admin/filters.py#L313 for the initial code that was then adapted to produce a custom filter class for bookings called CustomDateFieldListFilter inheriting from DateFieldListFilter.
+
+* Contributions by Alain Boyer and user10261970 on Stack Overflow available at https://stackoverflow.com/questions/51975488/extending-django-admins-datefieldlistfilter-for-custom-upcoming-filter for guidance on customising the DateFieldListFilter class.
+
 ### 11.2 Credits
 
 * Hero Image by Pixabay and taken from pixels.com: https://www.pexels.com/photo/man-surfing-on-waves-390051/.
