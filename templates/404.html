@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<main>
+    <h2 class="ps-3">Page Not Found</h2>
+    <p class="ps-3">We are sorry! The requested page could not be found!!</p>
+    <p class="ps-3">Please click <a href="{% url 'index' %}">here</a> to return to the home page:</p>
+    <a href="{% url 'index' %}" class="btn light-blue-btn-bg-color text-styling my-2 ms-3">Home!</a>
+</main>
+
+{% endblock content %}
