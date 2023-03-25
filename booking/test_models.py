@@ -11,16 +11,16 @@ class TestModels(TestCase):
             username='johns', password='3450123DGee%%')
         customer = Customer.objects.create(
             user=user,
-            email='john@email.ie',
-            phone_num='555 123 4567'
-        )
-        booking = Booking.objects.create(
-            customer=user,
             first_name='John',
             last_name='Smith',
+            email='john@email.ie',
+            phone_num='555 123 4567',
             date_of_birth='1980-04-10',
             height='1.8',
             weight='65',
+        )
+        booking = Booking.objects.create(
+            customer=user,
             ability_level='Beginner',
             lesson_date='2023-10-10',
             lesson_time='09:00',
@@ -41,21 +41,31 @@ class TestModels(TestCase):
             username='johns', password='3450123DGee%%')
         customer = Customer.objects.create(
             user=user,
+            first_name='John',
+            last_name='Smith',
             email='john@email.ie',
-            phone_num='555 123 4567'
+            phone_num='555 123 4567',
+            date_of_birth='1980-04-10',
+            height='1.8',
+            weight='65',
         )
         self.assertEqual(str(customer), 'johns')
 
     def test_booking_string_method_returns_lesson_date(self):
         user = User.objects.create(
             username='johns', password='3450123DGee%%')
-        booking = Booking.objects.create(
-            customer=user,
+        customer = Customer.objects.create(
+            user=user,
             first_name='John',
             last_name='Smith',
+            email='john@email.ie',
+            phone_num='555 123 4567',
             date_of_birth='1980-04-10',
             height='1.8',
             weight='65',
+        )
+        booking = Booking.objects.create(
+            customer=user,
             ability_level='Beginner',
             lesson_date='2023-10-10',
             lesson_time='09:00',
