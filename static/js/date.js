@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function () {
 
     function setMinDate() {
         let minDate = new Date();

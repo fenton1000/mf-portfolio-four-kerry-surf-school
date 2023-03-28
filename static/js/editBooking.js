@@ -3,7 +3,7 @@ let lessonDate = data.lessonDate;
 let abilityLevel = data.abilityLevel;
 let lessonTime = data.lessonTime;
 
-$(document).ready(function () {
+$(function () {
 
     function fillInLessonDate() {
         let newLessonDate = new Date(lessonDate);

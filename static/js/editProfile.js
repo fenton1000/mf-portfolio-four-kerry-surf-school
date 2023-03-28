@@ -1,7 +1,7 @@
 let data = document.currentScript.dataset;
 let dateOfBirth = data.dob;
 
-$(document).ready(function () {
+$(function () {
 
     function fillInDateOfBirth() {
         let newDateOfBirth = new Date(dateOfBirth);
