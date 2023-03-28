@@ -288,11 +288,12 @@ The following technologies were used in developing and deploying the website:
 
 * Microsoft Edge and Mozilla Firefox were used to test cross browser compatibility.
 
-## 9. testing
-### 9.1 code validation
-### 9.2 test cases (user story based with screenshots)
-### 9.3 fixed bugs
-### 9.4 supported screens and browsers
+## 9. Testing
+### 9.1 Code Validation
+### 9.2 Test Cases
+### 9.3 Fixed Bugs
+### 9.4 Supported Screens and Browsers
+### 9.5 Accessibility and Performance
 ## 10. Deployment
 ### 10.1 via gitpod
 ### 10.2 via github pages

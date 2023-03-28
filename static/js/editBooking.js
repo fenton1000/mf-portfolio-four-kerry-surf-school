@@ -25,8 +25,8 @@ $(document).ready(function () {
         if (time.includes(':')) {
             [hours, minutes] = time.split(':');
         } else {
-            hours = time
-            minutes = '00'
+            hours = time;
+            minutes = '00';
         }
         if (hours === '12') {
             hours = '00';
@@ -34,7 +34,7 @@ $(document).ready(function () {
         if (modifier === 'p.m.') {
             hours = parseInt(hours, 10) + 12;
         }
-        lesson = `${hours}:${minutes}`;
+        let lesson = `${hours}:${minutes}`;
         $("option[value|='"+lesson+"']").attr('selected', 'selected');
     }
 

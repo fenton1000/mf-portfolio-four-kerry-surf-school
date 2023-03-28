@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function () {
 
     function changeHomeView() {
         if (window.matchMedia("(max-width: 650px)").matches) {
@@ -15,7 +15,7 @@ $(document).ready(function () {
     // Add listener for window resizing:
     window.addEventListener("resize", changeHomeView);
 
-    setTimeout(function() {
+    setTimeout(function () {
         let messages = document.getElementById('msg');
         let alert = new bootstrap.Alert(messages);
         alert.close();

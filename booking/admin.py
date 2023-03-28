@@ -33,7 +33,7 @@ class BookingAdmin(admin.ModelAdmin):
 
     def disapprove_selected_bookings(self, request, queryset):
         queryset.update(approved=False)
-    
+
     def customer__age(self, obj):
         born = obj.customer.customer.date_of_birth
         today = date.today()
