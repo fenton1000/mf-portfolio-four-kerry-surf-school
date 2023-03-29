@@ -483,9 +483,34 @@ alt="Screenshot of the code institute python linter result for the admin.py file
 <img src="documents/py-val-admin-filters.png"
 alt="Screenshot of the code institute python linter result for the admin_filters.py file."></details>
 
-
 ### 9.2 Test Cases
+
 ### 9.3 Fixed Bugs
+
+1. The book now text that appears in the call to action button in the middle of the home page was too big on wider screen sizes.
+
+Solution: An appropriate media query and font-size were applied.
+
+This bug was raised as a PBI within the agile design process. Further information on the bug and solution can be found [here.](https://github.com/fenton1000/mf-portfolio-four-kerry-surf-school/issues/20)
+
+2. On the first deployment to Heroku following the addition of the hero image, the hero image did not appear.
+
+Solution: The url to the background image in the styles.css file was updated to be a complete url path to the remote storage location on cloudinary.
+
+This bug was raised as a PBI within the agile design process. Further information on the bug and solution can be found [here.](https://github.com/fenton1000/mf-portfolio-four-kerry-surf-school/issues/21)
+
+3. Initially the booking form accepted dates in the past when booking a lesson.
+
+Solution: A javascript/jquery function was created in date.js to find today's date and add it to the date input field as a min value attribute.
+
+This bug was raised as a PBI within the agile design process. Further information on the bug and solution can be found [here.](https://github.com/fenton1000/mf-portfolio-four-kerry-surf-school/issues/26)
+
+4. In certain input scenarios such as the entry of an invalid height format, the form passed front-end validation, but was returned by the POST method, rendering a new blank form and no feedback on the error.
+
+Solution: The view code was altered so that the creation of the blank form for the get method occurs before the if statement for the POST method. This ensures that should the POST method return an invalid form it is the completed form with errors and not a new blank form. Also the error message tags were added to the form so that the error message is displayed. The front end messaging was also improved to better explain the required input including the unit of measurement expected.
+
+This bug was raised as a PBI within the agile design process. Further information on the bug and solution can be found [here.](https://github.com/fenton1000/mf-portfolio-four-kerry-surf-school/issues/30)
+
 ### 9.4 Supported Screens and Browsers
 ### 9.5 Accessibility and Performance
 ## 10. Deployment
