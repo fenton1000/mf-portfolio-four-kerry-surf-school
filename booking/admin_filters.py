@@ -9,6 +9,10 @@ class CustomDateFieldListFilter(admin.DateFieldListFilter):
 
     def __init__(self, *args, **kwargs):
         super(CustomDateFieldListFilter, self).__init__(*args, **kwargs)
+        """
+        Creates custom date filters for bookings overwriting
+        the default Django date filters in the admin panel.
+        """
 
         now = timezone.now()
         # When time zone support is enabled, convert "now" to the user's time

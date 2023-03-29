@@ -29,12 +29,23 @@ class BookingAdmin(admin.ModelAdmin):
     actions = ['approve_selected_bookings', 'disapprove_selected_bookings']
 
     def approve_selected_bookings(self, request, queryset):
+        """
+        Adds an approve booking action to the default
+        Django admin actions dropdown for the bookings model.
+        """
         queryset.update(approved=True)
 
     def disapprove_selected_bookings(self, request, queryset):
+        """
+        Adds a disapprove booking action to the default
+        Django admin actions dropdown for the bookings model.
+        """
         queryset.update(approved=False)
 
     def customer__age(self, obj):
+        """
+        Calculates customer age and adds to admin booking model list display.
+        """
         born = obj.customer.customer.date_of_birth
         today = date.today()
         return today.year - born.year - (
@@ -42,6 +53,10 @@ class BookingAdmin(admin.ModelAdmin):
         )
 
     def customer_name_link(self, obj):
+        """
+        Adds the customer first name as a link to the customer details
+        in the admin list display for the booking model.
+        """
         link = reverse('admin:booking_customer_change', args=[obj.customer.id])
         return format_html(
             '<a href="{}">{}</a>',
