@@ -290,13 +290,16 @@ The following technologies were used in developing and deploying the website:
 
 * The W3C Markup Validation Service was used for HTML code validation.
 
+* The W3C CSS Validation Service was used for CSS code validation.
+
 ## 9. Testing
 
 ### 9.1 Code Validation
 
 #### 9.1.1 HTML Code Validation
 
-HTML code validation was carried out using the W3C Markup Validation Service. For public pages validation was undertaken by URI as follows:
+HTML code validation was carried out using the W3C Markup Validation Service. All code was successfully validated as outlined hereunder.
+For public pages validation was undertaken by URI as follows:
 
 Home page at : https://mf-pp4-kerry-surf-school.herokuapp.com/
 
@@ -371,6 +374,15 @@ Custom 404 page:
 <details><summary>Fig. 9.1.1.12 HTML Validation Result Custom 404 page</summary>
 <img src="documents/html-val-404.png"
 alt="Screenshot of the successful HTML validation result for custom 404 page."></details>
+
+#### 9.1.2 CSS Code Validation
+
+CSS code validation was carried out using the W3C CSS Validation Service. THe project contains a single custom css file styles.css. It was tested by direct input and was successfully validated.
+
+<details><summary>Fig. 9.1.2.1 CSS Validation Result for styles.css</summary>
+<img src="documents/css-val-styles.png"
+alt="Screenshot of the successful css validation result for the styles.css file."></details>
+
 
 
 ### 9.2 Test Cases
@@ -456,6 +468,8 @@ alt="Screenshot of the successful HTML validation result for custom 404 page."><
 * Contributions by sherpya, gtalarico and Jieter on Stack Overflow available at https://stackoverflow.com/questions/37539132/display-foreign-key-columns-as-link-to-detail-object-in-django-admin for code snippets and guidance on creating a link to an object in a related database in the display list for the current database.
 
 * The W3C Markup Validation Service available at https://validator.w3.org/ for HTML code validation.
+
+* The W3C CSS Validation Service available at https://jigsaw.w3.org/css-validator/ for CSS code validation.
 
 ### 11.2 Credits
 
