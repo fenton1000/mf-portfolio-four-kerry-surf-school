@@ -294,6 +294,8 @@ The following technologies were used in developing and deploying the website:
 
 * JS Hint was used for javascript/jquery validation.
 
+* The Code Institute Python Linter was used for python validation.
+
 ## 9. Testing
 
 ### 9.1 Code Validation
@@ -427,6 +429,59 @@ alt="Screenshot of the successful javascript validation result for the script.js
 
 This jsHint validation shows one undefined variable bootstrap. However this is a bootstrap alert method that is imported separately and is available to the code at runtime.
 
+#### 9.1.4 Python Code Validation
+
+In the first instance python validation has been implemented by way of constant monitoring of the problems list in the IDE. A number of problems remain but these do not relate to custom project code as outlined hereunder. All other files were found to be free of problems.
+
+**File: env.py**
+
+<details><summary>Fig. 9.1.4.1 IDE Problems list for env.py</summary>
+<img src="documents/py-val-env.png"
+alt="Screenshot of the IDE problems list for the env.py file."></details>
+
+The two errors here are due to lines being too long but this is as a result of the length of urls from external sources.
+
+**File: settings.py**
+
+<details><summary>Fig. 9.1.4.2 IDE Problems list for settings.py</summary>
+<img src="documents/py-val-settings.png"
+alt="Screenshot of the IDE problems list for the settings.py file."></details>
+
+All the errors here are due to lines being too long.
+Four of the five errors are in the Django provided code that has been left as provided.
+One of the errors results from the length of provided cloudinary method names.
+
+In addition all key files containing custom code were tested using the Code Institute Python Linter and were found to be error free. Examples of tests for key files are shown hereunder:
+
+**File: views.py**
+
+<details><summary>Fig. 9.1.4.3 Code Institute Python Linter Result for views.py</summary>
+<img src="documents/py-val-views.png"
+alt="Screenshot of the code institute python linter result for the views.py file."></details>
+
+**File: models.py**
+
+<details><summary>Fig. 9.1.4.4 Code Institute Python Linter Result for models.py</summary>
+<img src="documents/py-val-models.png"
+alt="Screenshot of the code institute python linter result for the models.py file."></details>
+
+**File: forms.py**
+
+<details><summary>Fig. 9.1.4.5 Code Institute Python Linter Result for forms.py</summary>
+<img src="documents/py-val-forms.png"
+alt="Screenshot of the code institute python linter result for the forms.py file."></details>
+
+**File: admin.py**
+
+<details><summary>Fig. 9.1.4.6 Code Institute Python Linter Result for admin.py</summary>
+<img src="documents/py-val-admin.png"
+alt="Screenshot of the code institute python linter result for the admin.py file."></details>
+
+**File: admin_filters.py**
+
+<details><summary>Fig. 9.1.4.6 Code Institute Python Linter Result for admin_filters.py</summary>
+<img src="documents/py-val-admin-filters.png"
+alt="Screenshot of the code institute python linter result for the admin_filters.py file."></details>
 
 
 ### 9.2 Test Cases
@@ -516,6 +571,8 @@ This jsHint validation shows one undefined variable bootstrap. However this is a
 * The W3C CSS Validation Service available at https://jigsaw.w3.org/css-validator/ for CSS code validation.
 
 * JS Hint available at https://jshint.com/ for javascript/jquery validation.
+
+* The Code Institute Python Linter available at https://pep8ci.herokuapp.com/ for python validation.
 
 ### 11.2 Credits
 
