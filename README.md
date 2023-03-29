@@ -288,8 +288,91 @@ The following technologies were used in developing and deploying the website:
 
 * Microsoft Edge and Mozilla Firefox were used to test cross browser compatibility.
 
+* The W3C Markup Validation Service was used for HTML code validation.
+
 ## 9. Testing
+
 ### 9.1 Code Validation
+
+#### 9.1.1 HTML Code Validation
+
+HTML code validation was carried out using the W3C Markup Validation Service. For public pages validation was undertaken by URI as follows:
+
+Home page at : https://mf-pp4-kerry-surf-school.herokuapp.com/
+
+<details><summary>Fig. 9.1.1.1 HTML Validation Result for Home page</summary>
+<img src="documents/html-val-home.png"
+alt="Screenshot of the successful HTML validation result for home page."></details>
+
+Sign Up or Log In links page at : https://mf-pp4-kerry-surf-school.herokuapp.com/signuporlogin/
+
+<details><summary>Fig. 9.1.1.2 HTML Validation Result for Sign Up or Log In links page</summary>
+<img src="documents/html-val-signuporlogin.png"
+alt="Screenshot of the successful HTML validation result for sign up or log in links page."></details>
+
+Sign Up page at : https://mf-pp4-kerry-surf-school.herokuapp.com/accounts/signup/
+
+<details><summary>Fig. 9.1.1.3 HTML Validation Result for Sign Up page</summary>
+<img src="documents/html-val-signup.png"
+alt="Screenshot of the successful HTML validation result for sign up page."></details>
+
+Log In page at : https://mf-pp4-kerry-surf-school.herokuapp.com/accounts/login/
+
+<details><summary>Fig. 9.1.1.4 HTML Validation Result for Log In page</summary>
+<img src="documents/html-val-login.png"
+alt="Screenshot of the successful HTML validation result for log in page."></details>
+
+For pages requiring a logged in user validation was undertaken by Direct Input as follows:
+
+Customer First Log In page to create customer Profile:
+
+<details><summary>Fig. 9.1.1.5 HTML Validation Result Customer First Log In page</summary>
+<img src="documents/html-val-firstlogin.png"
+alt="Screenshot of the successful HTML validation result for customer first log in page."></details>
+
+Customer Profile page:
+
+<details><summary>Fig. 9.1.1.6 HTML Validation Result Customer Profile page</summary>
+<img src="documents/html-val-customer.png"
+alt="Screenshot of the successful HTML validation result for customer profile page."></details>
+
+Make Booking page:
+
+<details><summary>Fig. 9.1.1.7 HTML Validation Result Make Booking page</summary>
+<img src="documents/html-val-booking.png"
+alt="Screenshot of the successful HTML validation result for make booking page."></details>
+
+View Bookings page:
+
+<details><summary>Fig. 9.1.1.8 HTML Validation Result View Bookings page</summary>
+<img src="documents/html-val-mybookings.png"
+alt="Screenshot of the successful HTML validation result for view bookings page."></details>
+
+Edit Booking page:
+
+<details><summary>Fig. 9.1.1.9 HTML Validation Result Edit Booking page</summary>
+<img src="documents/html-val-edit.png"
+alt="Screenshot of the successful HTML validation result for edit booking page."></details>
+
+Edit Profile page:
+
+<details><summary>Fig. 9.1.1.10 HTML Validation Result Edit Profile page</summary>
+<img src="documents/html-val-edit-profile.png"
+alt="Screenshot of the successful HTML validation result for edit profile page."></details>
+
+Log Out page:
+
+<details><summary>Fig. 9.1.1.11 HTML Validation Result Log Out page</summary>
+<img src="documents/html-val-logout.png"
+alt="Screenshot of the successful HTML validation result for log out page."></details>
+
+Custom 404 page:
+
+<details><summary>Fig. 9.1.1.12 HTML Validation Result Custom 404 page</summary>
+<img src="documents/html-val-404.png"
+alt="Screenshot of the successful HTML validation result for custom 404 page."></details>
+
+
 ### 9.2 Test Cases
 ### 9.3 Fixed Bugs
 ### 9.4 Supported Screens and Browsers
@@ -371,6 +454,8 @@ The following technologies were used in developing and deploying the website:
 * Contribution by Danny W Adair on Stack Overflow available at https://stackoverflow.com/questions/2217488/age-from-birthdate-in-python for python code snippet to calculate an age from a date of birth.
 
 * Contributions by sherpya, gtalarico and Jieter on Stack Overflow available at https://stackoverflow.com/questions/37539132/display-foreign-key-columns-as-link-to-detail-object-in-django-admin for code snippets and guidance on creating a link to an object in a related database in the display list for the current database.
+
+* The W3C Markup Validation Service available at https://validator.w3.org/ for HTML code validation.
 
 ### 11.2 Credits
 
