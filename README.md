@@ -292,6 +292,8 @@ The following technologies were used in developing and deploying the website:
 
 * The W3C CSS Validation Service was used for CSS code validation.
 
+* JS Hint was used for javascript/jquery validation.
+
 ## 9. Testing
 
 ### 9.1 Code Validation
@@ -377,11 +379,53 @@ alt="Screenshot of the successful HTML validation result for custom 404 page."><
 
 #### 9.1.2 CSS Code Validation
 
-CSS code validation was carried out using the W3C CSS Validation Service. THe project contains a single custom css file styles.css. It was tested by direct input and was successfully validated.
+CSS code validation was carried out using the W3C CSS Validation Service. The project contains a single custom css file styles.css. It was tested by direct input and was successfully validated.
 
 <details><summary>Fig. 9.1.2.1 CSS Validation Result for styles.css</summary>
 <img src="documents/css-val-styles.png"
 alt="Screenshot of the successful css validation result for the styles.css file."></details>
+
+#### 9.1.3 Javascript/jquery Code Validation
+
+Javascript code validation was carried out using JS Hint.  Each file was tested by direct input and was successfully validated as follows:
+
+**File: date.js**
+
+<details><summary>Fig. 9.1.3.1 js Validation Result for date.js</summary>
+<img src="documents/js-val-date.png"
+alt="Screenshot of the successful javascript validation result for the date.js file."></details>
+
+**File: dateOfBirth.js**
+
+<details><summary>Fig. 9.1.3.2 js Validation Result for dateOfBirth.js</summary>
+<img src="documents/js-val-dateOfBirth.png"
+alt="Screenshot of the successful javascript validation result for the dateOfBirth.js file."></details>
+
+**File: delete.js**
+
+<details><summary>Fig. 9.1.3.3 js Validation Result for delete.js</summary>
+<img src="documents/js-val-delete.png"
+alt="Screenshot of the successful javascript validation result for the delete.js file."></details>
+
+**File: editBooking.js**
+
+<details><summary>Fig. 9.1.3.4 js Validation Result for editBooking.js</summary>
+<img src="documents/js-val-editBooking.png"
+alt="Screenshot of the successful javascript validation result for the editBooking.js file."></details>
+
+**File: editProfile.js**
+
+<details><summary>Fig. 9.1.3.5 js Validation Result for editProfile.js</summary>
+<img src="documents/js-val-editProfile.png"
+alt="Screenshot of the successful javascript validation result for the editProfile.js file."></details>
+
+**File: script.js**
+
+<details><summary>Fig. 9.1.3.6 js Validation Result for script.js</summary>
+<img src="documents/js-val-script.png"
+alt="Screenshot of the successful javascript validation result for the script.js file."></details>
+
+This jsHint validation shows one undefined variable bootstrap. However this is a bootstrap alert method that is imported separately and is available to the code at runtime.
 
 
 
@@ -470,6 +514,8 @@ alt="Screenshot of the successful css validation result for the styles.css file.
 * The W3C Markup Validation Service available at https://validator.w3.org/ for HTML code validation.
 
 * The W3C CSS Validation Service available at https://jigsaw.w3.org/css-validator/ for CSS code validation.
+
+* JS Hint available at https://jshint.com/ for javascript/jquery validation.
 
 ### 11.2 Credits
 
