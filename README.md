@@ -296,6 +296,8 @@ The following technologies were used in developing and deploying the website:
 
 * The Code Institute Python Linter was used for python validation.
 
+* The amiresponsive website was used to check responsiveness.
+
 ## 9. Testing
 
 ### 9.1 Code Validation
@@ -499,6 +501,10 @@ Solution: The url to the background image in the styles.css file was updated to 
 
 This bug was raised as a PBI within the agile design process. Further information on the bug and solution can be found [here.](https://github.com/fenton1000/mf-portfolio-four-kerry-surf-school/issues/21)
 
+<details><summary>Fig. 9.3.1 Missing Hero Image</summary>
+<img src="documents/missing-hero-image.png"
+alt="Screenshot showing the hero image missing from the home page."></details>
+
 3. Initially the booking form accepted dates in the past when booking a lesson.
 
 Solution: A javascript/jquery function was created in date.js to find today's date and add it to the date input field as a min value attribute.
@@ -512,6 +518,80 @@ Solution: The view code was altered so that the creation of the blank form for t
 This bug was raised as a PBI within the agile design process. Further information on the bug and solution can be found [here.](https://github.com/fenton1000/mf-portfolio-four-kerry-surf-school/issues/30)
 
 ### 9.4 Supported Screens and Browsers
+
+#### 9.4.1 Supported Screens (Responsiveness)
+
+The site responsiveness has been tested using Chrome Developer Tools and has been found to be responsive across a range of device screen sizes as follow:
+
+**Galaxy Fold - Page Examples**
+
+Home Page:
+
+![Screenshot of the home page on a galaxy fold mobile phone in dev tools](documents/home-galaxy-fold.png "Home Page on Galaxy Fold")
+
+Sign Up or Log In Page:
+
+![Screenshot of the sign up or log in links page on a galaxy fold mobile phone in dev tools](documents/links-galaxy-fold.png "Sign Up or Log In Page on Galaxy Fold")
+
+Sign Up Page:
+
+![Screenshot of the sign up page on a galaxy fold mobile phone in dev tools](documents/signup-galaxy-fold.png "Sign Up Page on Galaxy Fold")
+
+Customer Dashboard:
+
+![Screenshot of the customer dashboard on a galaxy fold mobile phone in dev tools](documents/customer-galaxy-fold.png "Customer Dashboard Page on Galaxy Fold")
+
+Make a Booking Page:
+
+![Screenshot of the make a booking page on a galaxy fold mobile phone in dev tools](documents/book-galaxy-fold.png "Make a Booking Page on Galaxy Fold")
+
+View Bookings Page:
+
+![Screenshot of the view bookings page on a galaxy fold mobile phone in dev tools](documents/bookings-galaxy-fold.png "View Bookings Page on Galaxy Fold")
+
+**iPad Mini - Page Examples**
+
+Home Page:
+
+![Screenshot of the home page on an iPad Mini in dev tools](documents/home-mini.png "Home Page on iPad Mini")
+
+Sign Up or Log In Page:
+
+![Screenshot of the sign up or log in links page on an iPad Mini in dev tools](documents/links-mini.png "Sign Up or Log In Page on iPad Mini")
+
+Sign Up Page:
+
+![Screenshot of the sign up page on an iPad Mini in dev tools](documents/signup-mini.png "Sign Up Page on iPad Mini")
+
+Customer Dashboard:
+
+![Screenshot of the customer dashboard on an iPad Mini in dev tools](documents/customer-mini.png "Customer Dashboard Page on iPad Mini")
+
+Make a Booking Page:
+
+![Screenshot of the make a booking page on an iPad Mini in dev tools](documents/book-mini.png "Make a Booking Page on iPad Mini")
+
+View Bookings Page:
+
+![Screenshot of the view bookings page on an iPad Mini in dev tools](documents/bookings-mini.png "View Bookings Page on iPad Mini")
+
+In addition to these examples all other site pages have been tested on these devices. Furthermore the site responsiveness has also been tested on the following devices in Chrome Developer Tools and was found to be good:
+
+* iPhone SE
+* iPhone XR
+* Pixel 5
+* Samsung Galaxy S8+
+* Generic 768px Tablet
+* Generic 1024px Laptop
+* Generic 1440px large Laptop
+
+Finally the amiresposive website generates the following screen examples for the home page:
+
+![Screenshot of the home page on the am i responsive website](documents/amiresponsive.png "Home Page on amiresponsive.")
+
+
+#### 9.4.2 Supported Browsers
+
 ### 9.5 Accessibility and Performance
 ## 10. Deployment
 ### 10.1 via gitpod
@@ -598,6 +678,8 @@ This bug was raised as a PBI within the agile design process. Further informatio
 * JS Hint available at https://jshint.com/ for javascript/jquery validation.
 
 * The Code Institute Python Linter available at https://pep8ci.herokuapp.com/ for python validation.
+
+* The amiresponsive website available at https://ui.dev/amiresponsive to check responsiveness.
 
 ### 11.2 Credits
 
