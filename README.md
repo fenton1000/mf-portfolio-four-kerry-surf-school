@@ -110,7 +110,7 @@ alt="wireframe of the main section of the sign up or log in page"></details>
 <img src="documents/sign-up-form.png"
 alt="wireframe of the sign up form"></details>
 
-### 3.7 User Account First Log In
+### 3.7 User Account First Log In/Customer Profile Form
 
 * This page will appear after a user creates an account.
 
@@ -486,6 +486,189 @@ alt="Screenshot of the code institute python linter result for the admin.py file
 alt="Screenshot of the code institute python linter result for the admin_filters.py file."></details>
 
 ### 9.2 Test Cases
+
+#### 9.2.1 User Story Testing
+
+#### 9.2.2 Feature Testing
+
+**Navigation Bar**
+
+This feature has certain requirements tested as follows:
+
+Feature/Operation|Expect|Action|Result
+---|---|---|---
+Admin Only Link|Clicking Link will take user to Admin log in page|Clicked link|Admin login page opened
+Log In Link|Clicking Link will lead to customer log in page|Clicked link|Login page opened
+Log In Link|On log in page the link is underlined and bold to highlight active page|Opened login page|Link is highlighted
+Sign Up Link|Clicking Link will lead to customer sign up page|Clicked link|Sign Up page opened
+Sign Up Link|On sign up page the link is underlined and bold to highlight active page|Opened sign up page|Link is highlighted
+Home Link|Clicking Link on any other page will lead back to home page|Clicked link|Home page opened
+Home Link|On home page the link is underlined and bold to highlight active page|Opened home page|Link is highlighted
+KSurf Logo|Clicking Logo on any other page will lead back to home page|Clicked logo|Home page opened
+Customer logs in|Sign Up and Log In links replaced with My Account and Log Out links|Logged in|Links changed as expected.
+Log Out Link|Clicking Link will lead to customer log out page|Clicked link|Log Out page opened
+Log Out Link|On log out page the link is underlined and bold to highlight active page|Opened log out page|Link is highlighted
+My Account Link|Clicking Link will lead to customer account/dashboard page|Clicked link|Account page opened
+My Account Link|On account page the link is underlined and bold to highlight active page|Opened account page|Link is highlighted
+
+**Header**
+
+This feature has certain requirements tested as follows:
+
+Feature/Operation|Expect|Action|Result
+---|---|---|---
+Hero Image|Surfing-themed image appears at top of page|Open all pages at various test widths|Image of a person surfing appears correctly
+Business Name|Kerry Surf School appears at top of page|Open all pages at various test widths|Business name appears correctly
+Telephone Number|Kerry Surf School telephone number appears beneath hero image|Open all pages at various test widths|Telephone Number appears correctly
+Email Address|Kerry Surf School email address appears beneath hero image|Open all pages at various test widths|Email address appears correctly
+Opening Hours|Kerry Surf School opening hours appear beneath hero image|Open all pages at various test widths|Opening hours appear correctly
+
+**Footer**
+
+This feature has certain requirements tested as follows:
+
+Feature/Operation|Expect|Action|Result
+---|---|---|---
+Facebook Logo|Clicking Logo opens Facebook in a new tab|Clicked logo|Facebook opened in a new tab
+Instagram Logo|Clicking Logo opens Instagram in a new tab|Clicked logo|Instagram opened in a new tab
+Twitter Logo|Clicking Logo opens Twitter in a new tab|Clicked logo|Twitter opened in a new tab
+YouTube Logo|Clicking Logo opens YouTube in a new tab|Clicked logo|YouTube opened in a new tab
+
+**Home Page Main Section - Mobile Version**
+
+This feature has certain requirements tested as follows:
+
+Feature/Operation|Expect|Action|Result
+---|---|---|---
+Calls to Action|3 bars in an accordion style format|Opened homepage in mobile device size/format|3 bars appear across the screen
+Book Group Lessons Now!! bar|Clicking on this bar opens a new page with options/links|Clicked bar|Next page opens correctly
+Info on Surfing Lessons!! bar|Clicking on this bar opens information on lessons directly below in an accordion format|Clicked bar|Information on surfing lessons opens.
+Info on Hiring Gear!! bar|Clicking on this bar opens information on hiring gear directly below in an accordion format|Clicked bar|Information on hiring gear opens.
+
+**Home Page Main Section - Desktop Version**
+
+This feature has certain requirements tested as follows:
+
+Feature/Operation|Expect|Action|Result
+---|---|---|---
+Calls to Action|3 cards side by side across the screen|Opened homepage in desktop size/format|3 cards appear on screen
+Book Group Lessons Now!! card|Clicking on this card opens a new page with options/links|Clicked card|Next page opens correctly
+Info on Surfing Lessons!! card|Clicking on the link in this card moves the home page to the information section below.|Clicked card link|Page moves to information on surfing lessons.
+Info on Hiring Gear!! card|Clicking on the link in this card moves the home page to the information section below.|Clicked card link|Page moves to information on hiring gear.
+
+**Sign Up/ Log In Page**
+
+This feature has certain requirements tested as follows:
+
+Feature/Operation|Expect|Action|Result
+---|---|---|---
+Calls to Action|2 cards - sign up or log in|Opened page|2 cards appear on screen
+Sign Up card|Clicking on sign up link leads to the sign up page|Clicked Link|Sign Up page opens
+Log In card|Clicking on log in link leads to the log in page|Clicked Link|Log In page opens
+
+**Log In Form**
+
+This feature has certain requirements tested as follows:
+
+Feature/Operation|Expect|Action|Result
+---|---|---|---
+Required username field|Submitting the form without a username returns error|Clicked log in with username field blank|Required field message appears
+Required password field|Submitting the form without a password returns error|Clicked log in with password field blank|Required field message appears
+Username|Submitting the form with an incorrect username returns an error message|Clicked log in with an incorrect username|Incorrect username/password message appears
+Password|Submitting the form with an incorrect password returns an error message|Clicked log in with an incorrect password|Incorrect username/password message appears
+Log In Button|Clicking button will lead to the customer account page|Clicked Log In|Customer Account Page opened
+Sign Up! Link|Clicking the link leads to the Sign Up page|Clicked link|Sign Up page opens
+
+**Sign Up Form**
+
+This feature has certain requirements tested as follows:
+
+Feature/Operation|Expect|Action|Result
+---|---|---|---
+Required username field|Submitting the form without a username returns error|Clicked log in with username field blank|Required field message appears
+Required password1 field|Submitting the form without a password1 returns error|Clicked log in with password1 field blank|Required field message appears
+Required password2 field|Submitting the form without a password2 returns error|Clicked log in with password2 field blank|Required field message appears
+Username|Submitting the form with an existing username returns an error message|Clicked log in with an existing username|Username exists error message appears
+Password|Submitting the form with password1 and password2 fields not matching returns an error message|Clicked log in with password fields not matching|You must type the same password each time error message appears
+Sign Up Button|Clicking button will lead to the complete customer profile page|Clicked Sign Up button|Create Customer Profile form opened
+Log In! Link|Clicking the link leads to the Log In page|Clicked link|Log In page opens
+
+**Create Customer Profile Form**
+
+This feature has certain requirements tested as follows:
+
+Feature/Operation|Expect|Action|Result
+---|---|---|---
+Required First Name field|Submitting the form without a First Name returns error|Clicked Submit Details with First Name field blank|Required field message appears
+Required Last Name field|Submitting the form without a Last Name returns error|Clicked Submit Details with Last Name field blank|Required field message appears
+Required Email field|Submitting the form without an Email returns error|Clicked Submit Details with Email field blank|Required field message appears
+Email|Submitting the form with an entry not in an email address format returns error|Clicked Submit Details with Email field containin no @|Email error message appears
+Required Telephone Number field|Submitting the form without a Telephone Number returns error|Clicked Submit Details with Telephone Number field blank|Required field message appears
+Telephone Number|Submitting the form with letters or symbols returns error|Clicked Submit Details with Telephone Number field containing letters|Format error message appears
+Telephone Number|Submitting the form with numbers, spaces or "+" is accepted|Clicked Submit Details with Telephone Number field containing numbers, spaces and a "+"|Entry is accepted
+Required Date of Birth field|Submitting the form without a Date of Birth returns error|Clicked Submit Details with Date of Birth field blank|Required field message appears
+Date of Birth|Submitting the form with a Date of Birth in the future returns error|Clicked Submit Details with Date of Birth field containing a future date|Value must be today's date or earlier warning appears
+Required Height field|Submitting the form without a Height returns error|Clicked Submit Details with Height field blank|Required field message appears
+Height|Submitting a Height greater than 3m returns error|Clicked Submit Details with Height field set to value greater than 3|Value must be less than or equal to 3 message appears
+Height|Submitting a Height with a negative value returns error|Clicked Submit Details with Height field set to negative value|Value must be greater than 0 message appears
+Height|Submitting a Height with more than 2 decimals returns error|Clicked Submit Details with Height field set to value with several decimal places|Max digits message appears 
+Required Weight field|Submitting the form without a Weight returns error|Clicked Submit Details with Weight field blank|Required field message appears
+Weight|Submitting a Weight greater than 999kg returns error|Clicked Submit Details with Weight field set to value greater than 999|Value must be less than or equal to 999 message appears
+Weight|Submitting a Weight with more than 1 decimal returns error|Clicked Submit Details with Height field set to value with several decimal places|Error message appears
+Weight|Submitting a Weight with a negative value returns error|Clicked Submit Details with Weight field set to negative value|Value must be greater than 0 message appears 
+
+**Customer Account Page**
+
+This feature has certain requirements tested as follows:
+
+Feature/Operation|Expect|Action|Result
+---|---|---|---
+Make a Booking! button|Clicking this button will open the booking form|Clicked Button|Booking form opened
+View your Bookings! button|Clicking this button will open the view bookings page|Clicked Button|View booking page opened
+Edit your details! button|Clicking this button will open the edit profile form|Clicked Button|Edit profile form opened
+Delete Account!! button|Clicking this button will open the deletion confirmation modal|Clicked Button|Modal opened
+Modal Go Back! button|Clicking this button will close the deletion confirmation modal|Clicked Button|Modal closed
+Modal Confirm Delete Account!! button|Clicking this button will delete the user account|Clicked Button|Account deleted
+
+**Make a Booking Form**
+
+This feature has certain requirements tested as follows:
+
+Feature/Operation|Expect|Action|Result
+---|---|---|---
+Required Ability Level field|Submitting the form without selecting an ability level returns error|Clicked Make a Booking! with no ability level selected|Required field message appears
+Required Lesson Date field|Submitting the form with the Lesson Date field blank returns error|Clicked Make a Booking! with the lesson date field blank|Required field message appears
+Lesson Date|Submitting the form with a Lesson Date in the past returns error|Clicked Make a Booking! with Lesson Date field containing a past date|Value must be today's date or later warning appears
+Required Lesson Time field|Submitting the form without selecting a lesson time returns error|Clicked Make a Booking! with no lesson time selected|Required field message appears
+Customer Request field|Submitting the form without a customer request is acceptable|Clicked Make a Booking! with no customer request completed|Form submitted correctly
+Make a Booking! button|Clicking this button submits the form|Clicked Make a Booking! with a fully completed form|Form submitted successfully
+Go Back! button|Clicking this button returns to the customer account page|Clicked Go Back!|Customer Account page opens correctly
+
+**View Bookings Page**
+
+This feature has certain requirements tested as follows:
+
+Feature/Operation|Expect|Action|Result
+---|---|---|---
+Back to Account Summary! button|Clicking this button will open the customer account page|Clicked Button|Customer Account Page opened
+Edit Booking button|Clicking this button will open the edit booking form for the selected booking|Clicked button on a specific booking|The edit booking form for the selected booking opened
+Cancel Booking button|Clicking this button will open the cancel booking confimation modal|Clicked Button on a specific booking|Modal opened
+Modal Go Back! button|Clicking this button will close the cancel booking confimation modal|Clicked Button|Modal closed
+Modal Confirm Cancellation button|Clicking this button will delete the specified booking|Clicked Button|The selected booking was deleted.
+
+**Admin Bookings List Display - Customized Features**
+
+This feature has certain customized requirements tested as follows:
+
+Feature/Operation|Expect|Action|Result
+---|---|---|---
+Customer Name Link|Clicking this link will open the customers profile details in the admin Customer model|Clicked Link on a test booking|Customers details in the Customer model opened
+Approve selected bookings action|Selecting a booking awaiting approval and chosing this action will approve the booking|Selected a test booking awaiting approval and applied action|Booking was approved
+Disapprove selected bookings action|Selecting an approved booking and chosing this action will disapprove the booking|Selected a test approved booking and applied this action|Booking was disapproved
+Date Filters|Custom Date Filters are available|Applied various custom date filters to the list|Booking list was filtered accordingly
+
+
+#### 9.2.3 Automated Testing
 
 ### 9.3 Fixed Bugs
 

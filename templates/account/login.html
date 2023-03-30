@@ -19,6 +19,11 @@
         <form class="login" method="POST" action="{% url 'account_login' %}">
           {% csrf_token %}
           <p>
+            {{ form.non_field_errors}}
+            {{ form.login.errors}}
+            {{ form.password.errors}}
+          </p>
+          <p>
             {{ form.login.label_tag }}
           </p>
           <p>

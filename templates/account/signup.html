@@ -18,6 +18,12 @@
       <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
         {% csrf_token %}
         <p>
+          {{ form.non_field_errors }}
+          {{ form.username.errors }}
+          {{ form.password1.errors }}
+          {{ form.password2.errors }}
+        </p>
+        <p>
           {{ form.username.label_tag }}
         </p>
         <p>
