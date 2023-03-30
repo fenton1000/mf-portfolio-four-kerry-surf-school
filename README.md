@@ -499,6 +499,13 @@ alt="Screenshot of the code institute python linter result for the admin_filters
 
 #### 9.2.1 User Story Testing
 
+User stories have been tested as follows:
+
+User Story|Testing
+---|---
+As a **Visiting User** I can **view information about the lessons available** so that **I can determine whether the business provides the surf lesson I require.**| Information on available lessons is clearly provided on the home page
+As a **Visiting User** I can **view information about the equipment available to rent** so that **I can determine whether the business provides the equipment I need.**|Information on equipment available to rent is clearly provided on the home page
+
 #### 9.2.2 Feature Testing
 
 **Navigation Bar**
