@@ -26,11 +26,21 @@ Finally, as a longer term business goal, Kerry Surf School has begun researching
 
 7. As a **Visiting User** I can **cancel my bookings online** so that **I can go online at any time convenient to me and cancel some or all of the bookings I have made.**
 
-8. As a **Site Admin User** I can **view and filter bookings** so that **I can plan for expected customer volumes.**
+8. As a **Visiting User** I can **receive onscreen confirmation messages for actions such as making a booking** so that **I can be confident I have successfully completed the required task.**
 
-9. As a **Site Admin User** I can **amend bookings** so that **in the event of any particular problem arising such as a lack of available staff, bookings can be adjusted in consultation with customers.**
+9. As a **Visiting User** I can **add more of my details to my customer profile** so that **I do not need to re-enter them for every booking.**
 
-10. As a **Site Admin User** I can **close a specific lesson time and type to further bookings** so that **I can avoid inconvenience to the business and its customers by automated acceptance of bookings to lessons already determined to be full.**
+10. As a **Visiting User** I can **include any special requests with my booking** so that **I do not need to contact the business again having already submitted a booking.**
+
+11. As a **Site Admin** I can **approve bookings with a system visible on the admin side only** so that **I can monitor booking volumes against my available staff resources on any given day and review any special requests.**
+
+12. As a **Site Admin** I can **view and filter bookings** so that **I can plan for expected customer volumes.**
+
+13. As a **Site Admin** I can **amend bookings** so that **in the event of any particular problem arising such as a lack of available staff, bookings can be adjusted in consultation with customers.**
+
+14. As a **Site Admin** I can **prevent an individual student booking themselves into the same lesson more than once** so that **I do not end up with accidental spurious bookings.**
+
+15. As a **Business Owner** I can **provide a website landing page to potential customers that clearly defines the business offering** so that **I can attract potential customers to view further detailed information on the services offered so as to potentially increase business volumes.**
 
 ## 3. Features
 
