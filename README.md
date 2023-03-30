@@ -670,6 +670,20 @@ Date Filters|Custom Date Filters are available|Applied various custom date filte
 
 #### 9.2.3 Automated Testing
 
+Automated testing of python code in the views.py, models.py and forms.py files was carried out using Django's inbuilt unittest framework.
+
+The results of test carried out is as follows:
+
+**Tests Run OK**
+
+![Screenshot showing the results of django unittest python testing](documents/unittest.png "Unittest Results")
+
+**Coverage**
+
+![Screenshot showing the coverage for django unittest python testing](documents/coverage.png "Unittest Coverage")
+
+
+
 ### 9.3 Fixed Bugs
 
 1. The book now text that appears in the call to action button in the middle of the home page was too big on wider screen sizes.
