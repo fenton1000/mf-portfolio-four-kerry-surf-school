@@ -120,18 +120,38 @@ else:
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
+user_att = (
+    'django.contrib.auth.password_validation.'
+    'UserAttributeSimilarityValidator'
+)
+
+min_len = (
+    'django.contrib.auth.password_'
+    'validation.MinimumLengthValidator'
+)
+
+common = (
+    'django.contrib.auth.password'
+    '_validation.CommonPasswordValidator'
+)
+
+num_pass = (
+    'django.contrib.auth.password_'
+    'validation.NumericPasswordValidator'
+)
+
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': user_att,
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': min_len,
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': common,
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': num_pass,
     },
 ]
 
@@ -153,8 +173,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+stat_stor = (
+    'cloudinary_storage.storage.'
+    'StaticHashedCloudinaryStorage'
+)
+
 STATIC_URL = '/static/'
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_STORAGE = stat_stor
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 

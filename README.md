@@ -443,25 +443,8 @@ This jsHint validation shows one undefined variable bootstrap. However this is a
 
 #### 9.1.4 Python Code Validation
 
-In the first instance python validation has been implemented by way of constant monitoring of the problems list in the IDE. A number of problems remain but these do not relate to custom project code as outlined hereunder. All other files were found to be free of problems.
+In the first instance python validation has been implemented by way of constant monitoring of the problems list in the IDE. All python files were found to be free of problems.
 
-**File: env.py**
-
-<details><summary>Fig. 9.1.4.1 IDE Problems list for env.py</summary>
-<img src="documents/py-val-env.png"
-alt="Screenshot of the IDE problems list for the env.py file."></details>
-
-The two errors here are due to lines being too long but this is as a result of the length of urls from external sources.
-
-**File: settings.py**
-
-<details><summary>Fig. 9.1.4.2 IDE Problems list for settings.py</summary>
-<img src="documents/py-val-settings.png"
-alt="Screenshot of the IDE problems list for the settings.py file."></details>
-
-All the errors here are due to lines being too long.
-Four of the five errors are in the Django provided code that has been left as provided.
-One of the errors results from the length of provided cloudinary method names.
 
 In addition all key files containing custom code were tested using the Code Institute Python Linter and were found to be error free. Examples of tests for key files are shown hereunder:
 
@@ -894,6 +877,8 @@ Finally the amiresposive website generates the following screen examples for the
 * The Code Institute Python Linter available at https://pep8ci.herokuapp.com/ for python validation.
 
 * The amiresponsive website available at https://ui.dev/amiresponsive to check responsiveness.
+
+* Contribution by Levon on Stack Overflow available at https://stackoverflow.com/questions/10660435/how-do-i-split-the-definition-of-a-long-string-over-multiple-lines for information on how to split strings over multiple lines so as not to exceed the maximum line length.
 
 ### 11.2 Credits
 
