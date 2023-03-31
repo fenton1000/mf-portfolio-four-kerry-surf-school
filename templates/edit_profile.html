@@ -13,34 +13,42 @@
                 <form method="POST">
                     {% csrf_token %}
                     <p>
+                        {{ form.non_field_errors }}
+                    </p>
+                    <p>
                         {{ form.first_name.label_tag }}
                     </p>
                     <p>
+                        {{ form.first_name.errors }}
                         {{ form.first_name }}
                     </p>
                     <p>
                         {{ form.last_name.label_tag }}
                     </p>
                     <p>
+                        {{ form.last_name.errors }}
                         {{ form.last_name }}
                     </p>
                     <p>
                         {{ form.email.label_tag }}
                     </p>
                     <p>
+                        {{ form.email.errors }}
                         {{ form.email }}
                     </p>
                     <p>
                         <label for="id_phone_num">Telephone Number:</label>
                     </p>
                     <p>
-                        <input type="tel" pattern="[0-9, '', +]+" name="phone_num" value="{{ customer.phone_num }}"
+                        {{ form.phone_num.errors }}
+                        <input type="tel" pattern="[0-9, '', +]+" name="phone_num" value="{{ form.phone_num.value }}"
                             maxlength="20" required id="id_phone_num">
                     </p>
                     <p>
                         <label for="id_date_of_birth">Date of birth:</label>
                     </p>
                     <p>
+                        {{ form.date_of_birth.errors }}
                         <input type="date" name="date_of_birth" required id="id_date_of_birth">
                     </p>
                     <p>
@@ -48,7 +56,7 @@
                     </p>
                     <p>
                         {{ form.height.errors }}
-                        <input type="number" name="height" value="{{ customer.height }}" step="0.01" required
+                        <input type="number" name="height" value="{{ form.height.value }}" step="0.01" required
                             id="id_height" min="0" max="3" placeholder="0.00"> m
                     </p>
                     <p>
@@ -56,7 +64,7 @@
                     </p>
                     <p>
                         {{ form.weight.errors }}
-                        <input type="number" name="weight" value="{{ customer.weight }}" step="0.1" required
+                        <input type="number" name="weight" value="{{ form.weight.value }}" step="0.1" required
                             id="id_weight" min="0" max="999" placeholder="000.0"> kg
                     </p>
                     <button class="btn light-blue-btn-bg-color my-2" type="submit">Update Profile!</button>
@@ -72,7 +80,7 @@
     </p>
 </main>
 
-<script src="{% static 'js/editProfile.js' %}" defer data-dob="{{ customer.date_of_birth }}"></script>
+<script src="{% static 'js/editProfile.js' %}" defer data-dob="{{ form.date_of_birth.value }}"></script>
 <script src="{% static 'js/dateOfBirth.js' %}" defer></script>
 
 {% endblock content %}

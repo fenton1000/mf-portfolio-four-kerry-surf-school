@@ -96,7 +96,6 @@ def edit_customer(request):
             messages.success(request, 'Your profile has been updated!')
             return redirect('customer')
     context = {
-        'customer': customer,
         'form': form
     }
     return render(request, 'edit_profile.html', context)
