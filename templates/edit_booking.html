@@ -6,8 +6,10 @@
 
 <main>
     <h2 class="ps-3">You can edit the selected booking here {{ user.username }}!</h2>
+    <p class="ps-3">(Bookings for today cannot be made online. Please phone to check today's availability)</p>
     <p class="ps-3">Please edit the appropriate fields and submit changes once you are ready to do so:</p>
-    <p class="ps-3">(Please include any special requirements or requests in the Customer requests box and we will do or best to accomodate you!) </p>
+    <p class="ps-3">(Please include any special requirements or requests in the Customer requests box and we will do or
+        best to accomodate you!) </p>
     <div class="container">
         <div class="row">
             <div class="col-md-8 mt-3 offset-md-2 d-flex justify-content-center">
@@ -48,8 +50,7 @@
                         {{ form.customer_requests }}
                     </p>
                     <button class="btn light-blue-btn-bg-color my-2" type="submit">Update Booking!</button>
-                    <a href="{% url 'view_bookings' %}"
-                        class="btn light-blue-btn-bg-color text-styling my-2 ms-3">Go
+                    <a href="{% url 'view_bookings' %}" class="btn light-blue-btn-bg-color text-styling my-2 ms-3">Go
                         Back!</a>
                 </form>
             </div>

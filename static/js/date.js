@@ -1,7 +1,9 @@
 $(function () {
 
     function setMinDate() {
-        let minDate = new Date();
+        let date = new Date();
+        let today = date.getTime();
+        let minDate = new Date(today+86400000);
         let formattedMinDate = new Date(
             minDate.getTime() - (minDate.getTimezoneOffset() * 60000))
             .toISOString()
