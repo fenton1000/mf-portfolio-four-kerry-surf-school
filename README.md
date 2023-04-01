@@ -941,6 +941,11 @@ Intended Appearance|Good|Good|Good
 Intended Responsiveness|Good|Good|Good
 
 ### 9.5 Accessibility and Performance
+
+Lighthouse was used to assess accessibility and performance. The results were found to be acceptable as follows:
+
+![Screenshot of the lighthouse results](documents/lighthouse.png "Lighthouse Analysis")
+
 ## 10. Deployment
 ### 10.1 via gitpod
 ### 10.2 via github pages
@@ -1042,6 +1047,8 @@ Intended Responsiveness|Good|Good|Good
 * Gear Hire photo by Monica Silvestre and taken from pixels.com: https://www.pexels.com/photo/yellow-and-red-surfboards-near-blue-calm-body-of-water-699955/
 
 * Image size and format adjusting by Reduce Images: https://www.reduceimages.com/
+
+* Converting images to webp format by FreeConvert: https://www.freeconvert.com/image-converter
 
 * Favicon generation by favicon.io: https://favicon.io/
 
