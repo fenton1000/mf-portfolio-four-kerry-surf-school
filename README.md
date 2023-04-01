@@ -488,10 +488,31 @@ User Story|Testing
 ---|---
 As a **Visiting User** I can **view information about the lessons available** so that **I can determine whether the business provides the surf lesson I require.**| Information on available lessons is clearly provided on the home page
 As a **Visiting User** I can **view information about the equipment available to rent** so that **I can determine whether the business provides the equipment I need.**|Information on equipment available to rent is clearly provided on the home page
+As a **Visiting User** I can **view contact information for the business** so that **I can call or email the business to make enquires or bookings.**|Contact information is clearly provided in the header on all pages.
+As a **Visiting User** I can **book standard lesson type options online** so that **I can go online at a time convenient to me and make a booking.**|A user can go online, create an account and from there access a booking form to make bookings.
+As a **Visiting User** I can **view my bookings online** so that **I can go online at any time convenient to me to confirm the details of any bookings I have made.**|A user can log in to the account they created at sign up and view all their bookings by clicking on the View Bookings button.
+As a **Visiting User** I can **amend my bookings online** so that **I can go online at any time convenient to me and make changes to any bookings I have made.**|A user can log in to the account they created at sign up, view all their bookings by clicking on the View Bookings button and from there edit any booking by clicking on the Edit booking button for that specific booking.
+As a **Visiting User** I can **cancel my bookings online** so that **I can go online at any time convenient to me and cancel some or all of the bookings I have made.**|A user can log in to the account they created at sign up, view all their bookings by clicking on the View Bookings button and from there cancel any booking by clicking on the cancel booking button for that specific booking followed by the confirm cancellation booking.
+As a **Visiting User** I can **receive onscreen confirmation messages for actions such as making a booking** so that **I can be confident I have successfully completed the required task.**|Flash confirmation messages are given for sign up , log in, log out, making and editing bookings. In addition a warning message is displayed if a user tries to make the same booking twice.
+As a **Visiting User** I can **add more of my details to my customer profile** so that **I do not need to re-enter them for every booking.**|When a user account is created a customer profile form is displayed with mandatory fields for the recording of key customer details. As a result the booking form requires only minimum inputs for bookings. A customer account required decorator was created in the views.py file and applied to the customer account, make booking and view booking views to ensure the profile is completed prior to making bookings.
+As a **Visiting User** I can **include any special requests with my booking** so that **I do not need to contact the business again having already submitted a booking.**|A customer requests text area field is included in the booking form.
+As a **Site Admin** I can **approve bookings with a system visible on the admin side only** so that **I can monitor booking volumes against my available staff resources on any given day and review any special requests.**|A link to the site admin is provided in the navbar. Site admin is only accessible to users with an admin password. The admin side booking list display includes an approved field that defaults to not approved. Actions have been added to the dropdown list of action options to allow for easy approval or disapproval of bookings. The status of the booking is visible on the admin side only.
+As a **Site Admin** I can **view and filter bookings** so that **I can plan for expected customer volumes.**|A link to the site admin is provided in the navbar. Site admin is only accessible to users with an admin password. The bookings list can be viewed with key information diplayed including customer age calculated from the date of birth in the database. Each booking can be opened to see details. The booking list includes a link in each booking to the customer details. The bookings can be filtered by date and by approval status.
+As a **Site Admin** I can **amend bookings** so that **in the event of any particular problem arising such as a lack of available staff, bookings can be adjusted in consultation with customers.**|A link to the site admin is provided in the navbar. Site admin is only accessible to users with an admin password. In the admin booking list any booking can be clicked on and opened. Once opened any details can be changed as necessary.
+As a **Site Admin** I can **prevent an individual student booking themselves into the same lesson more than once** so that **I do not end up with accidental spurious bookings.**|The booking system has been designed to automatically prevent a user booking themselves into the same lesson twice. A warning message is diplayed to the user if the booking already exists.
+As a **Business Owner** I can **provide a website landing page to potential customers that clearly defines the business offering** so that **I can attract potential customers to view further detailed information on the services offered so as to potentially increase business volumes.**|The business name Kerry Surf School is clearly displayed at the top of the page. The hero image is of a surfer on the water. Three clear calls to action are displayed, info on lessons, info on equipment and book group lessons.
 
 #### 9.2.2 Feature Testing
 
 **Navigation Bar**
+
+<details><summary>Fig. 9.2.2.1 Navigation Bar - Logged Out</summary>
+<img src="documents/site-navbar-logged-out.png"
+alt="Screenshot of the websites navigation bar when logged out"></details>
+
+<details><summary>Fig. 9.2.2.2 Navigation Bar - Logged In</summary>
+<img src="documents/site-navbar-logged-in.png"
+alt="Screenshot of the websites navigation bar when logged in"></details>
 
 This feature has certain requirements tested as follows:
 
@@ -513,6 +534,10 @@ My Account Link|On account page the link is underlined and bold to highlight act
 
 **Header**
 
+<details><summary>Fig. 9.2.2.3 Header</summary>
+<img src="documents/site-header.png"
+alt="Screenshot of the websites header"></details>
+
 This feature has certain requirements tested as follows:
 
 Feature/Operation|Expect|Action|Result
@@ -525,6 +550,11 @@ Opening Hours|Kerry Surf School opening hours appear beneath hero image|Open all
 
 **Footer**
 
+<details><summary>Fig. 9.2.2.4 Footer</summary>
+<img src="documents/site-footer.png"
+alt="Screenshot of the websites footer"></details>
+
+
 This feature has certain requirements tested as follows:
 
 Feature/Operation|Expect|Action|Result
@@ -535,6 +565,10 @@ Twitter Logo|Clicking Logo opens Twitter in a new tab|Clicked logo|Twitter opene
 YouTube Logo|Clicking Logo opens YouTube in a new tab|Clicked logo|YouTube opened in a new tab
 
 **Home Page Main Section - Mobile Version**
+
+<details><summary>Fig. 9.2.2.5 Home Page - Mobile</summary>
+<img src="documents/site-home-mobile.png"
+alt="Screenshot of the websites home page on mobile devices"></details>
 
 This feature has certain requirements tested as follows:
 
@@ -547,6 +581,10 @@ Info on Hiring Gear!! bar|Clicking on this bar opens information on hiring gear 
 
 **Home Page Main Section - Desktop Version**
 
+<details><summary>Fig. 9.2.2.6 Home Page - Desktop</summary>
+<img src="documents/site-home-desktop.png"
+alt="Screenshot of the websites home page on desktop devices"></details>
+
 This feature has certain requirements tested as follows:
 
 Feature/Operation|Expect|Action|Result
@@ -557,6 +595,10 @@ Info on Surfing Lessons!! card|Clicking on the link in this card moves the home 
 Info on Hiring Gear!! card|Clicking on the link in this card moves the home page to the information section below.|Clicked card link|Page moves to information on hiring gear.
 
 **Sign Up/ Log In Page**
+
+<details><summary>Fig. 9.2.2.7 Sign Up/ Log In Page</summary>
+<img src="documents/site-signuporlogin.png"
+alt="Screenshot of the websites sign up or log in links page"></details>
 
 This feature has certain requirements tested as follows:
 
@@ -672,7 +714,7 @@ Date Filters|Custom Date Filters are available|Applied various custom date filte
 
 Automated testing of python code in the views.py, models.py and forms.py files was carried out using Django's inbuilt unittest framework.
 
-The results of test carried out is as follows:
+The results of tests successfully carried out is as follows:
 
 **Tests Run OK**
 
@@ -879,6 +921,8 @@ Finally the amiresposive website generates the following screen examples for the
 * The amiresponsive website available at https://ui.dev/amiresponsive to check responsiveness.
 
 * Contribution by Levon on Stack Overflow available at https://stackoverflow.com/questions/10660435/how-do-i-split-the-definition-of-a-long-string-over-multiple-lines for information on how to split strings over multiple lines so as not to exceed the maximum line length.
+
+* Contribution by rminde on the jquery forum available at https://forum.jquery.com/topic/tomorrow-and-next-day-date#:~:text=var%20tomorrow%3D%20new%20Date(today,usual%20month%20just%20add%201. for information on getting tomorrow's date in javascript.
 
 ### 11.2 Credits
 
