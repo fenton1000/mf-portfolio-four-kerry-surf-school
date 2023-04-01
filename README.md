@@ -508,11 +508,11 @@ As a **Business Owner** I can **provide a website landing page to potential cust
 
 <details><summary>Fig. 9.2.2.1 Navigation Bar - Logged Out</summary>
 <img src="documents/site-navbar-logged-out.png"
-alt="Screenshot of the websites navigation bar when logged out"></details>
+alt="Screenshot of the website's navigation bar when logged out"></details>
 
 <details><summary>Fig. 9.2.2.2 Navigation Bar - Logged In</summary>
 <img src="documents/site-navbar-logged-in.png"
-alt="Screenshot of the websites navigation bar when logged in"></details>
+alt="Screenshot of the website's navigation bar when logged in"></details>
 
 This feature has certain requirements tested as follows:
 
@@ -536,7 +536,7 @@ My Account Link|On account page the link is underlined and bold to highlight act
 
 <details><summary>Fig. 9.2.2.3 Header</summary>
 <img src="documents/site-header.png"
-alt="Screenshot of the websites header"></details>
+alt="Screenshot of the website's header"></details>
 
 This feature has certain requirements tested as follows:
 
@@ -552,7 +552,7 @@ Opening Hours|Kerry Surf School opening hours appear beneath hero image|Open all
 
 <details><summary>Fig. 9.2.2.4 Footer</summary>
 <img src="documents/site-footer.png"
-alt="Screenshot of the websites footer"></details>
+alt="Screenshot of the website's footer"></details>
 
 
 This feature has certain requirements tested as follows:
@@ -568,7 +568,7 @@ YouTube Logo|Clicking Logo opens YouTube in a new tab|Clicked logo|YouTube opene
 
 <details><summary>Fig. 9.2.2.5 Home Page - Mobile</summary>
 <img src="documents/site-home-mobile.png"
-alt="Screenshot of the websites home page on mobile devices"></details>
+alt="Screenshot of the website's home page on mobile devices"></details>
 
 This feature has certain requirements tested as follows:
 
@@ -583,7 +583,7 @@ Info on Hiring Gear!! bar|Clicking on this bar opens information on hiring gear 
 
 <details><summary>Fig. 9.2.2.6 Home Page - Desktop</summary>
 <img src="documents/site-home-desktop.png"
-alt="Screenshot of the websites home page on desktop devices"></details>
+alt="Screenshot of the website's home page on desktop devices"></details>
 
 This feature has certain requirements tested as follows:
 
@@ -598,7 +598,7 @@ Info on Hiring Gear!! card|Clicking on the link in this card moves the home page
 
 <details><summary>Fig. 9.2.2.7 Sign Up/ Log In Page</summary>
 <img src="documents/site-signuporlogin.png"
-alt="Screenshot of the websites sign up or log in links page"></details>
+alt="Screenshot of the website's sign up or log in links page"></details>
 
 This feature has certain requirements tested as follows:
 
@@ -612,7 +612,7 @@ Log In card|Clicking on log in link leads to the log in page|Clicked Link|Log In
 
 <details><summary>Fig. 9.2.2.8 Log In Form</summary>
 <img src="documents/site-login-form.png"
-alt="Screenshot of the websites log in form"></details>
+alt="Screenshot of the website's log in form"></details>
 
 This feature has certain requirements tested as follows:
 
@@ -629,7 +629,7 @@ Sign Up! Link|Clicking the link leads to the Sign Up page|Clicked link|Sign Up p
 
 <details><summary>Fig. 9.2.2.9 Sign Up Form</summary>
 <img src="documents/site-signup-form.png"
-alt="Screenshot of the websites sign up form"></details>
+alt="Screenshot of the website's sign up form"></details>
 
 This feature has certain requirements tested as follows:
 
@@ -647,7 +647,7 @@ Log In! Link|Clicking the link leads to the Log In page|Clicked link|Log In page
 
 <details><summary>Fig. 9.2.2.10 Create Customer Profile Form</summary>
 <img src="documents/site-customer-profile.png"
-alt="Screenshot of the websites create customer profile form"></details>
+alt="Screenshot of the website's create customer profile form"></details>
 
 This feature has certain requirements tested as follows:
 
@@ -659,7 +659,7 @@ Required Email field|Submitting the form without an Email returns error|Clicked 
 Email|Submitting the form with an entry not in an email address format returns error|Clicked Submit Details with Email field containin no @|Email error message appears
 Required Telephone Number field|Submitting the form without a Telephone Number returns error|Clicked Submit Details with Telephone Number field blank|Required field message appears
 Telephone Number|Submitting the form with letters or symbols returns error|Clicked Submit Details with Telephone Number field containing letters|Format error message appears
-Telephone Number|Submitting the form with numbers, spaces or "+" is accepted|Clicked Submit Details with Telephone Number field containing numbers, spaces and a "+"|Entry is accepted
+Telephone Number|Submitting the form with numbers, spaces, or "+" is accepted|Clicked Submit Details with Telephone Number field containing numbers, spaces and a "+"|Entry is accepted
 Required Date of Birth field|Submitting the form without a Date of Birth returns error|Clicked Submit Details with Date of Birth field blank|Required field message appears
 Date of Birth|Submitting the form with a Date of Birth in the future returns error|Clicked Submit Details with Date of Birth field containing a future date|Value must be today's date or earlier warning appears
 Required Height field|Submitting the form without a Height returns error|Clicked Submit Details with Height field blank|Required field message appears
@@ -675,7 +675,7 @@ Weight|Submitting a Weight with a negative value returns error|Clicked Submit De
 
 <details><summary>Fig. 9.2.2.11 Customer Account Page</summary>
 <img src="documents/site-customer-account.png"
-alt="Screenshot of the websites customer account page"></details>
+alt="Screenshot of the website's customer account page"></details>
 
 This feature has certain requirements tested as follows:
 
@@ -692,7 +692,7 @@ Modal Confirm Delete Account!! button|Clicking this button will delete the user 
 
 <details><summary>Fig. 9.2.2.12 Make a Booking Form</summary>
 <img src="documents/site-booking-form.png"
-alt="Screenshot of the websites make a booking form"></details>
+alt="Screenshot of the website's make a booking form"></details>
 
 This feature has certain requirements tested as follows:
 
@@ -710,7 +710,7 @@ Go Back! button|Clicking this button returns to the customer account page|Clicke
 
 <details><summary>Fig. 9.2.2.13 View Bookings Page</summary>
 <img src="documents/site-view-bookings.png"
-alt="Screenshot of the websites view bookings page"></details>
+alt="Screenshot of the website's view bookings page"></details>
 
 This feature has certain requirements tested as follows:
 
@@ -726,7 +726,7 @@ Modal Confirm Cancellation button|Clicking this button will delete the specified
 
 <details><summary>Fig. 9.2.2.13 Edit a Booking Form</summary>
 <img src="documents/site-edit-booking-form.png"
-alt="Screenshot of the websites edit a booking form"></details>
+alt="Screenshot of the website's edit a booking form"></details>
 
 This feature has certain requirements tested as follows:
 
@@ -745,7 +745,7 @@ Go Back! button|Clicking this button returns to the view bookings page|Clicked G
 
 <details><summary>Fig. 9.2.2.14 Edit Customer Profile Form</summary>
 <img src="documents/site-edit-customer-profile.png"
-alt="Screenshot of the websites edit customer profile form"></details>
+alt="Screenshot of the website's edit customer profile form"></details>
 
 This feature has certain requirements tested as follows:
 
@@ -774,7 +774,7 @@ Weight|Submitting a Weight with a negative value returns error|Clicked Update Pr
 
 <details><summary>Fig. 9.2.2.15 Admin Log In Page</summary>
 <img src="documents/admin-login.png"
-alt="Screenshot of the websites admin log in page"></details>
+alt="Screenshot of the website's admin log in page"></details>
 
 This feature has certain requirements tested as follows:
 
@@ -786,13 +786,13 @@ Back to Home!! link|Clicking the Back to Home!! link will return the user to the
 
 <details><summary>Fig. 9.2.2.16 Admin Bookings List Display</summary>
 <img src="documents/admin-bookings.png"
-alt="Screenshot of the websites admin bookings list display"></details>
+alt="Screenshot of the website's admin bookings list display"></details>
 
 This feature has certain customized requirements tested as follows:
 
 Feature/Operation|Expect|Action|Result
 ---|---|---|---
-Customer Name Link|Clicking this link will open the customers profile details in the admin Customer model|Clicked Link on a test booking|Customers details in the Customer model opened
+Customer Name Link|Clicking this link will open the customer's profile details in the admin Customer model|Clicked Link on a test booking|Customer's details in the Customer model opened
 Approve selected bookings action|Selecting a booking awaiting approval and chosing this action will approve the booking|Selected a test booking awaiting approval and applied action|Booking was approved
 Disapprove selected bookings action|Selecting an approved booking and chosing this action will disapprove the booking|Selected a test approved booking and applied this action|Booking was disapproved
 Date Filters|Custom Date Filters are available|Applied various custom date filters to the list|Booking list was filtered accordingly
@@ -918,6 +918,27 @@ Finally the amiresposive website generates the following screen examples for the
 
 
 #### 9.4.2 Supported Browsers
+
+The website was tested in the following browsers:
+
+**Google Chrome**
+
+![Screenshot of the home page in Google Chrome](documents/chrome.png "Google Chrome")
+
+**Microsoft Edge**
+
+![Screenshot of the home page in Microsoft Edge](documents/edge.png "Microsoft Edge")
+
+**Mozilla Firefox**
+
+![Screenshot of the home page in Mozilla Firefox](documents/firefox.png "Mozilla Firefox")
+
+**Browser Compatibility**
+
+Test|Chrome|Edge|Firefox
+---|---|---|---
+Intended Appearance|Good|Good|Good
+Intended Responsiveness|Good|Good|Good
 
 ### 9.5 Accessibility and Performance
 ## 10. Deployment
