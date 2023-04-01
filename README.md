@@ -610,6 +610,10 @@ Log In card|Clicking on log in link leads to the log in page|Clicked Link|Log In
 
 **Log In Form**
 
+<details><summary>Fig. 9.2.2.8 Log In Form</summary>
+<img src="documents/site-login-form.png"
+alt="Screenshot of the websites log in form"></details>
+
 This feature has certain requirements tested as follows:
 
 Feature/Operation|Expect|Action|Result
@@ -622,6 +626,10 @@ Log In Button|Clicking button will lead to the customer account page|Clicked Log
 Sign Up! Link|Clicking the link leads to the Sign Up page|Clicked link|Sign Up page opens
 
 **Sign Up Form**
+
+<details><summary>Fig. 9.2.2.9 Sign Up Form</summary>
+<img src="documents/site-signup-form.png"
+alt="Screenshot of the websites sign up form"></details>
 
 This feature has certain requirements tested as follows:
 
@@ -636,6 +644,10 @@ Sign Up Button|Clicking button will lead to the complete customer profile page|C
 Log In! Link|Clicking the link leads to the Log In page|Clicked link|Log In page opens
 
 **Create Customer Profile Form**
+
+<details><summary>Fig. 9.2.2.10 Create Customer Profile Form</summary>
+<img src="documents/site-customer-profile.png"
+alt="Screenshot of the websites create customer profile form"></details>
 
 This feature has certain requirements tested as follows:
 
@@ -661,6 +673,10 @@ Weight|Submitting a Weight with a negative value returns error|Clicked Submit De
 
 **Customer Account Page**
 
+<details><summary>Fig. 9.2.2.11 Customer Account Page</summary>
+<img src="documents/site-customer-account.png"
+alt="Screenshot of the websites customer account page"></details>
+
 This feature has certain requirements tested as follows:
 
 Feature/Operation|Expect|Action|Result
@@ -674,19 +690,27 @@ Modal Confirm Delete Account!! button|Clicking this button will delete the user 
 
 **Make a Booking Form**
 
+<details><summary>Fig. 9.2.2.12 Make a Booking Form</summary>
+<img src="documents/site-booking-form.png"
+alt="Screenshot of the websites make a booking form"></details>
+
 This feature has certain requirements tested as follows:
 
 Feature/Operation|Expect|Action|Result
 ---|---|---|---
 Required Ability Level field|Submitting the form without selecting an ability level returns error|Clicked Make a Booking! with no ability level selected|Required field message appears
 Required Lesson Date field|Submitting the form with the Lesson Date field blank returns error|Clicked Make a Booking! with the lesson date field blank|Required field message appears
-Lesson Date|Submitting the form with a Lesson Date in the past returns error|Clicked Make a Booking! with Lesson Date field containing a past date|Value must be today's date or later warning appears
+Lesson Date|Submitting the form with a Lesson Date in the past returns error|Clicked Make a Booking! with Lesson Date field containing a past date|Value must be tomorrow's date or later warning appears
 Required Lesson Time field|Submitting the form without selecting a lesson time returns error|Clicked Make a Booking! with no lesson time selected|Required field message appears
 Customer Request field|Submitting the form without a customer request is acceptable|Clicked Make a Booking! with no customer request completed|Form submitted correctly
 Make a Booking! button|Clicking this button submits the form|Clicked Make a Booking! with a fully completed form|Form submitted successfully
 Go Back! button|Clicking this button returns to the customer account page|Clicked Go Back!|Customer Account page opens correctly
 
 **View Bookings Page**
+
+<details><summary>Fig. 9.2.2.13 View Bookings Page</summary>
+<img src="documents/site-view-bookings.png"
+alt="Screenshot of the websites view bookings page"></details>
 
 This feature has certain requirements tested as follows:
 
@@ -698,7 +722,71 @@ Cancel Booking button|Clicking this button will open the cancel booking confimat
 Modal Go Back! button|Clicking this button will close the cancel booking confimation modal|Clicked Button|Modal closed
 Modal Confirm Cancellation button|Clicking this button will delete the specified booking|Clicked Button|The selected booking was deleted.
 
+**Edit a Booking Form**
+
+<details><summary>Fig. 9.2.2.13 Edit a Booking Form</summary>
+<img src="documents/site-edit-booking-form.png"
+alt="Screenshot of the websites edit a booking form"></details>
+
+This feature has certain requirements tested as follows:
+
+Feature/Operation|Expect|Action|Result
+---|---|---|---
+Form Fields|Form fields to be pre-populated with the current booking details|Clicked on the Edit Booking! button for a selected test booking|Form fields contained the current data when form opened
+Required Ability Level field|Submitting the form without selecting an ability level returns error|Clicked Update Booking! with the ability level changed to Please choose one!|Required field message appears
+Required Lesson Date field|Submitting the form with the Lesson Date field blank returns error|Clicked Update Booking! with the lesson date deleted|Required field message appears
+Lesson Date|Submitting the form with a Lesson Date in the past returns error|Clicked Update Booking! with Lesson Date field containing a past date|Value must be tomorrow's date or later warning appears
+Required Lesson Time field|Submitting the form without selecting a lesson time returns error|Clicked Update Booking! with the lesson time changed to Please choose one!|Required field message appears
+Customer Request field|Submitting the form without a customer request is acceptable|Clicked Update Booking! with no customer request completed|Form submitted correctly
+Update Booking! button|Clicking this button submits the form|Clicked Update Booking! with a fully completed form|Form submitted successfully
+Go Back! button|Clicking this button returns to the view bookings page|Clicked Go Back!|View Bookings page opens correctly
+
+**Edit Customer Profile Form**
+
+<details><summary>Fig. 9.2.2.14 Edit Customer Profile Form</summary>
+<img src="documents/site-edit-customer-profile.png"
+alt="Screenshot of the websites edit customer profile form"></details>
+
+This feature has certain requirements tested as follows:
+
+Feature/Operation|Expect|Action|Result
+---|---|---|---
+Form Fields|Form fields to be pre-populated with the current customer profile details|Clicked on the Edit your Details! button for a selected test customer profile|Form fields contained the current profile data when form opened
+Required First Name field|Submitting the form without a First Name returns error|Clicked Update Profile! with First Name deleted|Required field message appears
+Required Last Name field|Submitting the form without a Last Name returns error|Clicked Update Profile! with Last Name deleted|Required field message appears
+Required Email field|Submitting the form without an Email returns error|Clicked Update Profile! with Email address deleted|Required field message appears
+Email|Submitting the form with an entry not in an email address format returns error|Clicked Update Profile! with Email field containin no @|Email error message appears
+Required Telephone Number field|Submitting the form without a Telephone Number returns error|Clicked Update Profile! with Telephone Number deleted|Required field message appears
+Telephone Number|Submitting the form with letters or symbols returns error|Clicked Update Profile! with Telephone Number field containing letters|Format error message appears
+Telephone Number|Submitting the form with numbers, spaces or "+" is accepted|Clicked Update Profile! with Telephone Number field containing numbers, spaces and a "+"|Entry is accepted
+Required Date of Birth field|Submitting the form without a Date of Birth returns error|Clicked Update Profile! with Date of Birth deleted|Required field message appears
+Date of Birth|Submitting the form with a Date of Birth in the future returns error|Clicked Update Profile! with Date of Birth field containing a future date|Value must be today's date or earlier warning appears
+Required Height field|Submitting the form without a Height returns error|Clicked Update Profile! with Height deleted|Required field message appears
+Height|Submitting a Height greater than 3m returns error|Clicked Update Profile! with Height field set to value greater than 3|Value must be less than or equal to 3 message appears
+Height|Submitting a Height with a negative value returns error|Clicked Update Profile! with Height field set to negative value|Value must be greater than 0 message appears
+Height|Submitting a Height with more than 2 decimals returns error|Clicked Update Profile! with Height field set to value with several decimal places|Max digits message appears 
+Required Weight field|Submitting the form without a Weight returns error|Clicked Update Profile! with Weight deleted|Required field message appears
+Weight|Submitting a Weight greater than 999kg returns error|Clicked Update Profile! with Weight field set to value greater than 999|Value must be less than or equal to 999 message appears
+Weight|Submitting a Weight with more than 1 decimal returns error|Clicked Update Profile! with Height field set to value with several decimal places|Error message appears
+Weight|Submitting a Weight with a negative value returns error|Clicked Update Profile! with Weight field set to negative value|Value must be greater than 0 message appears
+
+**Admin Log In Page - Customized Features**
+
+<details><summary>Fig. 9.2.2.15 Admin Log In Page</summary>
+<img src="documents/admin-login.png"
+alt="Screenshot of the websites admin log in page"></details>
+
+This feature has certain requirements tested as follows:
+
+Feature/Operation|Expect|Action|Result
+---|---|---|---
+Back to Home!! link|Clicking the Back to Home!! link will return the user to the home page|Clicked on the Back to Home!! link|The home page opened
+
 **Admin Bookings List Display - Customized Features**
+
+<details><summary>Fig. 9.2.2.16 Admin Bookings List Display</summary>
+<img src="documents/admin-bookings.png"
+alt="Screenshot of the websites admin bookings list display"></details>
 
 This feature has certain customized requirements tested as follows:
 
