@@ -947,8 +947,44 @@ Lighthouse was used to assess accessibility and performance. The results were fo
 ![Screenshot of the lighthouse results](documents/lighthouse.png "Lighthouse Analysis")
 
 ## 10. Deployment
-### 10.1 via gitpod
-### 10.2 via github pages
+
+   ### 10.1 via github
+
+1. The Code Institute project template was accessed on github at https://github.com/Code-Institute-Org/gitpod-full-template and the Use this Template button clicked to create a project-specific repository.
+
+2. All files and documents pushed from Gitpod appear in the repository.
+
+### 10.2 via gitpod
+
+The site was developed in gitpod as follows:
+
+1. From the github repository created for the project the Gitpod button installed as a chrome browser extension was clicked. A Gitpod workspace was created.
+
+2. To view project progress during development the command python3 manage.py runserver was entered in the IDE terminal.
+
+3. At regular appropriate intervals the latest version of the code was saved via the git add and git commit commands. Appropriate commit messages were added to control the revisions.
+
+4. The git push command was used to push all committed code and documentation to the repository for secure storage.
+
+### 10.3 via Heroku
+
+* Prior to deployment to Heroku, the settings.py file is updated to ensure that in the production version debug is set to False.
+
+* Prior to deployment to Heroku, the requirements.txt file is updated by typing the command pip3 freeze --local > requirements.txt to the terminal and following this all outstanding commits are pushed to the github repository.
+
+* In Heroku a new project is created to host the application.
+
+* Within this project in the settings section the Config Vars area is updated by adding variables contained locally in the env.py file including the urls for the database and the cloudinary storage as well as the django secret key.
+
+* In addition a key named PORT is created and it is given the value 8000.
+
+* In the Deploy section the option to connect to github is chosen, the repository name is found and clicked on.
+
+* The option to deploy from the main branch is chosen and the project is deployed. This may take a few moments.
+
+* Once deployed a button linking to the site is provided. When clicked it leads to the deployed application and the page address can be copied and provided as a link to the site/application.
+
+* The live site/application can be accessed <a href="https://mf-pp4-kerry-surf-school.herokuapp.com/" target="_blank">here</a>
 
 ## 11. References and Credits
 
