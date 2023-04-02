@@ -250,7 +250,7 @@ Therefore a color palette consisting of blues, browns, oranges, reds, and purple
 
 ## 7. Database Entity Relationship Diagram
 
-![Database ERD showing the 4 data models and their relationships](documents/database-erd.png "Database Entity Relationship Diagram")
+![Database ERD showing the 3 data models and their relationships](documents/database-erd.png "Database Entity Relationship Diagram")
 
 ## 8. Technology
 
@@ -948,17 +948,17 @@ Lighthouse was used to assess accessibility and performance. The results were fo
 
 ## 10. Deployment
 
-   ### 10.1 via github
+### 10.1 via GitHub
 
-1. The Code Institute project template was accessed on github at https://github.com/Code-Institute-Org/gitpod-full-template and the Use this Template button clicked to create a project-specific repository.
+1. The Code Institute project template was accessed on GitHub at https://github.com/Code-Institute-Org/gitpod-full-template and the Use this Template button clicked to create a project-specific repository.
 
 2. All files and documents pushed from Gitpod appear in the repository.
 
-### 10.2 via gitpod
+### 10.2 via Gitpod
 
-The site was developed in gitpod as follows:
+The site was developed in Gitpod as follows:
 
-1. From the github repository created for the project the Gitpod button installed as a chrome browser extension was clicked. A Gitpod workspace was created.
+1. From the GitHub repository created for the project the Gitpod button installed as a chrome browser extension was clicked. A Gitpod workspace was created.
 
 2. To view project progress during development the command python3 manage.py runserver was entered in the IDE terminal.
 
@@ -970,15 +970,15 @@ The site was developed in gitpod as follows:
 
 * Prior to deployment to Heroku, the settings.py file is updated to ensure that in the production version debug is set to False.
 
-* Prior to deployment to Heroku, the requirements.txt file is updated by typing the command pip3 freeze --local > requirements.txt to the terminal and following this all outstanding commits are pushed to the github repository.
+* Prior to deployment to Heroku, the requirements.txt file is updated by typing the command pip3 freeze --local > requirements.txt to the terminal and following this all outstanding commits are pushed to the GitHub repository.
 
 * In Heroku a new project is created to host the application.
 
-* Within this project in the settings section the Config Vars area is updated by adding variables contained locally in the env.py file including the urls for the database and the cloudinary storage as well as the django secret key.
+* Within this project in the settings section the Config Vars area is updated by adding variables contained locally in the env.py file including the URLs for the database and the Cloudinary storage as well as the django secret key.
 
 * In addition a key named PORT is created and it is given the value 8000.
 
-* In the Deploy section the option to connect to github is chosen, the repository name is found and clicked on.
+* In the Deploy section the option to connect to GitHub is chosen, the repository name is found and clicked on.
 
 * The option to deploy from the main branch is chosen and the project is deployed. This may take a few moments.
 
