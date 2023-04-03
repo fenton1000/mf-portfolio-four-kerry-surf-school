@@ -248,6 +248,10 @@ Therefore a color palette consisting of blues, browns, oranges, reds, and purple
 
 ![Wireframe of the create booking page](documents/create-booking.png "Create Booking")
 
+### 6.10 View Bookings
+
+![Wireframe of the view bookings page](documents/view-bookings.png "View Bookings")
+
 ## 7. Database Entity Relationship Diagram
 
 ![Database ERD showing the 3 data models and their relationships](documents/database-erd.png "Database Entity Relationship Diagram")
