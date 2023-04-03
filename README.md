@@ -48,11 +48,17 @@ Please note that the features section contains relevant extracts from the projec
 
 ### 3.1 Navigation Bar
 
-* The navigation bar provides a link to return to the home page from any other page. This link will be highlighted to indicate when a user is on the homepage.
+* The navigation bar provides a Home link to return to the home page from any other page. This link will be highlighted to indicate when a user is on the homepage.
 
-* When no user is logged in the navigation bar provides links to sign-up or log-in.
+* The navigation bar contains the KSurf logo. The logo is also a link to the home page in line with likely user expectations.
 
-* When a user is logged in the link to log-out replaces the log-in or sign-up options.
+* When no user is logged in the navigation bar provides links to Sign Up or Log In.
+
+* When a user is logged in the links to My Account and Log Out replace the Sign Up or Log In options.
+
+* The Sign Up, Log In, My Account, and Log Out links are highlighted as active when the appropriate page is open.
+
+* An Admin Only link to the admin log in page is also provided for ease of access. This link will have a different colour to differentiate it from the main user links.
 
 <details><summary>Fig. 3.1.1 Navigation Bar with no user logged in.</summary>
 <img src="documents/navbar-logged-out.png"
@@ -68,11 +74,19 @@ alt="wireframe of the navigation bar when there is a user logged in"></details>
 
 * The header contains a hero image with a theme related to the purpose of the website.
 
+* The header displays the telephone number, email address, and business opening hours.
+
 <details><summary>Fig. 3.2.1 Header</summary>
 <img src="documents/header.png"
 alt="wireframe of the page header"></details>
 
-### 3.3 Home Page Main Section
+### 3.3 Footer
+
+* The footer contains links to social media - Facebook, Instagram, Twitter, YouTube.
+
+* The footer is sticky, always appearing at the bottom of the view.
+
+### 3.4 Home Page Main Section
 
 * The main section contains a link, in the form of a card, to commence the booking process. This is the key call to action on the home page. This link will bring the user to the page with options to log in or sign up.
 
@@ -82,57 +96,27 @@ alt="wireframe of the page header"></details>
 
 * On mobile devices the three items will be displayed beneath each other in an accordion format.
 
-<details><summary>Fig. 3.3.1 Home Page Main Section on Desktop</summary>
+<details><summary>Fig. 3.4.1 Home Page Main Section on Desktop</summary>
 <img src="documents/home-main-desktop.png"
 alt="wireframe of the home page main section on desktop"></details>
 
-<details><summary>Fig. 3.3.2 Home Page Main Section on Mobile</summary>
+<details><summary>Fig. 3.4.2 Home Page Main Section on Mobile</summary>
 <img src="documents/home-main-mobile.png"
 alt="wireframe of the home page main section on a mobile device"></details>
 
-### 3.4 Footer
-
-* The footer contains links to social media.
-
-* The footer is sticky, always appearing at the bottom of the view.
-
 ### 3.5 Sign Up/ Log In Page
 
-* This page is reached by clicking on the booking option on the home page.
+* This page is reached by clicking on the book group lessons now option on the home page.
 
-* The main section on this page contains links to the sign up or sign in options.
+* The main section on this page contains links to the sign up or log in options.
 
-* There is also a brief explainer regarding the need to create an account. This is in the form of a dropdown box on the mobile version.
+* There is also a brief explainer regarding the need to create an account.
 
 <details><summary>Fig. 3.5.1 Sign Up/ Log In</summary>
 <img src="documents/desktop-sign-up-sign-in-main.png"
 alt="wireframe of the main section of the sign up or log in page"></details>
 
-### 3.6 Sign Up Form
-
-* The page containing this form is reached either by clicking on sign up on the navigation bar or by clicking on the appropriate link on the sign up or log in options page.
-
-* The form contains a field to enter a unique username and fields to enter and confirm a user password.
-
-* The form has a submit button to process the entered information.
-
-<details><summary>Fig. 3.6.1 Sign Up Form</summary>
-<img src="documents/sign-up-form.png"
-alt="wireframe of the sign up form"></details>
-
-### 3.7 User Account First Log In/Customer Profile Form
-
-* This page will appear after a user creates an account.
-
-* This page will contain a form for the provision of an email address and telephone number for the management of bookings.
-
-* A short explainer is provided regarding the data collected.
-
-<details><summary>Fig. 3.7.1 Email and Phone Number Form</summary>
-<img src="documents/email-phone-form.png"
-alt="wireframe of the email and telephone number form"></details>
-
-### 3.8 Log In Form
+### 3.6 Log In Form
 
 * The page containing this form is reached either by clicking on log in on the navigation bar or by clicking on the appropriate link on the sign up or log in options page.
 
@@ -140,9 +124,33 @@ alt="wireframe of the email and telephone number form"></details>
 
 * The form has a submit button to process the entered information.
 
-<details><summary>Fig. 3.8.1 Log In Form</summary>
+<details><summary>Fig. 3.6.1 Log In Form</summary>
 <img src="documents/log-in-form.png"
 alt="wireframe of the log in form"></details>
+
+### 3.7 Sign Up Form
+
+* The page containing this form is reached either by clicking on sign up on the navigation bar or by clicking on the appropriate link on the sign up or log in options page.
+
+* The form contains a field to enter a unique username and fields to enter and confirm a user password.
+
+* The form has a submit button to process the entered information.
+
+<details><summary>Fig. 3.7.1 Sign Up Form</summary>
+<img src="documents/sign-up-form.png"
+alt="wireframe of the sign up form"></details>
+
+### 3.8 User Account First Log In/Create Customer Profile Form
+
+* This page appears after a user creates an account. **NB:** As the information gathered in this form is critical to the processing of bookings and is therefore a required form, access to the my account page, the make a booking page, and the view bookings page is controlled by way of a custom python code decorator applied to the view functions for these pages. A customer attempting to view their account page, make a booking or view their current bookings is redirected to the customer profile form if a customer profile does not exist.
+
+* This page contains a form for the provision of first name, last name, email address, telephone number, date of birth, height, and weight.
+
+* A short explainer is provided regarding the data collected.
+
+<details><summary>Fig. 3.8.1 Create Customer Profile Form</summary>
+<img src="documents/create-customer-profile-form.png"
+alt="wireframe of the create customer profile form"></details>
 
 ### 3.9 Customer Account Page Main Section
 
@@ -150,23 +158,69 @@ alt="wireframe of the log in form"></details>
 
 * The main section of this page contains a summary of customer information.
 
-* The main section of this page contains links to create, view, edit and cancel bookings.
+* The main section of this page contains links to make a booking, view bookings, edit profile, and delete account.
 
 <details><summary>Fig. 3.9.1 Customer Account Page Main Section</summary>
 <img src="documents/user-account-main.png"
 alt="wireframe of the main section of the customer account page"></details>
 
-### 3.10 Create Booking Form
+### 3.10 Make a Booking Form
 
 * This form is reached by clicking the appropriate link on the customer account page.
 
-* This form gathers the necessary data for each individual's booking including first name, last name, date of birth, height, weight, ability level, booking date and booking time.
+* This form gathers the necessary data for an individual booking including ability level, lesson date, lesson time, and customer requests.
 
 * A submit button allows creation of the booking and its storage onto the database.
 
-<details><summary>Fig. 3.10.1 Create Booking Form</summary>
+<details><summary>Fig. 3.10.1 Make a Booking Form</summary>
 <img src="documents/create-booking-form.png"
-alt="wireframe of the create booking form"></details>
+alt="wireframe of the make a booking form"></details>
+
+### 3.11 View Bookings Page
+
+* This page is reached by clicking the appropriate link on the customer account page.
+
+* This page provides a summary of all of a customer's bookings.
+
+* Options to edit or cancel are provided for each booking.
+
+<details><summary>Fig. 3.11.1 View Bookings Page</summary>
+<img src="documents/view-bookings-section.png"
+alt="wireframe of the view bookings section"></details>
+
+### 3.12 Edit a Booking Form
+
+* This form is reached by clicking the appropriate link in the specific booking on the view bookings page.
+
+* This form contains the same fields and format as the make a booking form.
+
+* When the link is clicked and the form is opened for a specific booking, the form is pre-populated with the current details of that booking.
+
+### 3.13 Edit Customer Profile Form
+
+* This form is reached by clicking the appropriate link on the customer account page.
+
+* This form contains the same fields and format as the create customer profile form.
+
+* When the link is clicked and the form is opened, the form is pre-populated with the current customer profile data.
+
+### 3.14 Admin Log In Page - Customization
+
+* This page contains one customized link, a Back to Home link to take users back to the home page if they click on the Admin Only link.
+
+* Otherwise, this is a standard Django Admin-provided page template providing a log in form that only allows log in with an admin password.
+
+### 3.15 Admin Bookings List Display - Customization
+
+* In general the features provided on the admin side are the default Django-provided features. However, the Bookings list display from the Booking model is customized.
+
+* An approval process is added whereby bookings default to not approved until the admin approves them. This is to allow the admin to control booking volumes and intervene if a problem arises. The system is coded to automatically prevent an individual from double-booking themselves. However, because these are group lessons multiple bookings at the same time by different individuals are allowed. Consideration was given to coding in an upper limit on bookings for any given lesson but doing this would lead to other issues arising. Firstly, from a customer viewpoint, if a booking is refused due to business volumes the system should suggest alternatives. Failure to provide alternatives is considered a poor UX. However this level of sophistication does not form part of the MVP but could be considered as a future feature. Secondly, the business already expects and caters to different business volumes throughout the weeks and seasons. Therefore setting a single upper limit is not a viable solution. Again a more sophisticated solution allowing the admin to set limits for specific time periods or lessons could be considered as a future feature. The downside of the current solution is that in the event of too many bookings the business will have to contact individuals and manually adjust bookings. However, given that this is a small but established business that already has a reasonably good idea of expected volumes and typically can cater for this, it does not anticipate significant issues for now. If business volumes grow, the future features described above can be added.
+
+* The booking display list includes the customer first name and the name is also a link to the customers details in the related customer model. When the business is using the booking list in a practical use scenario such as preparing equipment for a particular lesson, easy access to the customer profile is very useful rather than having to search the user for each booking in the seperate customer model.
+
+* The ability to filter the booking list by date and approval status is added. In particular, the date filters are customized to provide a more useful set of filters for management of bookings, than the default Django date filters. For example Django includes defaults of "last 7 days" and "this year" whereas "next 7 days" and "remainder of this year" are considered more useful in this scenario.
+
+* The list includes the customer's age calculated from the customer profile date of birth database entry.
 
 ## 4. Future Features
 
@@ -657,6 +711,10 @@ This feature has certain requirements tested as follows:
 
 Feature/Operation|Expect|Action|Result
 ---|---|---|---
+Required Form|Clicking the My Account link to bypass this form will not proceed to my account page|Clicked My Account link|The site remains on the create customer profile page
+Required Form|Clicking the Home link and then the My Account link to bypass this form will not proceed to my account page|Clicked Home followed by the My Account link|The home page opens but when the My Account link is clicked the user is redirected to the create customer profile page
+Required Form|Manually entering the make a booking URL to bypass this form will not proceed to the make a booking page|Entered the make a booking page URL|The site remains on the create customer profile page
+Required Form|Manually entering the view bookings URL to bypass this form will not proceed to the view bookings page|Entered the view bookings page URL|The site remains on the create customer profile page
 Required First Name field|Submitting the form without a First Name returns error|Clicked Submit Details with First Name field blank|Required field message appears
 Required Last Name field|Submitting the form without a Last Name returns error|Clicked Submit Details with Last Name field blank|Required field message appears
 Required Email field|Submitting the form without an Email returns error|Clicked Submit Details with Email field blank|Required field message appears
