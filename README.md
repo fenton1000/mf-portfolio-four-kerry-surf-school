@@ -214,7 +214,7 @@ alt="wireframe of the view bookings section"></details>
 
 * In general the features provided on the admin side are the default Django-provided features. However, the Bookings list display from the Booking model is customized.
 
-* An approval process is added whereby bookings default to not approved until the admin approves them. This is to allow the admin to control booking volumes and intervene if a problem arises. The system is coded to automatically prevent an individual from double-booking themselves. However, because these are group lessons multiple bookings at the same time by different individuals are allowed. Consideration was given to coding in an upper limit on bookings for any given lesson but doing this would lead to other issues arising. Firstly, from a customer viewpoint, if a booking is refused due to business volumes the system should suggest alternatives. Failure to provide alternatives is considered a poor UX. However this level of sophistication does not form part of the MVP but could be considered as a future feature. Secondly, the business already expects and caters to different business volumes throughout the weeks and seasons. Therefore setting a single upper limit is not a viable solution. Again a more sophisticated solution allowing the admin to set limits for specific time periods or lessons could be considered as a future feature. The downside of the current solution is that in the event of too many bookings the business will have to contact individuals and manually adjust bookings. However, given that this is a small but established business that already has a reasonably good idea of expected volumes and typically can cater for this, it does not anticipate significant issues for now. If business volumes grow, the future features described above can be added.
+* An approval process is added whereby bookings default to not approved until the admin approves them. This is to allow the admin to control booking volumes and intervene if a problem arises. The system is coded to automatically prevent an individual from double-booking themselves. However, because these are group lessons multiple bookings at the same time by different individuals are allowed. Consideration was given to coding in an upper limit on bookings for any given lesson but doing this would lead to other issues arising. Firstly, from a customer viewpoint, if a booking is refused due to business volumes the system should suggest alternatives. Failure to provide alternatives is considered a poor UX. However, this level of sophistication does not form part of the MVP but could be considered as a future feature. Secondly, the business already expects and caters to different business volumes throughout the weeks and seasons. Therefore setting a single upper limit is not a viable solution. Again a more sophisticated solution allowing the admin to set limits for specific time periods or lessons could be considered as a future feature. The downside of the current solution is that in the event of too many bookings the business will have to contact individuals and manually adjust bookings. However, given that this is a small but established business that already has a reasonably good idea of expected volumes and typically can cater for this, it does not anticipate significant issues for now. If business volumes grow, the future features described above can be added.
 
 * The booking display list includes the customer first name and the name is also a link to the customers details in the related customer model. When the business is using the booking list in a practical use scenario such as preparing equipment for a particular lesson, easy access to the customer profile is very useful rather than having to search the user for each booking in the seperate customer model.
 
@@ -226,23 +226,31 @@ alt="wireframe of the view bookings section"></details>
 
 The following future features could be added in time:
 
-1. The ability to create and save numerous individual profiles within a user account to allow for quicker completion of future bookings. Allowing several profiles under one customer account, would for example allow a parent to create one account but then create individual profiles for each family member.
+1. Provision of a contact form, giving potential customers another option by which to contact the business.
 
-2. The ability to book equipment hire online.
+2. Sending an email to customers when a booking is received.
 
-3. The ability to book a broader range of lessons including private lessons with or without equipment hire included.
+3. Giving site admin the ability to set booking volume limits for specific lessons or time periods, together with a system that suggests alternatives to customers if a choosen lesson is already booked.
 
-4. The ability to make payments online.
+4. The ability to create and save numerous individual profiles within a user account. Allowing several profiles under one customer account, would for example allow a parent to create one account but then create individual profiles and bookings for each family member.
 
-5. The creation of an online shop for surfing equipment sales.
+5. Providing a record of progress over time in terms of ability level, attached to each individual profile.
+
+6. The ability to book equipment hire online.
+
+7. The ability to book a broader range of lessons including private lessons with or without equipment hire included.
+
+8. The ability to make payments online.
+
+9. The creation of an online shop for surfing equipment sales.
 
 ## 5. Typography and Color Scheme
 
 ### 5.1 Typography
 
-The main page heading is also the business name "Kerry Surf School". It has the main surfer hero image as a background and has the font style Bubblegum Sans. This was chosen for its fun, informal relaxed style and was considered to be very much in keeping with the surfing theme.
+The main page heading is also the business name "Kerry Surf School". It has the main surfer hero image as a background and has the font style, Bubblegum Sans. This was chosen for its fun, informal relaxed style and was considered to be very much in keeping with the surfing theme.
 
-All other text uses the Quicksand font-style. This style is clear and easy to read while maintaining a somewhat informal look and works well with the Bubblegum Sans heading text.
+All other text uses the Quicksand font style. This style is clear and easy to read while maintaining a somewhat informal look and works well with the Bubblegum Sans heading text.
 
 ### 5.2 Color Scheme
 
