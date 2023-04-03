@@ -2,9 +2,9 @@
 
 ## 1. Purpose of the Project
 
-Kerry Surf School is a small owner run business teaching surfing lessons and hiring out surfing equipment. The business currently has an online presence via its social media accounts and through a Google Business Profile but it does not have its own website. Most of the surfing lessons are booked over the phone without a requirement to pay when booking. Payments are taken in person on the day of the lesson. Walk-ins are also accepted for lessons if room is available. The majority of equipment hire customers are walk-in customers.
+Kerry Surf School is a small owner-run business teaching surfing lessons and hiring out surfing equipment. The business currently has an online presence via its social media accounts and through a Google Business Profile but it does not have its own website. Most of the surfing lessons are booked over the phone without a requirement to pay when booking. Payments are taken in person on the day of the lesson. Walk-ins are also accepted for lessons if room is available. The majority of equipment hire customers are walk-in customers.
 
-Now the business has decided to create its own website in the hope of increasing business volumes. The business would like to have two key elements initially. Firstly it would like to provide information on the services it currently provides. Secondly it would like to have an option for potential customers to book its most popular beginner-level and intermediate-level lessons online. To begin with, the business is happy to allow customers book online and pay on the day of the lesson as this is how it also manages phone bookings as previously mentioned.
+Now the business has decided to create its own website in the hope of increasing business volumes. The business would like to have two key elements initially. Firstly it would like to provide information on the services it currently provides. Secondly it would like to have an option for potential customers to book its most popular beginner-level and intermediate-level lessons online. To begin with, the business is happy to allow customers book online and pay on the day of the lesson as this is how it already manages phone bookings.
 
 Assuming that the creation of the website leads to benefits for the business, Kerry Surf School would envisage adding additional features to the website over time. These include the ability to book a range of equipment/clothing, to book more advanced lessons with or without equipment and to book private lessons. Futhermore, it would like to eventually have the option to process payments online.
 
@@ -88,7 +88,7 @@ alt="wireframe of the page header"></details>
 
 ### 3.4 Home Page Main Section
 
-* The main section contains a link, in the form of a card, to commence the booking process. This is the key call to action on the home page. This link will bring the user to the page with options to log in or sign up.
+* The main section contains a link, in the form of a card, to commence the booking process. This is the key call to action on the home page. This link will bring the user to a page with options to log in or sign up.
 
 * The main section contains a link, in the form of a card, to information regarding surfing lessons. This information is located further down on the home page. This link is therefore a section link within the page.
 
@@ -120,7 +120,7 @@ alt="wireframe of the main section of the sign up or log in page"></details>
 
 * The page containing this form is reached either by clicking on log in on the navigation bar or by clicking on the appropriate link on the sign up or log in options page.
 
-* The form contains a field to enter a username and user password.
+* The form contains fields to enter a username and user password.
 
 * The form has a submit button to process the entered information.
 
@@ -216,7 +216,7 @@ alt="wireframe of the view bookings section"></details>
 
 * An approval process is added whereby bookings default to not approved until the admin approves them. This is to allow the admin to control booking volumes and intervene if a problem arises. The system is coded to automatically prevent an individual from double-booking themselves. However, because these are group lessons multiple bookings at the same time by different individuals are allowed. Consideration was given to coding in an upper limit on bookings for any given lesson but doing this would lead to other issues arising. Firstly, from a customer viewpoint, if a booking is refused due to business volumes the system should suggest alternatives. Failure to provide alternatives is considered a poor UX. However, this level of sophistication does not form part of the MVP but could be considered as a future feature. Secondly, the business already expects and caters to different business volumes throughout the weeks and seasons. Therefore setting a single upper limit is not a viable solution. Again a more sophisticated solution allowing the admin to set limits for specific time periods or lessons could be considered as a future feature. The downside of the current solution is that in the event of too many bookings the business will have to contact individuals and manually adjust bookings. However, given that this is a small but established business that already has a reasonably good idea of expected volumes and typically can cater for this, it does not anticipate significant issues for now. If business volumes grow, the future features described above can be added.
 
-* The booking display list includes the customer first name and the name is also a link to the customers details in the related customer model. When the business is using the booking list in a practical use scenario such as preparing equipment for a particular lesson, easy access to the customer profile is very useful rather than having to search the user for each booking in the seperate customer model.
+* The booking display list includes the customer first name and the name is also a link to the customers details in the related customer model. When the business is using the booking list in a practical use scenario such as preparing equipment for a particular lesson, easy access to the customer profile is very useful rather than having to search for the customer for each booking in the seperate customer model.
 
 * The ability to filter the booking list by date and approval status is added. In particular, the date filters are customized to provide a more useful set of filters for management of bookings, than the default Django date filters. For example Django includes defaults of "last 7 days" and "this year" whereas "next 7 days" and "remainder of this year" are considered more useful in this scenario.
 
@@ -268,7 +268,7 @@ Therefore a color palette consisting of blues, browns, oranges, reds, and purple
 
 #e9d1d1 is a light orange-pink color and has been used for the main title when it is located towards the bottom of the background image on smaller screens. The location of the surfer within the image on smaller screens requires the title to be displayed toward the bottom of the image. However the purple color #620da7 does not provide sufficient contrast with the color within the background image at this location and so this lighter color is used. Likewise, this lighter color would not provide the required contrast at other locations within the image and therefore the purple color is used as described above.
 
-#d3ccc5 is a brown that provides a small degree of contrast with the main background color and has been used to provide a subtle outline to the booking card on larger screens and to form input fields.
+#d3ccc5 is a brown that provides a small degree of contrast with the main background color and has been used to provide a subtle outline to the booking card on larger screens and to the form and form input fields.
 
 #246bad is a darker blue and has been used to provide a top border to the footer so as to ensure it is always distinguishable even when clickable links and accordion elements with the same background color overlap it.
 
@@ -395,6 +395,8 @@ The following technologies were used in developing and deploying the website:
 * Javascript
 
 * Django
+
+* Posrgres database via elephantsql.com
 
 * Cloudinary
 
@@ -936,17 +938,17 @@ Date Filters|Custom Date Filters are available|Applied various custom date filte
 
 Automated testing of python code in the views.py, models.py and forms.py files was carried out using Django's inbuilt unittest framework.
 
-The results of tests successfully carried out is as follows:
+The results of 35 tests successfully carried out is as follows:
 
 **Tests Run OK**
 
 ![Screenshot showing the results of django unittest python testing](documents/unittest.png "Unittest Results")
 
+The tests provide 100% coverage of the views.py, models.py and forms.py files and result in an overall coverage of 97%.
+
 **Coverage**
 
 ![Screenshot showing the coverage for django unittest python testing](documents/coverage.png "Unittest Coverage")
-
-
 
 ### 10.3 Fixed Bugs
 
@@ -968,13 +970,13 @@ alt="Screenshot showing the hero image missing from the home page."></details>
 
 3. Initially the booking form accepted dates in the past when booking a lesson.
 
-Solution: A javascript/jquery function was created in date.js to find today's date and add it to the date input field as a min value attribute.
+Solution: A javascript/jquery function was created in date.js to find tomorrow's date and add it to the date input field as a min value attribute.
 
 This bug was raised as a PBI within the agile design process. Further information on the bug and solution can be found [here.](https://github.com/fenton1000/mf-portfolio-four-kerry-surf-school/issues/26)
 
 4. In certain input scenarios such as the entry of an invalid height format, the form passed front-end validation, but was returned by the POST method, rendering a new blank form and no feedback on the error.
 
-Solution: The view code was altered so that the creation of the blank form for the get method occurs before the if statement for the POST method. This ensures that should the POST method return an invalid form it is the completed form with errors and not a new blank form. Also the error message tags were added to the form so that the error message is displayed. The front end messaging was also improved to better explain the required input including the unit of measurement expected.
+Solution: The view code was altered so that the creation of the blank form for the get method occurs before the if statement for the POST method. This ensures that should the POST method return an invalid form it is the completed form with errors and not a new blank form. Also the error message tags were added to the form so that the error message is displayed. The front-end messaging was also improved to better explain the required input including the unit of measurement expected.
 
 This bug was raised as a PBI within the agile design process. Further information on the bug and solution can be found [here.](https://github.com/fenton1000/mf-portfolio-four-kerry-surf-school/issues/30)
 
