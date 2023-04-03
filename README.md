@@ -318,7 +318,71 @@ Therefore a color palette consisting of blues, browns, oranges, reds, and purple
 
 ![Database ERD showing the 3 data models and their relationships](documents/database-erd.png "Database Entity Relationship Diagram")
 
-## 8. Technology
+## 8. Agile Methodology
+
+An Agile methodology and tools have been applied to the management of this project. Tools available within GitHub have been used to apply these methodologies.
+
+The GitHub issues list has been used to create User Stories and Epics as well as raising issues for bugs, testing and UX Enhancement. The issues list for this project is available <a href="https://github.com/fenton1000/mf-portfolio-four-kerry-surf-school/issues" target="_blank">here.</a>
+
+Labels have been applied to the issues using both the GitHub-provided labels for bug, enhancement and documentation as well as the creation of custom labels for story points and must-have, should-have, and could-have labels for prioritization.
+
+**Available Labels**
+
+![Screenshot of available lables](documents/labels.png "Available Labels")
+
+Using the milestones feature in GitHub a Product Backlog was created. Issues raised and deemed to require work were passed to the Product Backlog to become Product Backlog Items (PBIs). In the case of this project all issues raised passed to the Product Backlog.
+
+Again using the milestones feature iteration timeboxes were created. For this project the length of a timebox was 5 days and in total 6 iterations were achieved during the development of the MVP. The milestones for this project are available <a href="https://github.com/fenton1000/mf-portfolio-four-kerry-surf-school/milestones" target="_blank">here.</a>
+
+Prior to being added to an iteration the acceptance critera for user stories were added and user stories were broken down into the tasks required to achieved the acceptance criteria. The acceptance criteria were written in non-technical language to clearly outline what was needed for the user story to be considered fulfilled. The tasks include the technical requirements.
+
+In the case of bugs, testing, and enhancements, a list of tasks required to be completed to address the issue was added.
+
+The tasks and acceptance criteria for any individual task can be viewed by opening the individual issue in the issues list or in the milestone.
+
+Finally, prior to adding any issue to an iteration timebox the appropriate labels were added to assign story points, priority and as necessary hightlight additional information such as the issue being a bug.
+
+The six timebox iterations for the project are as follows:
+
+**Iteration 1**
+
+![Screenshot of iteration one timebox](documents/iteration-one-timebox.png "Iteration One")
+
+**Iteration 2**
+
+![Screenshot of iteration two timebox](documents/iteration-two-timebox.png "Iteration Two")
+
+**Iteration 3**
+
+![Screenshot of iteration three timebox](documents/iteration-three-timebox.png "Iteration Three")
+
+**Iteration 4**
+
+![Screenshot of iteration four timebox](documents/iteration-four-timebox.png "Iteration Four")
+
+**Iteration 5**
+
+![Screenshot of iteration five timebox](documents/iteration-five-timebox.png "Iteration Five")
+
+**Iteration 6**
+
+![Screenshot of iteration six timebox](documents/iteration-six-timebox.png "Iteration Six")
+
+For iterations, 1 to 4, the story point total was set to 8 points. Following the completion of 4 iterations, it was noted that the velocity achieved was closer to 7 story points on average so the total for iteration 5 is seven story points. This was reduced further to 5 points for the final iteration based on a further reduction in average velocity following iteration 5.
+
+When assigning and prioritising PBIs in a timebox, it was ensured that the story-point total for must-have PBIs was set to less than 60% of the total. In practice the percentage was generally much lower than this maximum allowed. It was also ensured that could-have PBIs made up at least 20% of the story-point total.
+
+Finally a kanban board was used to assist in the tracking and coordination of PBIs on a day-to-day basis. This board was set up as a virtual board using the projects tool in GitHub with PBIs added to the board at the commencement of iterations and moving from "Todo" to "In Progress" to "Done". The project board for this project can be viewed <a href="https://github.com/users/fenton1000/projects/5/views/1" target="_blank">here.</a>
+
+**Board at Start**
+
+![Screenshot of the kanban board at the start of the project](documents/kanban-start.png "Board at Start")
+
+**Board near End**
+
+![Screenshot of the kanban board near the end of the project](documents/kanban-end.png "Board near End")
+
+## 9. Technology
 
 The following technologies were used in developing and deploying the website:
 
@@ -374,36 +438,36 @@ The following technologies were used in developing and deploying the website:
 
 * The amiresponsive website was used to check responsiveness.
 
-## 9. Testing
+## 10. Testing
 
-### 9.1 Code Validation
+### 10.1 Code Validation
 
-#### 9.1.1 HTML Code Validation
+#### 10.1.1 HTML Code Validation
 
 HTML code validation was carried out using the W3C Markup Validation Service. All code was successfully validated as outlined hereunder.
 For public pages validation was undertaken by URI as follows:
 
 Home page at : https://mf-pp4-kerry-surf-school.herokuapp.com/
 
-<details><summary>Fig. 9.1.1.1 HTML Validation Result for Home page</summary>
+<details><summary>Fig. 10.1.1.1 HTML Validation Result for Home page</summary>
 <img src="documents/html-val-home.png"
 alt="Screenshot of the successful HTML validation result for home page."></details>
 
 Sign Up or Log In links page at : https://mf-pp4-kerry-surf-school.herokuapp.com/signuporlogin/
 
-<details><summary>Fig. 9.1.1.2 HTML Validation Result for Sign Up or Log In links page</summary>
+<details><summary>Fig. 10.1.1.2 HTML Validation Result for Sign Up or Log In links page</summary>
 <img src="documents/html-val-signuporlogin.png"
 alt="Screenshot of the successful HTML validation result for sign up or log in links page."></details>
 
 Sign Up page at : https://mf-pp4-kerry-surf-school.herokuapp.com/accounts/signup/
 
-<details><summary>Fig. 9.1.1.3 HTML Validation Result for Sign Up page</summary>
+<details><summary>Fig. 10.1.1.3 HTML Validation Result for Sign Up page</summary>
 <img src="documents/html-val-signup.png"
 alt="Screenshot of the successful HTML validation result for sign up page."></details>
 
 Log In page at : https://mf-pp4-kerry-surf-school.herokuapp.com/accounts/login/
 
-<details><summary>Fig. 9.1.1.4 HTML Validation Result for Log In page</summary>
+<details><summary>Fig. 10.1.1.4 HTML Validation Result for Log In page</summary>
 <img src="documents/html-val-login.png"
 alt="Screenshot of the successful HTML validation result for log in page."></details>
 
@@ -411,103 +475,103 @@ For pages requiring a logged in user validation was undertaken by Direct Input a
 
 Customer First Log In page to create customer Profile:
 
-<details><summary>Fig. 9.1.1.5 HTML Validation Result Customer First Log In page</summary>
+<details><summary>Fig. 10.1.1.5 HTML Validation Result Customer First Log In page</summary>
 <img src="documents/html-val-firstlogin.png"
 alt="Screenshot of the successful HTML validation result for customer first log in page."></details>
 
 Customer Profile page:
 
-<details><summary>Fig. 9.1.1.6 HTML Validation Result Customer Profile page</summary>
+<details><summary>Fig. 10.1.1.6 HTML Validation Result Customer Profile page</summary>
 <img src="documents/html-val-customer.png"
 alt="Screenshot of the successful HTML validation result for customer profile page."></details>
 
 Make Booking page:
 
-<details><summary>Fig. 9.1.1.7 HTML Validation Result Make Booking page</summary>
+<details><summary>Fig. 10.1.1.7 HTML Validation Result Make Booking page</summary>
 <img src="documents/html-val-booking.png"
 alt="Screenshot of the successful HTML validation result for make booking page."></details>
 
 View Bookings page:
 
-<details><summary>Fig. 9.1.1.8 HTML Validation Result View Bookings page</summary>
+<details><summary>Fig. 10.1.1.8 HTML Validation Result View Bookings page</summary>
 <img src="documents/html-val-mybookings.png"
 alt="Screenshot of the successful HTML validation result for view bookings page."></details>
 
 Edit Booking page:
 
-<details><summary>Fig. 9.1.1.9 HTML Validation Result Edit Booking page</summary>
+<details><summary>Fig. 10.1.1.9 HTML Validation Result Edit Booking page</summary>
 <img src="documents/html-val-edit.png"
 alt="Screenshot of the successful HTML validation result for edit booking page."></details>
 
 Edit Profile page:
 
-<details><summary>Fig. 9.1.1.10 HTML Validation Result Edit Profile page</summary>
+<details><summary>Fig. 10.1.1.10 HTML Validation Result Edit Profile page</summary>
 <img src="documents/html-val-edit-profile.png"
 alt="Screenshot of the successful HTML validation result for edit profile page."></details>
 
 Log Out page:
 
-<details><summary>Fig. 9.1.1.11 HTML Validation Result Log Out page</summary>
+<details><summary>Fig. 10.1.1.11 HTML Validation Result Log Out page</summary>
 <img src="documents/html-val-logout.png"
 alt="Screenshot of the successful HTML validation result for log out page."></details>
 
 Custom 404 page:
 
-<details><summary>Fig. 9.1.1.12 HTML Validation Result Custom 404 page</summary>
+<details><summary>Fig. 10.1.1.12 HTML Validation Result Custom 404 page</summary>
 <img src="documents/html-val-404.png"
 alt="Screenshot of the successful HTML validation result for custom 404 page."></details>
 
-#### 9.1.2 CSS Code Validation
+#### 10.1.2 CSS Code Validation
 
 CSS code validation was carried out using the W3C CSS Validation Service. The project contains a single custom css file styles.css. It was tested by direct input and was successfully validated.
 
-<details><summary>Fig. 9.1.2.1 CSS Validation Result for styles.css</summary>
+<details><summary>Fig. 10.1.2.1 CSS Validation Result for styles.css</summary>
 <img src="documents/css-val-styles.png"
 alt="Screenshot of the successful css validation result for the styles.css file."></details>
 
-#### 9.1.3 Javascript/jquery Code Validation
+#### 10.1.3 Javascript/jquery Code Validation
 
 Javascript code validation was carried out using JS Hint.  Each file was tested by direct input and was successfully validated as follows:
 
 **File: date.js**
 
-<details><summary>Fig. 9.1.3.1 js Validation Result for date.js</summary>
+<details><summary>Fig. 10.1.3.1 js Validation Result for date.js</summary>
 <img src="documents/js-val-date.png"
 alt="Screenshot of the successful javascript validation result for the date.js file."></details>
 
 **File: dateOfBirth.js**
 
-<details><summary>Fig. 9.1.3.2 js Validation Result for dateOfBirth.js</summary>
+<details><summary>Fig. 10.1.3.2 js Validation Result for dateOfBirth.js</summary>
 <img src="documents/js-val-dateOfBirth.png"
 alt="Screenshot of the successful javascript validation result for the dateOfBirth.js file."></details>
 
 **File: delete.js**
 
-<details><summary>Fig. 9.1.3.3 js Validation Result for delete.js</summary>
+<details><summary>Fig. 10.1.3.3 js Validation Result for delete.js</summary>
 <img src="documents/js-val-delete.png"
 alt="Screenshot of the successful javascript validation result for the delete.js file."></details>
 
 **File: editBooking.js**
 
-<details><summary>Fig. 9.1.3.4 js Validation Result for editBooking.js</summary>
+<details><summary>Fig. 10.1.3.4 js Validation Result for editBooking.js</summary>
 <img src="documents/js-val-editBooking.png"
 alt="Screenshot of the successful javascript validation result for the editBooking.js file."></details>
 
 **File: editProfile.js**
 
-<details><summary>Fig. 9.1.3.5 js Validation Result for editProfile.js</summary>
+<details><summary>Fig. 10.1.3.5 js Validation Result for editProfile.js</summary>
 <img src="documents/js-val-editProfile.png"
 alt="Screenshot of the successful javascript validation result for the editProfile.js file."></details>
 
 **File: script.js**
 
-<details><summary>Fig. 9.1.3.6 js Validation Result for script.js</summary>
+<details><summary>Fig. 10.1.3.6 js Validation Result for script.js</summary>
 <img src="documents/js-val-script.png"
 alt="Screenshot of the successful javascript validation result for the script.js file."></details>
 
 This jsHint validation shows one undefined variable bootstrap. However this is a bootstrap alert method that is imported separately and is available to the code at runtime.
 
-#### 9.1.4 Python Code Validation
+#### 10.1.4 Python Code Validation
 
 In the first instance python validation has been implemented by way of constant monitoring of the problems list in the IDE. All python files were found to be free of problems.
 
@@ -516,37 +580,37 @@ In addition all key files containing custom code were tested using the Code Inst
 
 **File: views.py**
 
-<details><summary>Fig. 9.1.4.3 Code Institute Python Linter Result for views.py</summary>
+<details><summary>Fig. 10.1.4.3 Code Institute Python Linter Result for views.py</summary>
 <img src="documents/py-val-views.png"
 alt="Screenshot of the code institute python linter result for the views.py file."></details>
 
 **File: models.py**
 
-<details><summary>Fig. 9.1.4.4 Code Institute Python Linter Result for models.py</summary>
+<details><summary>Fig. 10.1.4.4 Code Institute Python Linter Result for models.py</summary>
 <img src="documents/py-val-models.png"
 alt="Screenshot of the code institute python linter result for the models.py file."></details>
 
 **File: forms.py**
 
-<details><summary>Fig. 9.1.4.5 Code Institute Python Linter Result for forms.py</summary>
+<details><summary>Fig. 10.1.4.5 Code Institute Python Linter Result for forms.py</summary>
 <img src="documents/py-val-forms.png"
 alt="Screenshot of the code institute python linter result for the forms.py file."></details>
 
 **File: admin.py**
 
-<details><summary>Fig. 9.1.4.6 Code Institute Python Linter Result for admin.py</summary>
+<details><summary>Fig. 10.1.4.6 Code Institute Python Linter Result for admin.py</summary>
 <img src="documents/py-val-admin.png"
 alt="Screenshot of the code institute python linter result for the admin.py file."></details>
 
 **File: admin_filters.py**
 
-<details><summary>Fig. 9.1.4.6 Code Institute Python Linter Result for admin_filters.py</summary>
+<details><summary>Fig. 10.1.4.6 Code Institute Python Linter Result for admin_filters.py</summary>
 <img src="documents/py-val-admin-filters.png"
 alt="Screenshot of the code institute python linter result for the admin_filters.py file."></details>
 
-### 9.2 Test Cases
+### 10.2 Test Cases
 
-#### 9.2.1 User Story Testing
+#### 10.2.1 User Story Testing
 
 User stories have been tested as follows:
 
@@ -568,15 +632,15 @@ As a **Site Admin** I can **amend bookings** so that **in the event of any parti
 As a **Site Admin** I can **prevent an individual student booking themselves into the same lesson more than once** so that **I do not end up with accidental spurious bookings.**|The booking system has been designed to automatically prevent a user booking themselves into the same lesson twice. A warning message is diplayed to the user if the booking already exists.
 As a **Business Owner** I can **provide a website landing page to potential customers that clearly defines the business offering** so that **I can attract potential customers to view further detailed information on the services offered so as to potentially increase business volumes.**|The business name Kerry Surf School is clearly displayed at the top of the page. The hero image is of a surfer on the water. Three clear calls to action are displayed, info on lessons, info on equipment and book group lessons.
 
-#### 9.2.2 Feature Testing
+#### 10.2.2 Feature Testing
 
 **Navigation Bar**
 
-<details><summary>Fig. 9.2.2.1 Navigation Bar - Logged Out</summary>
+<details><summary>Fig. 10.2.2.1 Navigation Bar - Logged Out</summary>
 <img src="documents/site-navbar-logged-out.png"
 alt="Screenshot of the website's navigation bar when logged out"></details>
 
-<details><summary>Fig. 9.2.2.2 Navigation Bar - Logged In</summary>
+<details><summary>Fig. 10.2.2.2 Navigation Bar - Logged In</summary>
 <img src="documents/site-navbar-logged-in.png"
 alt="Screenshot of the website's navigation bar when logged in"></details>
 
@@ -600,7 +664,7 @@ My Account Link|On account page the link is underlined and bold to highlight act
 
 **Header**
 
-<details><summary>Fig. 9.2.2.3 Header</summary>
+<details><summary>Fig. 10.2.2.3 Header</summary>
 <img src="documents/site-header.png"
 alt="Screenshot of the website's header"></details>
 
@@ -616,7 +680,7 @@ Opening Hours|Kerry Surf School opening hours appear beneath hero image|Open all
 
 **Footer**
 
-<details><summary>Fig. 9.2.2.4 Footer</summary>
+<details><summary>Fig. 10.2.2.4 Footer</summary>
 <img src="documents/site-footer.png"
 alt="Screenshot of the website's footer"></details>
 
@@ -632,7 +696,7 @@ YouTube Logo|Clicking Logo opens YouTube in a new tab|Clicked logo|YouTube opene
 
 **Home Page Main Section - Mobile Version**
 
-<details><summary>Fig. 9.2.2.5 Home Page - Mobile</summary>
+<details><summary>Fig. 10.2.2.5 Home Page - Mobile</summary>
 <img src="documents/site-home-mobile.png"
 alt="Screenshot of the website's home page on mobile devices"></details>
 
@@ -647,7 +711,7 @@ Info on Hiring Gear!! bar|Clicking on this bar opens information on hiring gear 
 
 **Home Page Main Section - Desktop Version**
 
-<details><summary>Fig. 9.2.2.6 Home Page - Desktop</summary>
+<details><summary>Fig. 10.2.2.6 Home Page - Desktop</summary>
 <img src="documents/site-home-desktop.png"
 alt="Screenshot of the website's home page on desktop devices"></details>
 
@@ -662,7 +726,7 @@ Info on Hiring Gear!! card|Clicking on the link in this card moves the home page
 
 **Sign Up/ Log In Page**
 
-<details><summary>Fig. 9.2.2.7 Sign Up/ Log In Page</summary>
+<details><summary>Fig. 10.2.2.7 Sign Up/ Log In Page</summary>
 <img src="documents/site-signuporlogin.png"
 alt="Screenshot of the website's sign up or log in links page"></details>
 
@@ -676,7 +740,7 @@ Log In card|Clicking on log in link leads to the log in page|Clicked Link|Log In
 
 **Log In Form**
 
-<details><summary>Fig. 9.2.2.8 Log In Form</summary>
+<details><summary>Fig. 10.2.2.8 Log In Form</summary>
 <img src="documents/site-login-form.png"
 alt="Screenshot of the website's log in form"></details>
 
@@ -693,7 +757,7 @@ Sign Up! Link|Clicking the link leads to the Sign Up page|Clicked link|Sign Up p
 
 **Sign Up Form**
 
-<details><summary>Fig. 9.2.2.9 Sign Up Form</summary>
+<details><summary>Fig. 10.2.2.9 Sign Up Form</summary>
 <img src="documents/site-signup-form.png"
 alt="Screenshot of the website's sign up form"></details>
 
@@ -711,7 +775,7 @@ Log In! Link|Clicking the link leads to the Log In page|Clicked link|Log In page
 
 **Create Customer Profile Form**
 
-<details><summary>Fig. 9.2.2.10 Create Customer Profile Form</summary>
+<details><summary>Fig. 10.2.2.10 Create Customer Profile Form</summary>
 <img src="documents/site-customer-profile.png"
 alt="Screenshot of the website's create customer profile form"></details>
 
@@ -743,7 +807,7 @@ Weight|Submitting a Weight with a negative value returns error|Clicked Submit De
 
 **Customer Account Page**
 
-<details><summary>Fig. 9.2.2.11 Customer Account Page</summary>
+<details><summary>Fig. 10.2.2.11 Customer Account Page</summary>
 <img src="documents/site-customer-account.png"
 alt="Screenshot of the website's customer account page"></details>
 
@@ -760,7 +824,7 @@ Modal Confirm Delete Account!! button|Clicking this button will delete the user 
 
 **Make a Booking Form**
 
-<details><summary>Fig. 9.2.2.12 Make a Booking Form</summary>
+<details><summary>Fig. 10.2.2.12 Make a Booking Form</summary>
 <img src="documents/site-booking-form.png"
 alt="Screenshot of the website's make a booking form"></details>
 
@@ -778,7 +842,7 @@ Go Back! button|Clicking this button returns to the customer account page|Clicke
 
 **View Bookings Page**
 
-<details><summary>Fig. 9.2.2.13 View Bookings Page</summary>
+<details><summary>Fig. 10.2.2.13 View Bookings Page</summary>
 <img src="documents/site-view-bookings.png"
 alt="Screenshot of the website's view bookings page"></details>
 
@@ -794,7 +858,7 @@ Modal Confirm Cancellation button|Clicking this button will delete the specified
 
 **Edit a Booking Form**
 
-<details><summary>Fig. 9.2.2.13 Edit a Booking Form</summary>
+<details><summary>Fig. 10.2.2.13 Edit a Booking Form</summary>
 <img src="documents/site-edit-booking-form.png"
 alt="Screenshot of the website's edit a booking form"></details>
 
@@ -813,7 +877,7 @@ Go Back! button|Clicking this button returns to the view bookings page|Clicked G
 
 **Edit Customer Profile Form**
 
-<details><summary>Fig. 9.2.2.14 Edit Customer Profile Form</summary>
+<details><summary>Fig. 10.2.2.14 Edit Customer Profile Form</summary>
 <img src="documents/site-edit-customer-profile.png"
 alt="Screenshot of the website's edit customer profile form"></details>
 
@@ -842,7 +906,7 @@ Weight|Submitting a Weight with a negative value returns error|Clicked Update Pr
 
 **Admin Log In Page - Customized Features**
 
-<details><summary>Fig. 9.2.2.15 Admin Log In Page</summary>
+<details><summary>Fig. 10.2.2.15 Admin Log In Page</summary>
 <img src="documents/admin-login.png"
 alt="Screenshot of the website's admin log in page"></details>
 
@@ -854,7 +918,7 @@ Back to Home!! link|Clicking the Back to Home!! link will return the user to the
 
 **Admin Bookings List Display - Customized Features**
 
-<details><summary>Fig. 9.2.2.16 Admin Bookings List Display</summary>
+<details><summary>Fig. 10.2.2.16 Admin Bookings List Display</summary>
 <img src="documents/admin-bookings.png"
 alt="Screenshot of the website's admin bookings list display"></details>
 
@@ -868,7 +932,7 @@ Disapprove selected bookings action|Selecting an approved booking and chosing th
 Date Filters|Custom Date Filters are available|Applied various custom date filters to the list|Booking list was filtered accordingly
 
 
-#### 9.2.3 Automated Testing
+#### 10.2.3 Automated Testing
 
 Automated testing of python code in the views.py, models.py and forms.py files was carried out using Django's inbuilt unittest framework.
 
@@ -884,7 +948,7 @@ The results of tests successfully carried out is as follows:
 
 
 
-### 9.3 Fixed Bugs
+### 10.3 Fixed Bugs
 
 1. The book now text that appears in the call to action button in the middle of the home page was too big on wider screen sizes.
 
@@ -898,7 +962,7 @@ Solution: The url to the background image in the styles.css file was updated to 
 
 This bug was raised as a PBI within the agile design process. Further information on the bug and solution can be found [here.](https://github.com/fenton1000/mf-portfolio-four-kerry-surf-school/issues/21)
 
-<details><summary>Fig. 9.3.1 Missing Hero Image</summary>
+<details><summary>Fig. 10.3.1 Missing Hero Image</summary>
 <img src="documents/missing-hero-image.png"
 alt="Screenshot showing the hero image missing from the home page."></details>
 
@@ -914,9 +978,9 @@ Solution: The view code was altered so that the creation of the blank form for t
 
 This bug was raised as a PBI within the agile design process. Further information on the bug and solution can be found [here.](https://github.com/fenton1000/mf-portfolio-four-kerry-surf-school/issues/30)
 
-### 9.4 Supported Screens and Browsers
+### 10.4 Supported Screens and Browsers
 
-#### 9.4.1 Supported Screens (Responsiveness)
+#### 10.4.1 Supported Screens (Responsiveness)
 
 The site responsiveness has been tested using Chrome Developer Tools and has been found to be responsive across a range of device screen sizes as follow:
 
@@ -987,7 +1051,7 @@ Finally the amiresposive website generates the following screen examples for the
 ![Screenshot of the home page on the am i responsive website](documents/amiresponsive.png "Home Page on amiresponsive.")
 
 
-#### 9.4.2 Supported Browsers
+#### 10.4.2 Supported Browsers
 
 The website was tested in the following browsers:
 
@@ -1010,21 +1074,21 @@ Test|Chrome|Edge|Firefox
 Intended Appearance|Good|Good|Good
 Intended Responsiveness|Good|Good|Good
 
-### 9.5 Accessibility and Performance
+### 10.5 Accessibility and Performance
 
 Lighthouse was used to assess accessibility and performance. The results were found to be acceptable as follows:
 
 ![Screenshot of the lighthouse results](documents/lighthouse.png "Lighthouse Analysis")
 
-## 10. Deployment
+## 11. Deployment
 
-### 10.1 via GitHub
+### 11.1 via GitHub
 
 1. The Code Institute project template was accessed on GitHub at https://github.com/Code-Institute-Org/gitpod-full-template and the Use this Template button clicked to create a project-specific repository.
 
 2. All files and documents pushed from Gitpod appear in the repository.
 
-### 10.2 via Gitpod
+### 11.2 via Gitpod
 
 The site was developed in Gitpod as follows:
 
@@ -1036,7 +1100,7 @@ The site was developed in Gitpod as follows:
 
 4. The git push command was used to push all committed code and documentation to the repository for secure storage.
 
-### 10.3 via Heroku
+### 11.3 via Heroku
 
 * Prior to deployment to Heroku, the settings.py file is updated to ensure that in the production version debug is set to False.
 
@@ -1056,9 +1120,9 @@ The site was developed in Gitpod as follows:
 
 * The live site/application can be accessed <a href="https://mf-pp4-kerry-surf-school.herokuapp.com/" target="_blank">here</a>
 
-## 11. References and Credits
+## 12. References and Credits
 
-### 11.1 References
+### 12.1 References
 
 * The Code Institute student Template for Gitpod provided by Code Institute at https://github.com/Code-Institute-Org/gitpod-full-template. This template allows easy set up of a repository and workspace.
 
@@ -1144,7 +1208,7 @@ The site was developed in Gitpod as follows:
 
 * Contribution by rminde on the jquery forum available at https://forum.jquery.com/topic/tomorrow-and-next-day-date#:~:text=var%20tomorrow%3D%20new%20Date(today,usual%20month%20just%20add%201. for information on getting tomorrow's date in javascript.
 
-### 11.2 Credits
+### 12.2 Credits
 
 * Hero Image by Pixabay and taken from pixels.com: https://www.pexels.com/photo/man-surfing-on-waves-390051/.
 
